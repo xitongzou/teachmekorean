@@ -1,4 +1,5 @@
-teachmekorean
-=============
+## Teach me Korean
 
-A project for learning Korean
+A project to learn korean more efficiently.
+
+-Tong Zou
