@@ -64,12 +64,12 @@ homecontent.set({title: "Teach Me Korean!!", content: "Learn Korean by starting 
 /** Backbone Views **/ 
 var HomeView = Backbone.View.extend({
                                 initialize: function() {
-                                this.render();
-                                },
+                                    this.render();
+                                    },  
                                 render: function() {
                                 var source = $("#header-template").html();
                                 var template = Handlebars.compile(source);
-                                this.el.html(template(this.data));
+                                this.$el.html(template(homecontent.toJSON()));
                                 }
 });
-var homeView = new HomeView({el: $("#header-holder"), data: homecontent.toJSON() });
+var homeView = new HomeView({el: $("#header-holder")});
