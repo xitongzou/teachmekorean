@@ -68,7 +68,7 @@
     </nav>
     </header>
       <script id="header-template" type="text/x-handlebars-template">
-              <div class="hero-unit">
+		  <div class="hero-unit">
               <h1>{{title}}</h1>
               <p>{{content}}</p>
           <p><a href="#" class="btn btn-primary btn-large">{{{details}}}</a></p>
@@ -86,21 +86,17 @@
           </script>
       <script id="lesson-template" type="text/x-handlebars-template">
           <div class="row-fluid">
-          {{#lesson}}
-          <div class="hero-unit">
-          <h2>{{english}}</h2>
-          <h2>{{korean}}</h2>
-          <h2>{{romanized}}</h2>
-          {{!use for english meanings, korean synonyms, and other verb conjugations of this word}}
-          <h2>{{details}}</h2>
+		  <h3>{{title}}</h3>
+		  {{#lesson-helper lessons}}
+		  
+		  {{/lesson-helper}}
           </div>
-          {{/lesson}}
           </script>
     <div class="container-fluid">
       <div class="row-fluid">
         <aside class="span3">
           <div class="well sidebar-nav">
-            <ul class="nav nav-list">
+            <ul class="nav nav-list lesson-list">
               <li class="nav-header">Lessons</li>
               <li class="active"><a class="lesson-1" href="#">Lesson 1</a></li>
               <li><a class="lesson-2" href="#">Lesson 2</a></li>
@@ -135,7 +131,7 @@
       <hr>
       
       <footer>
-          <p>&copy; Company 2013</p>
+          <p>&copy; Tong Zou 2013</p>
       </footer>
     <!-- Le javascript
     ================================================== -->
