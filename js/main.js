@@ -62,7 +62,8 @@ homecontent.set({title: "Teach Me Korean!!",
 content: "Learn Korean by starting off with simple sentences with mouseovers for each word, and learn to combine words together to create proper sentences and structures.",
  details: "Learn more &raquo;"});
 var Word = Backbone.Model.extend({
-									word: ''
+									word: '',
+									romanization: ''
          });
 var WordGroup = Backbone.Collection.extend({
                                         model: Word
@@ -94,9 +95,10 @@ Handlebars.registerHelper('lesson-helper', function(lessonGroup) {
 	_.each(lessonGroup.models, function(lesson) {
 		out += "<div class='hero-unit'>";
 	   _.each(lesson.get("krGroup").models, function(krWord) {
-	     out += "<h2 class='korean-word'>";
+	     var tooltipContent = "<h2>" + krWord.get('romanization') + "</h2>";
+	     out += "<h2 class='korean-word'><a href='#' data-toggle='tooltip' title='"+tooltipContent+"'>";
 		 out += krWord.get('word');
-		 out += "</h2>";
+		 out += "</a></h2>";
 	   });
 	   _.each(lesson.get("enGroup").models, function(enWord) {
 	     out += "<h2 class='english-word'>";
@@ -126,10 +128,11 @@ var Lesson1View = Backbone.View.extend({
 						    /** Lesson 1 **/
 							var word1 = new Word();
 							word1.set({ word: "Hello"});
+							
 							var wordGroup1 = new WordGroup();
 							wordGroup1.add(word1);
 							var word2 = new Word();
-							word2.set({ word: "안녕하세요" });
+							word2.set({ word: "안녕하세요", romanization: "an-nyeong-ha-se-yo" });
 							var wordGroup2 = new WordGroup();
 							wordGroup2.add(word2);
 							
@@ -142,7 +145,7 @@ var Lesson1View = Backbone.View.extend({
 							wordGroup3.add(word3);
 							wordGroup3.add(word3a);
 							var word4 = new Word();
-							word4.set({ word: "감사합니다" });
+							word4.set({ word: "감사합니다", romanization: "kam-sa-hap-ni-da" });
 							var wordGroup4 = new WordGroup();
 							wordGroup4.add(word4);
 							
@@ -166,9 +169,19 @@ var Lesson1View = Backbone.View.extend({
 						}
 });
 
+/** functions **/
+function applyTooltips() {
+	_.each($("[data-toggle='tooltip']"),function(word) {
+		$(word).tooltip({html:true});
+	});
+}
+
 $('.lesson-list').on('click', function(evt) {
-    if (evt.target.className === "lesson-1") {
+	var className = evt.target.className;
+    if (className === "lesson-1") {
 	  var lesson1view = new Lesson1View({el: $("#lesson-holder")});
 	  lesson1view.render();
 	}
+	applyTooltips();
 });
+
