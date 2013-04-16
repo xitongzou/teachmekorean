@@ -1,60 +1,3 @@
-/*
-
-var contentSource = $("#content-template").html();
-var headerSource = $("#header-template").html();
-var lessonSource = $("#lesson-template").html();
-var contentTemplate = Handlebars.compile(contentSource);
-var headerTemplate = Handlebars.compile(headerSource);
-var lessonTemplate = Handlebars.compile(lessonSource);
-var sectionData = { section: [
-                     {heading: "Heading", content: "Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.", details: "View details &raquo;"},
-                       {heading: "Heading", content: "Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.", details: "View details &raquo;"},
-                        {heading: "Heading", content: "Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.", details: "View details &raquo;"},
-                        {heading: "Heading", content: "Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.", details: "View details &raquo;"},
-                              {heading: "Heading", content: "Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.", details: "View details &raquo;"},
-                              {heading: "Heading", content: "Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.", details: "View details &raquo;"}
-                     ]
-};
-var Lesson1Data = { lesson: [{ english : "Hello", korean: "안녕하세요", romanized: "ann-nyeong-ha-se-yo"}, { english : "Thank you", korean: "감사합니다", romanized: "kam-sa-hap-ni-da" }] };
-var Lesson2Data = { lesson: [{ english: "Yes", korean: "네", romanized: "ne" },
-                             { english: "No", korean: "아니요", romanized: "an-ni-yo" }]};
-
-var EnWord = Backbone.Model.extend({
-                               initialize: function(){
-                               alert("English word created");
-                               }
-         });
-var KrWord = Backbone.Model.extend({
-                               initialize: function() {
-                               alert("Korean word created");
-                               }
-                               });
-var LessonEnWords = Backbone.Collection.extend({
-                                        model: EnWord
-});
-var LessonKrWords = Backbone.Collection.extend({
-                                               model: KrWord
-});
-lesson.set({ english: "Yes", korean: "네", romanized: "ne" });
-$("#header-holder").html(headerTemplate(headerData));
-$("#content-holder").html(contentTemplate(sectionData));
-$("#home").on('click',function(elem) {
-              $("#lesson-holder").hide();
-              $("#header-holder").html(headerTemplate(headerData));
-              $("#header-holder").show();
-              });
-$(".lesson-1").on('click', function (elem) {
-                  $("#header-holder").hide();
-                  $("#lesson-holder").html(lessonTemplate(Lesson1Data));
-                  $("#lesson-holder").show();
-                  });
-$(".lesson-2").on('click', function (elem) {
-                  $("#header-holder").hide();
-                  $("#lesson-holder").html(lessonTemplate(Lesson2Data));
-                  $("#lesson-holder").show();
-                  });
-*/
-
 /** Backbone Models **/
 var HomeContentModel = Backbone.Model.extend({ });
 var homecontent = new HomeContentModel();
@@ -95,13 +38,29 @@ Handlebars.registerHelper('lesson-helper', function(lessonGroup) {
 	_.each(lessonGroup.models, function(lesson) {
 		out += "<div class='hero-unit'>";
 	   _.each(lesson.get("krGroup").models, function(krWord) {
-	     var tooltipContent = "<h2>" + krWord.get('romanization') + "</h2>";
-	     out += "<h2 class='korean-word'><a href='#' data-toggle='tooltip' title='"+tooltipContent+"'>";
+	   	 var romanization = krWord.get('romanization'), translation = krWord.get('translation'), synonyms = krWord.get('synonyms'), toolTipContent = "";
+		 if (romanization) {
+		 toolTipContent += "<h2>" + romanization + "</h2>";
+		 } 
+		 if (translation) {
+		 toolTipContent += "<h2>" + translation + "</h2>";
+		 } 
+		 if (synonyms) {
+		 toolTipContent += "<h2>" + synonyms + "</h2>";
+		 }
+	     out += "<h2 class='korean-word'><a href='#' data-toggle='tooltip' title='"+toolTipContent+"'>";
 		 out += krWord.get('word');
 		 out += "</a></h2>";
 	   });
 	   _.each(lesson.get("enGroup").models, function(enWord) {
-	     out += "<h2 class='english-word'>";
+	     var translation = enWord.get('translation'), synonyms = enWord.get('synonyms'), toolTipContent = "";
+		 if (translation) {
+		 toolTipContent += "<h2>" + translation + "</h2>";
+		 }
+		 if (synonyms) {
+		 toolTipContent += "<h2>" + synonyms + "</h2>";
+		 }
+		 out += "<h2 class='english-word'><a href='#' data-toggle='tooltip' title='"+toolTipContent+"'>";
 		 out += enWord.get('word');
 		 out += "</h2>";
 	   });
@@ -127,25 +86,22 @@ var Lesson1View = Backbone.View.extend({
 						
 						    /** Lesson 1 **/
 							var word1 = new Word();
-							word1.set({ word: "Hello"});
+							word1.set({ word: "Hello", translation: "안녕하세요", synonyms: "Hi, Hey"});
 							
 							var wordGroup1 = new WordGroup();
 							wordGroup1.add(word1);
 							var word2 = new Word();
-							word2.set({ word: "안녕하세요", romanization: "an-nyeong-ha-se-yo" });
+							word2.set({ word: "안녕하세요", romanization: "an-nyeong-ha-se-yo", translation: "Hello, Hi" });
 							var wordGroup2 = new WordGroup();
 							wordGroup2.add(word2);
 							
 							/** Lesson 2 **/
 							var word3 = new Word();
-							word3.set({ word: "Thank You" });
-							var word3a = new Word();
-							word3a.set({ word: "Thanks!!"});
+							word3.set({ word: "Thank You", translation: "감사합니다", synonyms: "Thanks"});
 							var wordGroup3 = new WordGroup();
 							wordGroup3.add(word3);
-							wordGroup3.add(word3a);
 							var word4 = new Word();
-							word4.set({ word: "감사합니다", romanization: "kam-sa-hap-ni-da" });
+							word4.set({ word: "감사합니다", romanization: "kam-sa-ham-ni-da", translation: "Thank you, Thanks", synonyms: "고맙습니다"});
 							var wordGroup4 = new WordGroup();
 							wordGroup4.add(word4);
 							
