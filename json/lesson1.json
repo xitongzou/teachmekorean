@@ -12,7 +12,7 @@
         "details": ""
     },
 	"lesson1-vocab": {
-		"title": "Lesson 1 Vocabulary".
+		"title": "Lesson 1 Vocabulary",
 		"lessons": [
 		{
 				"enGroup": [{
@@ -41,8 +41,7 @@
 					"synonyms":"고맙습니다",
 					"base":"고맙다"
 				}]
-		]
-	}
+		}]
   }
 
 }

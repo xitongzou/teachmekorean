@@ -40,7 +40,7 @@ function loadLessonJSON(lesson) {
     $.getJSON("json/lessons.json", function(data){
               
               /** get data for lesson **/
-              var lessonData = data[lesson];
+              var lessonData = data[lesson+"-content"];
               var lessonContentCol = new ContentCollection();
               var lessonContentCon = new ContentContainer();
               
