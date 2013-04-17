@@ -68,19 +68,24 @@
     </nav>
     </header>
       <script id="header-template" type="text/x-handlebars-template">
-		  <div class="hero-unit">
-              <h1>{{title}}</h1>
-              <p>{{content}}</p>
+          <div class="hero-unit">
+          <h1>{{title}}</h1>
+          <p class="lead">
+          {{#content-helper content}}
+          
+          {{/content-helper}}
+          </p>
+          {{#if details}}
           <p><a href="#" class="btn btn-primary btn-large">{{{details}}}</a></p>
-              </div>
+          {{/if}}
+          </div>
       </script>
       <script id="content-template" type="text/x-handlebars-template">
           <div class="row-fluid">
           {{#section}}
           <section class="span4">
           <h2>{{heading}}</h2>
-          <p>{{content}}</p>
-          <p><a class="btn" href="#">{{{details}}}</a></p>
+          <p class="lead">{{{content}}}</p>
           </section>
           {{/section}}
           </script>

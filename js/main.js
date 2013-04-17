@@ -1,12 +1,16 @@
 /** Backbone Models **/
-var HomeContentModel = Backbone.Model.extend({ });
-var homecontent = new HomeContentModel();
-homecontent.set({title: "Teach Me Korean!!", 
-content: "Learn Korean by starting off with simple sentences with mouseovers for each word, and learn to combine words together to create proper sentences and structures.",
- details: "Learn more &raquo;"});
+var ContentModel = Backbone.Model.extend({ title: "", content:""});
+var ContentCollection = Backbone.Collection.extend({
+                                                   model: ContentModel
+});
+var ContentContainer = Backbone.Model.extend({
+                                             title: "",
+                                             details: "",
+                                             content: ContentCollection
+});
 var Word = Backbone.Model.extend({
-									word: '',
-									romanization: ''
+									word: "",
+									romanization: ""
          });
 var WordGroup = Backbone.Collection.extend({
                                         model: Word
@@ -19,18 +23,62 @@ var LessonGroup = Backbone.Collection.extend({
         model: Lesson
 });		 
 
-var Content = Backbone.Model.extend({
-	  heading: "",
-	  content: ""
-});
-
 var LessonContainer = Backbone.Model.extend({
      title: "",
-	 body: Content,
 	 lessons: LessonGroup
 });
 
+
+/** functions **/
+function applyTooltips() {
+	_.each($("[data-toggle='tooltip']"),function(word) {
+           $(word).tooltip({html:true});
+           });
+}
+
+function loadLessonJSON(lesson) {
+    $.getJSON("json/lessons.json", function(data){
+              
+              /** get data for lesson **/
+              var lessonData = data[lesson];
+              var lessonContentCol = new ContentCollection();
+              var lessonContentCon = new ContentContainer();
+              
+              /** for each content data, create a new content model **/
+              _.each(lessonData.contentCol, function(contentmodel) {
+                     var lessonContent = new ContentModel();
+                     lessonContent.set({title:contentmodel.title,
+                                       content:contentmodel.content});
+                     lessonContentCol.add(lessonContent);
+                     });
+              
+
+              lessonContentCon.set({title:lessonData['title'],details:lessonData['details'], content: lessonContentCol});
+              var source = $("#header-template").html();
+              var template = Handlebars.compile(source);
+              $("#header-holder").html(template(lessonContentCon.toJSON()));
+              console.log(lessonContentCon.toJSON());
+              }).done(function() { console.log('done'); });
+}
+
 /** Handlebar Helpers **/
+Handlebars.registerHelper('content-helper', function(contentcol) {
+      var out = "";
+                          
+      //loop over backbone collection
+       _.each(contentcol.models, function(contentmodel) {
+              var title = contentmodel.get('title'),
+              content = contentmodel.get('content');
+              if (title) {
+                out += "<h2>" + title + "</h2>";
+              }
+              if (content) {
+              out += content;
+              }
+              });
+      return out;
+});
+                          
 Handlebars.registerHelper('lesson-helper', function(lessonGroup) {
     var out = "";
 	 
@@ -64,23 +112,28 @@ Handlebars.registerHelper('lesson-helper', function(lessonGroup) {
 		 out += enWord.get('word');
 		 out += "</h2>";
 	   });
-		out += "</div";
+		out += "</div>";
 	});
 	return out;
 });
 		 
 /** Backbone Views **/ 
 var HomeView = Backbone.View.extend({
-                                initialize: function() {
-                                    this.render();
-                                    },  
                                 render: function() {
+                                    var homecontent = new ContentModel();
+                                    homecontent.set({title: "",
+                                                    content: "Learn Korean by starting off with simple sentences with mouseovers for each word, and learn to combine words together to create proper sentences and structures."});
+                                    var homecontentCol = new ContentCollection();
+                                    var homecontentCon = new ContentContainer();
+                                    homecontentCol.add(homecontent);
+                                    homecontentCon.set({title: "Teach Me Korean!!", details: "Learn more &raquo;", content: homecontentCol});
                                 var source = $("#header-template").html();
                                 var template = Handlebars.compile(source);
-                                this.$el.html(template(homecontent.toJSON()));
+                                this.$el.html(template(homecontentCon.toJSON()));
                                 }
 });
 var homeView = new HomeView({el: $("#header-holder")});
+homeView.render();
 var Lesson1View = Backbone.View.extend({
 						render: function() {
 						
@@ -118,25 +171,19 @@ var Lesson1View = Backbone.View.extend({
 							lessonGroup.add(lesson2);
 							
 							var lessonCon = new LessonContainer();
-							lessonCon.set({title:"Lesson 1 - Hello and Thank You",lessons: lessonGroup});
+							lessonCon.set({title:"Lesson 1 Vocabulary",lessons: lessonGroup});
 							var source = $("#lesson-template").html();
 							var template = Handlebars.compile(source);
                             this.$el.html(template(lessonCon.toJSON()));
 						}
 });
 
-/** functions **/
-function applyTooltips() {
-	_.each($("[data-toggle='tooltip']"),function(word) {
-		$(word).tooltip({html:true});
-	});
-}
-
 $('.lesson-list').on('click', function(evt) {
 	var className = evt.target.className;
     if (className === "lesson-1") {
 	  var lesson1view = new Lesson1View({el: $("#lesson-holder")});
 	  lesson1view.render();
+      loadLessonJSON("lesson1");
 	}
 	applyTooltips();
 });
