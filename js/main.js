@@ -1,7 +1,8 @@
 /** Backbone Models **/
 var ContentModel = Backbone.Model.extend({ title: "", content:""});
 var ContentCollection = Backbone.Collection.extend({
-                                                   model: ContentModel
+                                                   model: ContentModel,
+												   url: "#"
 });
 var ContentContainer = Backbone.Model.extend({
                                              title: "",
@@ -13,21 +14,22 @@ var Word = Backbone.Model.extend({
 									romanization: ""
          });
 var WordGroup = Backbone.Collection.extend({
-                                        model: Word
+                                        model: Word,
+										url: "#"
 });
 var Lesson = Backbone.Model.extend({
 							   enGroup: WordGroup,
 							   krGroup: WordGroup
          });
 var LessonGroup = Backbone.Collection.extend({ 
-        model: Lesson
+        model: Lesson,
+		url: "#"
 });		 
 
 var LessonContainer = Backbone.Model.extend({
      title: "",
 	 lessons: LessonGroup
 });
-
 
 /** functions **/
 function applyTooltips() {
@@ -116,9 +118,35 @@ Handlebars.registerHelper('lesson-helper', function(lessonGroup) {
 	});
 	return out;
 });
+
+/** Routers **/
+AppRouter = Backbone.Router.extend({
+	routes: {
+		"":"home",
+		"add":"add",
+		"close":"home"
+	},
+	
+	home:function() {
+		console.log('home');
+		new HomeView();
+	},
+	
+	add:function() {
+		new AddView();
+	},
+	
+	update:function(e) {
+		model = wines.get(e);
+		new UpdateView({model:model});
+	}
+});
 		 
 /** Backbone Views **/ 
 var HomeView = Backbone.View.extend({
+								initialize: function() {
+									this.collection.bind('all',this.render,this);
+								},
                                 render: function() {
                                     var homecontent = new ContentModel();
                                     homecontent.set({title: "",
@@ -135,8 +163,16 @@ var HomeView = Backbone.View.extend({
 var homeView = new HomeView({el: $("#header-holder")});
 homeView.render();
 var Lesson1View = Backbone.View.extend({
+						template: "",
+						events: {
+						"click #addBtn": "add"
+						},
+						add: function(e) {
+							e.preventDefault();
+							return this;
+						}
 						render: function() {
-						
+							this.$el.empty();
 						    /** Lesson 1 **/
 							var word1 = new Word();
 							word1.set({ word: "Hello", translation: "안녕하세요", synonyms: "Hi, Hey"});
@@ -167,6 +203,9 @@ var Lesson1View = Backbone.View.extend({
 							lesson2.set({krGroup:wordGroup4});
 							
 							var lessonGroup = new LessonGroup();
+							lessonGroup.on('add',function(model) {
+								console.log('added a new lesson');
+							});
 							lessonGroup.add(lesson1);
 							lessonGroup.add(lesson2);
 							
@@ -188,3 +227,7 @@ $('.lesson-list').on('click', function(evt) {
 	applyTooltips();
 });
 
+$(document).ready(function() {
+	KoreanApp = new AppRouter();
+	Backbone.history.start();
+});
