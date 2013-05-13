@@ -57,17 +57,30 @@ function renderView(type,lessonName) {
     }
 }
 
-/** this function populates the model objects and renders the view **/
+function loadAndRender(lessonName){
+    //load from cache if it exists, otherwise fetch the json and populate
+    if (KoreanApp.lessons[lessonName]) {
+      if (KoreanApp.lessons[lessonName].lessonContentCon) {
+          renderView("content",lessonName);   
+      }
+      if (KoreanApp.lessons[lessonName].lessonVocabCon) {
+          renderView("vocab", lessonName);
+          applyPopups();
+      }
+    } else {
+        KoreanApp.lessons[lessonName] = {};
+        loadJSON(lessonName);
+    }
+}
+
+/** this function populates the model objects from json and renders the view **/
 function loadJSON(lessonName) {
     $.getJSON("json/"+lessonName+".json", function(data){
               
               /** get content for lesson **/
               var lessonData = data[lessonName+"-content"];
-              KoreanApp.lessons[lessonName] = KoreanApp.lessons[lessonName] || {};
               
               if (lessonData.title.length > 0) {
-              
-              if (!KoreanApp.lessons[lessonName].lessonContentCon) {
               
               KoreanApp.lessons[lessonName].lessonContentCon = new ContentContainer();
               var lessonContentCol = new ContentCollection();
@@ -82,7 +95,6 @@ function loadJSON(lessonName) {
               
 
               KoreanApp.lessons[lessonName].lessonContentCon.set({title:lessonData['title'],details:lessonData['details'], content: lessonContentCol});
-              }
               
               renderView("content",lessonName); 
               
@@ -90,9 +102,8 @@ function loadJSON(lessonName) {
               
               /** get vocab for lesson **/
               var vocabData = data[lessonName+"-vocab"];
-              if (vocabData.title.length > 0) {
               
-              if (!KoreanApp.lessons[lessonName].lessonVocabCon) {
+              if (vocabData.title.length > 0) {
               
               KoreanApp.lessons[lessonName].lessonVocabCon = new LessonContainer();
               var lessonGroup = new LessonGroup();
@@ -117,7 +128,6 @@ function loadJSON(lessonName) {
                      });
               KoreanApp.lessons[lessonName].lessonVocabCon.set({title:vocabData['title'],
                                                                lessons:lessonGroup});
-              }
               
               renderView("vocab", lessonName);
               applyPopups();
@@ -194,12 +204,12 @@ var AppRouter = Backbone.Router.extend({
 	
 	home:function() {
 		console.log('home');
-        loadJSON("home");
+        loadAndRender("home");
 	},
 	
 	lesson1:function() {
         console.log('lesson1');
-        loadJSON("lesson1");
+        loadAndRender("lesson1");
     },                            
 	
 	update:function(e) {
@@ -259,7 +269,8 @@ var Lesson1View = Backbone.View.extend({
                                        }
 });
 
-$(document).ready(function() {
+/** init **/
+$(function() {
      KoreanApp = {};
      KoreanApp.lessons = {};
      KoreanApp.views = {};
