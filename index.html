@@ -67,7 +67,7 @@
       </div>
     </nav>
     </header>
-      <script id="header-template" type="text/x-handlebars-template">
+      <script id="content-template" type="text/x-handlebars-template">
           <div class="hero-unit">
           <h1>{{title}}</h1>
           <p class="lead">
@@ -80,15 +80,6 @@
           {{/if}}
           </div>
       </script>
-      <script id="content-template" type="text/x-handlebars-template">
-          <div class="row-fluid">
-          {{#section}}
-          <section class="span4">
-          <h2>{{heading}}</h2>
-          <p class="lead">{{{content}}}</p>
-          </section>
-          {{/section}}
-          </script>
       <script id="lesson-template" type="text/x-handlebars-template">
           <div class="row-fluid">
 		  <h3>{{title}}</h3>
@@ -103,17 +94,17 @@
           <div class="well sidebar-nav">
             <ul class="nav nav-list lesson-list">
               <li class="nav-header">Lessons</li>
-              <li class="active"><a class="lesson-1" href="#">Lesson 1</a></li>
+              <li class="active"><a class="lesson-1" href="#lesson1">Lesson 1</a></li>
               <li><a class="lesson-2" href="#">Lesson 2</a></li>
               <li><a href="#">Lesson 3</a></li>
               <li><a href="#">Lesson 4</a></li>
-              <li class="nav-header">Sidebar</li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
+              <li class="nav-header">Vocabulary</li>
+              <li><a href="#">Vocab 1</a></li>
+              <li><a href="#">Vocab 2</a></li>
+              <li><a href="#">Vocab 3</a></li>
+              <li><a href="#">Vocab 4</a></li>
+              <li><a href="#">Vocab 5</a></li>
+              <li><a href="#">Vocab 6</a></li>
               <li class="nav-header">Sidebar</li>
               <li><a href="#">Link</a></li>
               <li><a href="#">Link</a></li>
@@ -122,12 +113,11 @@
           </div><!--/.well -->
         </aside><!--/span-->
         <article class="span9">
-          <div id="header-holder" class="hero-unit">
+          <div id="content-holder" class="hero-unit">
           </div>
-            <div id="lesson-holder">
-                </div>
-            <div id="content-holder">
-            </div><!--/row-->
+            <div id="vocab-holder">
+             </div>
+                <!--/row-->
         </article><!--/span-->
       </div><!--/row-->
 
