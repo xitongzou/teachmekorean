@@ -1,0 +1,13 @@
+.korean-word,
+.english-word {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.phrase {
+    margin: 0 0 0 10px;
+}
+
+.popover {
+max-width: 500px;
+}

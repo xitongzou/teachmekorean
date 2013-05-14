@@ -1,4 +1,4 @@
-/** Backbone Models **/
+/** Backbone Models/Collections **/
 var ContentModel = Backbone.Model.extend({ title: "", content:""});
 var ContentCollection = Backbone.Collection.extend({
                                                    model: ContentModel
@@ -12,7 +12,8 @@ var Word = Backbone.Model.extend({
 									word: "",
 									romanization: "",
                                  translation: "",
-                                 synonyms: ""
+                                 synonyms: "",
+                                 particle:""
          });
 var WordGroup = Backbone.Collection.extend({
                                         model: Word
@@ -39,36 +40,36 @@ function applyPopups() {
 }
 
 function disposeViews(newView) {
-    if (newView !== KoreanApp.views.currentView) {
-    _.each(KoreanApp.views.activeViews, function(view) {
+    if (newView !== App.views.currentView) {
+    _.each(App.views.activeViews, function(view) {
            //view.remove() actually deletes the dom element - we just want to erase the content
            view.$el.html("");
            });
     }
-    KoreanApp.views.currentView = newView;
+    App.views.currentView = newView;
 }
 
 function renderView(type,lessonName) {
     disposeViews(lessonName);
     if (type === "content") {
-       KoreanApp.views.activeViews.push(new ContentView({el: $("#content-holder"), model: lessonName}));
+       App.views.activeViews.push(new ContentView({el: $("#content-holder"), model: lessonName}));
     } else if (type === "vocab") {
-       KoreanApp.views.activeViews.push(new VocabView({el:$("#vocab-holder"), model: lessonName}));
+       App.views.activeViews.push(new VocabView({el:$("#vocab-holder"), model: lessonName}));
     }
 }
 
 function loadAndRender(lessonName){
     //load from cache if it exists, otherwise fetch the json and populate
-    if (KoreanApp.lessons[lessonName]) {
-      if (KoreanApp.lessons[lessonName].lessonContentCon) {
+    if (App.lessons[lessonName]) {
+      if (App.lessons[lessonName].lessonContentCon) {
           renderView("content",lessonName);   
       }
-      if (KoreanApp.lessons[lessonName].lessonVocabCon) {
+      if (App.lessons[lessonName].lessonVocabCon) {
           renderView("vocab", lessonName);
           applyPopups();
       }
     } else {
-        KoreanApp.lessons[lessonName] = {};
+        App.lessons[lessonName] = {};
         loadJSON(lessonName);
     }
 }
@@ -82,7 +83,7 @@ function loadJSON(lessonName) {
               
               if (lessonData.title.length > 0) {
               
-              KoreanApp.lessons[lessonName].lessonContentCon = new ContentContainer();
+              App.lessons[lessonName].lessonContentCon = new ContentContainer();
               var lessonContentCol = new ContentCollection();
               
               /** for each content data, create a new content model **/
@@ -94,7 +95,7 @@ function loadJSON(lessonName) {
                      });
               
 
-              KoreanApp.lessons[lessonName].lessonContentCon.set({title:lessonData['title'],details:lessonData['details'], content: lessonContentCol});
+              App.lessons[lessonName].lessonContentCon.set({title:lessonData['title'],details:lessonData['details'], content: lessonContentCol});
               
               renderView("content",lessonName); 
               
@@ -105,7 +106,7 @@ function loadJSON(lessonName) {
               
               if (vocabData.title.length > 0) {
               
-              KoreanApp.lessons[lessonName].lessonVocabCon = new LessonContainer();
+              App.lessons[lessonName].lessonVocabCon = new LessonContainer();
               var lessonGroup = new LessonGroup();
               
               /** for each vocab data, create a new word model **/
@@ -115,18 +116,18 @@ function loadJSON(lessonName) {
                      var krWordGroup = new WordGroup();
                      //loop over korean words
                      _.each(lesson.krGroup, function(krWord) {
-                            krWordGroup.add(new Word({word:krWord.word,romanization:krWord.romanization,translation:krWord.translation,base:krWord.base,synonyms:krWord.synonyms}));
+                            krWordGroup.add(new Word({word:krWord.word,romanization:krWord.romanization,translation:krWord.translation,base:krWord.base,synonyms:krWord.synonyms,particle:krWord.particle}));
                         });
                      
                      var enWordGroup = new WordGroup();
                      //loop over english words
                      _.each(lesson.enGroup, function(enWord) {
-                                        enWordGroup.add(new Word({word:enWord.word,translation:enWord.translation,synonyms:enWord.synonyms}));
+                            enWordGroup.add(new Word({word:enWord.word,translation:enWord.translation,synonyms:enWord.synonyms,particle:enWord.particle}));
                         });
                      lessonModel.set({enGroup:enWordGroup,krGroup:krWordGroup});
                      lessonGroup.add(lessonModel);
                      });
-              KoreanApp.lessons[lessonName].lessonVocabCon.set({title:vocabData['title'],
+              App.lessons[lessonName].lessonVocabCon.set({title:vocabData['title'],
                                                                lessons:lessonGroup});
               
               renderView("vocab", lessonName);
@@ -165,29 +166,44 @@ Handlebars.registerHelper('lesson-helper', function(lessonGroup) {
 	   _.each(lesson.get("krGroup").models, function(krWord) {
 	   	 var romanization = krWord.get('romanization'), translation = krWord.get('translation'), synonyms = krWord.get('synonyms'), toolTipContent = "";
 		 if (romanization) {
-		 toolTipContent += "<h2>" + romanization + "</h2>";
+		 toolTipContent += "<h3>" + romanization + "</h3>";
 		 } 
 		 if (translation) {
-		 toolTipContent += "<h2>" + translation + "</h2>";
+		 toolTipContent += "<h3>" + translation + "</h3>";
 		 } 
 		 if (synonyms) {
-		 toolTipContent += "<h2>" + synonyms + "</h2>";
+		 toolTipContent += "<h3>" + synonyms + "</h3>";
 		 }
-	     out += "<h2 class='korean-word'><a href='#' data-toggle='popover' title='"+toolTipContent+"'>";
+         var classNames = "korean-word";
+         if (krWord.get('particle')) {
+              classNames += " particle";
+          } else {
+              classNames += " phrase";
+          }
+	     out += "<span class='" + classNames + "'><a href='#' data-toggle='popover' title='"+toolTipContent+"'>";
 		 out += krWord.get('word');
-		 out += "</a></h2>";
+         out += "</a>";
+		  out += "</span>";
 	   });
+        out += "<p></p>";
 	   _.each(lesson.get("enGroup").models, function(enWord) {
 	     var translation = enWord.get('translation'), synonyms = enWord.get('synonyms'), toolTipContent = "";
 		 if (translation) {
-		 toolTipContent += "<h2>" + translation + "</h2>";
+		 toolTipContent += "<h3>" + translation + "</h3>";
 		 }
 		 if (synonyms) {
-		 toolTipContent += "<h2>" + synonyms + "</h2>";
+		 toolTipContent += "<h3>" + synonyms + "</h3>";
 		 }
-		 out += "<h2 class='english-word'><a href='#' data-toggle='popover' title='"+toolTipContent+"'>";
-		 out += enWord.get('word');
-		 out += "</h2>";
+         var classNames = "english-word";
+         if (enWord.get('particle')) {
+              classNames += " particle";
+          } else {
+              classNames += " phrase";
+          }
+		 out += "<span class='" + classNames + "'><a href='#' data-toggle='popover' title='"+toolTipContent+"'>";
+         out += enWord.get('word');
+         out += "</a>";
+         out += "</span>";
 	   });
 		out += "</div>";
 	});
@@ -210,8 +226,13 @@ var AppRouter = Backbone.Router.extend({
 	lesson1:function() {
         console.log('lesson1');
         loadAndRender("lesson1");
-    },                            
-	
+    },
+    
+    lesson2:function() {
+        console.log('lesson2');
+        loadAndRender("lesson2");
+    },
+       
 	update:function(e) {
 		model = wines.get(e);
 		new UpdateView({model:model});
@@ -228,8 +249,8 @@ var ContentView = Backbone.View.extend({
                                     render: function() {
                                        var source = $("#content-template").html();
                                        var template = Handlebars.compile(source);
-                                       this.$el.html(template(KoreanApp.lessons[this.model].lessonContentCon.toJSON()));
-                                       console.log(KoreanApp.lessons[this.model].lessonContentCon.toJSON());
+                                       this.$el.html(template(App.lessons[this.model].lessonContentCon.toJSON()));
+                                       console.log(App.lessons[this.model].lessonContentCon.toJSON());
                                     }
 });
 
@@ -241,41 +262,18 @@ var VocabView = Backbone.View.extend({
                                      render: function(){
                                         var source = $("#lesson-template").html();
                                         var template = Handlebars.compile(source);
-                                        this.$el.html(template(KoreanApp.lessons[this.model].lessonVocabCon.toJSON()));
-                                         console.log(KoreanApp.lessons[this.model].lessonVocabCon.toJSON());
+                                        this.$el.html(template(App.lessons[this.model].lessonVocabCon.toJSON()));
+                                         console.log(App.lessons[this.model].lessonVocabCon.toJSON());
                                      }
-});
-
-var Lesson1View = Backbone.View.extend({
-                                       template: "",
-                                        model: null,
-                                       initialize:function(model) {
-                                       this.model = model;
-                                       },
-                                       events: {
-                                       "click #addBtn": "add"
-                                       },
-                                       add: function(e) {
-                                       e.preventDefault();
-                                       return this;
-                                       },
-						render: function() {
-						
-						},
-                                       close: function() {
-                                       this.remove();
-                                       this.unbind();
-                                       this.model.unbind("change",this.modelChanged);
-                                       }
 });
 
 /** init **/
 $(function() {
-     KoreanApp = {};
-     KoreanApp.lessons = {};
-     KoreanApp.views = {};
-     KoreanApp.views.activeViews = [];
-     KoreanApp.views.currentView = "";
-     KoreanApp.AppRouter = new AppRouter();
+     App = {};
+     App.lessons = {};
+     App.views = {};
+     App.views.activeViews = [];
+     App.views.currentView = "";
+     App.AppRouter = new AppRouter();
      Backbone.history.start();
 });

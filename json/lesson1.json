@@ -15,32 +15,32 @@
 		"title": "Lesson 1 Vocabulary",
 		"lessons": [
 		{
+                "krGroup": [{
+                                "word":"안녕하세요",
+                                "romanization":"an-nyeong-ha-se-yo",
+                                "translation":"Hello, Hi",
+                                "base":"안녕하다"
+                                }],
 				"enGroup": [{
 					"word":"Hello",
 					"translation":"안녕하세요",
 					"synonyms":"Hi, Hey"
-					}],
-				"krGroup": [{
-					"word":"안녕하세요",
-					"romanization":"an-nyeong-ha-se-yo",
-					"translation":"Hello, Hi",
-					"base":"안녕하다"
-				}]
+					}]
 				
 		},
 		{
-				"enGroup": [{
-					"word":"Thank You",
-					"translation":"감사합니다",
-					"synonyms":"Thanks"
-				}],
 				"krGroup": [{
 					"word":"감사합니다",
 					"romanization":"kam-sa-ham-ni-da",
 					"translation":"Thank you, Thanks",
 					"synonyms":"고맙습니다",
 					"base":"고맙다"
-				}]
+				}],
+                "enGroup": [{
+                                "word":"Thank You",
+                                "translation":"감사합니다",
+                                "synonyms":"Thanks"
+                              }]
 		}]
   }
 
