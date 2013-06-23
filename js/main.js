@@ -182,8 +182,7 @@ Handlebars.registerHelper('lesson-helper', function(lessonGroup) {
           }
 	     out += "<span class='" + classNames + "'><a href='#' data-toggle='popover' title='"+toolTipContent+"'>";
 		 out += krWord.get('word');
-         out += "</a>";
-		  out += "</span>";
+         out += "</a></span>";
 	   });
         out += "<p></p>";
 	   _.each(lesson.get("enGroup").models, function(enWord) {
@@ -202,8 +201,7 @@ Handlebars.registerHelper('lesson-helper', function(lessonGroup) {
           }
 		 out += "<span class='" + classNames + "'><a href='#' data-toggle='popover' title='"+toolTipContent+"'>";
          out += enWord.get('word');
-         out += "</a>";
-         out += "</span>";
+         out += "</a></span>";
 	   });
 		out += "</div>";
 	});
