@@ -1,7 +1,7 @@
 {
     "home-content": {
         "title": "Teach Me Korean!!",
-        "contentCol": [{
+        "contents": [{
                        "title": "Easy - and fun!",
                        "content":"Learn Korean by starting off with simple sentences with mouseovers for each word, and learn to combine words together to create proper sentences and structures."
                        }],
@@ -9,7 +9,7 @@
     },
 	"home-vocab": {
 		"title": "",
-		"lessons": []
+		"vocabs": []
     }
     
 }

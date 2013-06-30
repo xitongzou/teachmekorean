@@ -1,13 +1,8 @@
-.korean-word,
-.english-word {
-    font-weight: bold;
-    font-size: 20px;
-}
-
-.phrase {
-    margin: 0 0 0 10px;
-}
-
-.popover {
-max-width: 500px;
-}
+#lesson-content .korean-word,
+#lesson-content .english-word {
+  font-weight: bold;
+  font-size: 20px; }
+#lesson-content .phrase {
+  margin: 0 0 0 10px; }
+#lesson-content .popover {
+  max-width: 500px; }

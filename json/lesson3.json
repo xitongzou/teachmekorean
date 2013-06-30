@@ -1,0 +1,91 @@
+{
+    "lesson3-content": {
+        "title": "Lesson 3 - Hello, Goodbye",
+        "contents": [
+                       {
+                       "title": "안녕하세요.",
+                       "content":"If you remember 안녕하세요, that is fantastic. And if you even remember that “안녕” in 안녕하세 요 means “peace” and “well-being”, that is even more fantastic."
+                       },
+                       { 
+                        "title": "안녕히 계세요.",
+                       "content":"f you are leaving, and the other person is (or the other people are) staying, you can say: 안녕히 계세요."
+                       },
+                       {
+                       "title": "안녕히 가세요.",
+                       "content": "If you are staying, an the other person is (or the other people are) leaving, you can say: 안녕히 가세요."
+                       }
+                       ],
+        "details": ""
+    },
+	"lesson3-vocab": {
+		"title": "Lesson 3 Vocabulary",
+		"vocabs": [
+                    {
+                    "krGroup": [{
+                                "word":"안녕",
+                                "romanization":"ahn-nyeong",
+                                "translation":"Hello"
+                                },
+                                {
+                                "word":".",
+                                "particle":true
+                                },
+                                {
+                                "word":"안녕히 계세요",
+                                "romanization":"ah-nyeong-hi gye-se-yo",
+                                "translation":"Goodbye (when you are leaving)"
+                                }, 
+                                {
+                                "word":".",
+                                "particle":true
+                                },
+                                {
+                                "word":"안녕히 가세요",
+                                "romanization":"ah-nyeong-hi ga-se-yo",
+                                "translation":"Goodbye (when others are leaving)"
+                                },
+                                {
+                                "word":".",
+                                "particle":true
+                                }
+                                ],
+                    "enGroup": [
+                                {
+                                "word":"Stay",
+                                "translation":"머무르다"
+                                },
+                                {
+                                "word":"in",
+                                "translation":"에"
+                                },
+                                {
+                                "word":"Peace",
+                                "translation":"평화"
+                                },
+                                {
+                                "word":".",
+                                "particle":true
+                                },
+                                {
+                                "word":"Go",
+                                "translation":"가다"
+                                },
+                                {
+                                "word":"in",
+                                "translation":"에"
+                                },
+                                {
+                                "word":"Peace",
+                                "translation":"평화"
+                                },
+                                {
+                                "word":".",
+                                "particle":true
+                                }
+                                ]
+                    
+                    }
+                    ]
+    }
+    
+}

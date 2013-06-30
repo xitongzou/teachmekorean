@@ -1,12 +1,13 @@
 {
     "lesson2-content": {
         "title": "Lesson 2 - Yes and No",
-        "contentCol": [
+        "contents": [
                        {
                        "title": "네 / 아니요",
                        "content":"In Korean, 'Yes' is 네 [ne] and 'No' is 아니요 [aniyo] in 존댓말 [jondaetmal], polite language. 네. [ne] = Yes. 아니요. [aniyo] = No. But in Korean, when people say '네', it is not the same as saying 'Yes.' in English. The same goes for '아니요' too. This is because the Korean '네' expresses your 'agreement' to what the other person said. And '아니요' expresses your 'disagreement' or 'denial' to what the other person said."
                        },
-                       { "title": "네 is more than just YES or THAT’S RIGHT.",
+                       { 
+                        "title": "네 is more than just YES or THAT’S RIGHT.",
                        "content":"While 네 [ne] is used to express 'Yes' or 'That’s right', it is also used as a conversation filler. If you listen to two Korean people talking with each other, you will hear them saying 네 quite often, even when it is not intended to mean 'Yes'."
                        },
                        {
@@ -21,8 +22,8 @@
         "details": ""
     },
 	"lesson2-vocab": {
-		"title": "Lesson 1 Vocabulary",
-		"lessons": [
+		"title": "Lesson 2 Vocabulary",
+		"vocabs": [
                     {
                     "krGroup": [{
                                 "word":"커피",

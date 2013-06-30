@@ -45,28 +45,30 @@
 
   <body>
     <header>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container-fluid">
+    <menu id="korean-menu" class="navbar">
+      <div class="navbar-inner container-fluid">
+        <div class="row-fluid">
+          <nav class="top-nav">
+           <ul class="nav">
+            <li><a href="#">Teach me Korean</a></li>
+            <li class="divider-vertical"></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+           </ul>
+          </nav>
           <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="#">Teach me Korean</a>
           <div class="nav-collapse collapse">
             <p class="navbar-text pull-right">
               Logged in as <a href="#" class="navbar-link">Username</a>
             </p>
-            <ul class="nav">
-              <li class="active"><a id="home" href="#">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
           </div><!--/.nav-collapse -->
         </div>
       </div>
-    </nav>
+    </menu>
     </header>
       <script id="content-template" type="text/x-handlebars-template">
           <div class="hero-unit">
@@ -81,24 +83,24 @@
           {{/if}}
           </div>
       </script>
-      <script id="lesson-template" type="text/x-handlebars-template">
+      <script id="vocab-template" type="text/x-handlebars-template">
           <div class="row-fluid">
 		  <h3>{{title}}</h3>
-		  {{#lesson-helper lessons}}
+		  {{#vocab-helper vocabs}}
 		  
-		  {{/lesson-helper}}
+		  {{/vocab-helper}}
           </div>
           </script>
-    <main class="container-fluid">
+    <main id="korean-app" class="container-fluid">
       <div class="row-fluid">
-        <aside class="span3">
-          <div class="well sidebar-nav">
+        <nav id="sidebar-nav" class="span3">
+          <aside class="well sidebar-nav">
             <ul class="nav nav-list lesson-list">
               <li class="nav-header">Lessons</li>
-              <li><a class="lesson-1" href="#lesson1">Lesson 1</a></li>
-              <li><a class="lesson-2" href="#lesson2">Lesson 2</a></li>
-              <li><a href="#">Lesson 3</a></li>
-              <li><a href="#">Lesson 4</a></li>
+              <li><a href="#lesson1">Lesson 1</a></li>
+              <li><a href="#lesson2">Lesson 2</a></li>
+              <li><a href="#lesson3">Lesson 3</a></li>
+              <li><a href="#lesson4">Lesson 4</a></li>
               <li class="nav-header">Vocabulary</li>
               <li><a href="#">Vocab 1</a></li>
               <li><a href="#">Vocab 2</a></li>
@@ -111,9 +113,9 @@
               <li><a href="#">Link</a></li>
               <li><a href="#">Link</a></li>
             </ul>
-          </div><!--/.well -->
-        </aside><!--/span-->
-        <article class="span9">
+          </aside><!--/.well -->
+        </nav><!--/span-->
+        <article id="lesson-content" class="span9">
           <div id="content-holder" class="hero-unit">
           </div>
             <div id="vocab-holder">

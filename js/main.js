@@ -18,17 +18,17 @@ var Word = Backbone.Model.extend({
 var WordGroup = Backbone.Collection.extend({
                                         model: Word
 });
-var Lesson = Backbone.Model.extend({
+var Vocab = Backbone.Model.extend({
 							   enGroup: WordGroup,
 							   krGroup: WordGroup
          });
-var LessonGroup = Backbone.Collection.extend({ 
-        model: Lesson
+var VocabGroup = Backbone.Collection.extend({ 
+        model: Vocab
 });		 
 
-var LessonContainer = Backbone.Model.extend({
+var VocabContainer = Backbone.Model.extend({
      title: "",
-	 lessons: LessonGroup
+	 vocabs: VocabGroup
 });
 
 /** functions **/
@@ -39,100 +39,62 @@ function applyPopups() {
            });
 }
 
-function disposeViews(newView) {
-    if (newView !== App.views.currentView) {
-    _.each(App.views.activeViews, function(view) {
-           //view.remove() actually deletes the dom element - we just want to erase the content
-           view.$el.html("");
-           });
-    }
-    App.views.currentView = newView;
-}
+function renderView(jsonContent) {
 
-function renderView(type,lessonName) {
-    disposeViews(lessonName);
-    if (type === "content") {
-       App.views.activeViews.push(new ContentView({el: $("#content-holder"), model: lessonName}));
-    } else if (type === "vocab") {
-       App.views.activeViews.push(new VocabView({el:$("#vocab-holder"), model: lessonName}));
-    }
-}
+    /** populate and render lesson content **/
+    if (jsonContent.contents) {
+               var lessonContentCol = new ContentCollection();
 
-function loadAndRender(lessonName){
-    //load from cache if it exists, otherwise fetch the json and populate
-    if (App.lessons[lessonName]) {
-      if (App.lessons[lessonName].lessonContentCon) {
-          renderView("content",lessonName);   
-      }
-      if (App.lessons[lessonName].lessonVocabCon) {
-          renderView("vocab", lessonName);
-          applyPopups();
-      }
-    } else {
-        App.lessons[lessonName] = {};
-        loadJSON(lessonName);
-    }
+       /** for each content data, create a new content model **/
+              _.each(jsonContent.contents, function(contentmodel) {
+                     lessonContentCol.add(new ContentModel(contentmodel));
+                     });
+
+              App.ContentContainer.set({title:jsonContent['title'],details:jsonContent['details'], content: lessonContentCol});
+    } 
+
+    /** populate and render lesson vocab **/
+
+    else if (jsonContent.vocabs) {
+              var vocabGroup = new VocabGroup();
+
+        /** for each vocab data, create a new word model **/
+              _.each(jsonContent.vocabs, function(vocab) {
+                     var vocabModel = new Vocab();
+                     
+                     var krWordGroup = new WordGroup();
+                     //loop over korean words
+                     _.each(vocab.krGroup, function(krWord) {
+                            krWordGroup.add(new Word(krWord));
+                        });
+                     
+                     var enWordGroup = new WordGroup();
+                     //loop over english words
+                     _.each(vocab.enGroup, function(enWord) {
+                            enWordGroup.add(new Word(enWord));
+                        });
+                     vocabModel.set({enGroup:enWordGroup,krGroup:krWordGroup});
+                     vocabGroup.add(vocabModel);
+                     });
+
+              App.VocabContainer.set({title:jsonContent['title'],vocabs:vocabGroup});
+                   applyPopups();
+    } 
 }
 
 /** this function populates the model objects from json and renders the view **/
 function loadJSON(lessonName) {
     $.getJSON("json/"+lessonName+".json", function(data){
               
-              /** get content for lesson **/
-              var lessonData = data[lessonName+"-content"];
-              
-              if (lessonData.title.length > 0) {
-              
-              App.lessons[lessonName].lessonContentCon = new ContentContainer();
-              var lessonContentCol = new ContentCollection();
-              
-              /** for each content data, create a new content model **/
-              _.each(lessonData.contentCol, function(contentmodel) {
-                     var lessonContent = new ContentModel();
-                     lessonContent.set({title:contentmodel.title,
-                                       content:contentmodel.content});
-                     lessonContentCol.add(lessonContent);
-                     });
-              
+              /** get content for Vocab **/
+              var lessonContent = data[lessonName+"-content"];
 
-              App.lessons[lessonName].lessonContentCon.set({title:lessonData['title'],details:lessonData['details'], content: lessonContentCol});
+              renderView(lessonContent);
               
-              renderView("content",lessonName); 
-              
-              }
-              
-              /** get vocab for lesson **/
-              var vocabData = data[lessonName+"-vocab"];
-              
-              if (vocabData.title.length > 0) {
-              
-              App.lessons[lessonName].lessonVocabCon = new LessonContainer();
-              var lessonGroup = new LessonGroup();
-              
-              /** for each vocab data, create a new word model **/
-              _.each(vocabData.lessons, function(lesson) {
-                     var lessonModel = new Lesson();
-                     
-                     var krWordGroup = new WordGroup();
-                     //loop over korean words
-                     _.each(lesson.krGroup, function(krWord) {
-                            krWordGroup.add(new Word({word:krWord.word,romanization:krWord.romanization,translation:krWord.translation,base:krWord.base,synonyms:krWord.synonyms,particle:krWord.particle}));
-                        });
-                     
-                     var enWordGroup = new WordGroup();
-                     //loop over english words
-                     _.each(lesson.enGroup, function(enWord) {
-                            enWordGroup.add(new Word({word:enWord.word,translation:enWord.translation,synonyms:enWord.synonyms,particle:enWord.particle}));
-                        });
-                     lessonModel.set({enGroup:enWordGroup,krGroup:krWordGroup});
-                     lessonGroup.add(lessonModel);
-                     });
-              App.lessons[lessonName].lessonVocabCon.set({title:vocabData['title'],
-                                                               lessons:lessonGroup});
-              
-              renderView("vocab", lessonName);
-              applyPopups();
-              }
+              /** get vocab for Vocab **/
+              var lessonVocab = data[lessonName+"-vocab"];        
+
+              renderView(lessonVocab);
               
               }).done(function() {
                       console.log('done');
@@ -157,13 +119,13 @@ Handlebars.registerHelper('content-helper', function(contentcol) {
       return out;
 });
                           
-Handlebars.registerHelper('lesson-helper', function(lessonGroup) {
+Handlebars.registerHelper('vocab-helper', function(vocabgroup) {
     var out = "";
 	 
 	 //loop over backbone collection
-	_.each(lessonGroup.models, function(lesson) {
+	_.each(vocabgroup.models, function(vocab) {
 		out += "<div class='hero-unit'>";
-	   _.each(lesson.get("krGroup").models, function(krWord) {
+	   _.each(vocab.get("krGroup").models, function(krWord) {
 	   	 var romanization = krWord.get('romanization'), translation = krWord.get('translation'), synonyms = krWord.get('synonyms'), toolTipContent = "";
 		 if (romanization) {
 		 toolTipContent += "<h3>" + romanization + "</h3>";
@@ -185,7 +147,7 @@ Handlebars.registerHelper('lesson-helper', function(lessonGroup) {
          out += "</a></span>";
 	   });
         out += "<p></p>";
-	   _.each(lesson.get("enGroup").models, function(enWord) {
+	   _.each(vocab.get("enGroup").models, function(enWord) {
 	     var translation = enWord.get('translation'), synonyms = enWord.get('synonyms'), toolTipContent = "";
 		 if (translation) {
 		 toolTipContent += "<h3>" + translation + "</h3>";
@@ -213,65 +175,69 @@ var AppRouter = Backbone.Router.extend({
 	routes: {
 		"":"home",
 		"lesson1":"lesson1",
-		"lesson2":"lesson2"
+		"lesson2":"lesson2",
+    "lesson3":"lesson3",
+    "lesson4":"lesson4"
 	},
 	
 	home:function() {
-		console.log('home');
-        loadAndRender("home");
+        loadJSON("home");
 	},
 	
 	lesson1:function() {
-        console.log('lesson1');
-        loadAndRender("lesson1");
+        loadJSON("lesson1");
     },
     
     lesson2:function() {
-        console.log('lesson2');
-        loadAndRender("lesson2");
+        loadJSON("lesson2");
     },
-       
-	update:function(e) {
-		model = wines.get(e);
-		new UpdateView({model:model});
-	}
+
+    lesson3:function() {
+      loadJSON("lesson3");
+    },
+
+    lesson4:function() {
+      loadJSON("lesson4");
+    }
                                        
 });
 
 /** Backbone Views **/ 
 var ContentView = Backbone.View.extend({
                                     model: null,
+                                    el: $("#content-holder"),
                                     initialize: function() {
-                                       this.render();
+                                       this.model.on('change', this.render, this);
                                     },
                                     render: function() {
                                        var source = $("#content-template").html();
                                        var template = Handlebars.compile(source);
-                                       this.$el.html(template(App.lessons[this.model].lessonContentCon.toJSON()));
-                                       console.log(App.lessons[this.model].lessonContentCon.toJSON());
+                                       this.$el.html(template(this.model.toJSON()));
+                                       console.log(this.model.toJSON());
                                     }
 });
 
 var VocabView = Backbone.View.extend({
                                      model: null,
+                                     el: $("#vocab-holder"),
                                      initialize: function() {
-                                      this.render();
+                                        this.model.on('change', this.render, this);
                                      },
                                      render: function(){
-                                        var source = $("#lesson-template").html();
+                                        var source = $("#vocab-template").html();
                                         var template = Handlebars.compile(source);
-                                        this.$el.html(template(App.lessons[this.model].lessonVocabCon.toJSON()));
-                                         console.log(App.lessons[this.model].lessonVocabCon.toJSON());
+                                        this.$el.html(template(this.model.toJSON()));
+                                         console.log(this.model.toJSON());
                                      }
 });
 
 /** init **/
 $(function() {
      App = {};
-     App.lessons = {};
-     App.views = {};
-     App.views.activeViews = [];
-     App.views.currentView = "";
      App.AppRouter = new AppRouter();
+     App.ContentContainer = new ContentContainer();
+     App.VocabContainer = new VocabContainer();
+     App.ContentView = new ContentView({model:App.ContentContainer});
+     App.VocabView = new VocabView({model:App.VocabContainer});
      Backbone.history.start();
 });
