@@ -124,9 +124,13 @@ Handlebars.registerHelper('vocab-helper', function(vocabgroup) {
 	 
 	 //loop over backbone collection
 	_.each(vocabgroup.models, function(vocab) {
-		out += "<div class='hero-unit'>";
+		out += "<div class='page-header'>";
 	   _.each(vocab.get("krGroup").models, function(krWord) {
-	   	 var romanization = krWord.get('romanization'), translation = krWord.get('translation'), synonyms = krWord.get('synonyms'), toolTipContent = "";
+	   	 var romanization = krWord.get('romanization'), 
+       translation = krWord.get('translation'), 
+       synonyms = krWord.get('synonyms'), 
+       base = krWord.get('base'),
+       toolTipContent = "";
 		 if (romanization) {
 		 toolTipContent += "<h3>" + romanization + "</h3>";
 		 } 
@@ -136,6 +140,9 @@ Handlebars.registerHelper('vocab-helper', function(vocabgroup) {
 		 if (synonyms) {
 		 toolTipContent += "<h3>" + synonyms + "</h3>";
 		 }
+     if (base) {
+      toolTipContent += "<h3>" + base + "</h3>";
+     }
          var classNames = "korean-word";
          if (krWord.get('particle')) {
               classNames += " particle";
@@ -177,7 +184,16 @@ var AppRouter = Backbone.Router.extend({
 		"lesson1":"lesson1",
 		"lesson2":"lesson2",
     "lesson3":"lesson3",
-    "lesson4":"lesson4"
+    "lesson4":"lesson4",
+    "vocab1":"vocab1",
+    "vocab2":"vocab2",
+    "vocab3":"vocab3",
+    "vocab4":"vocab4",
+    "vocab5":"vocab5",
+    "vocab6":"vocab6",
+    "vocab7":"vocab7",
+    "vocab8":"vocab8",
+    "vocab9":"vocab9",
 	},
 	
 	home:function() {
@@ -198,6 +214,37 @@ var AppRouter = Backbone.Router.extend({
 
     lesson4:function() {
       loadJSON("lesson4");
+    },
+
+    vocab1: function() {
+      loadJSON("vocab1");
+    },
+
+    vocab2: function() {
+      loadJSON("vocab2");
+    },
+        vocab3: function() {
+      loadJSON("vocab3");
+    },
+        vocab4: function() {
+      loadJSON("vocab4");
+    },
+        vocab5: function() {
+      loadJSON("vocab5");
+    },
+        vocab6: function() {
+      loadJSON("vocab6");
+    },
+        vocab7: function() {
+      loadJSON("vocab7");
+    },
+
+        vocab8: function() {
+      loadJSON("vocab8");
+    },
+
+        vocab9: function() {
+      loadJSON("vocab9");
     }
                                        
 });

@@ -1,0 +1,212 @@
+{
+    "vocab5-content": {
+        "title": "",
+        "contents": [],
+        "details": ""
+    },
+    "vocab5-vocab": {
+        "title": "Vocabulary Lesson 5",
+        "vocabs": [
+
+                    {
+                    "krGroup": [{
+                                "word":"어차피",
+                                "romanization":"eo-cha-pi",
+                                "translation":"anyway, anyhow"
+                                },
+                                {
+                                "word":"그것",
+                                "romanization":"geu-geot",
+                                "translation":"it, that",
+                                "base":"그거"
+                                },
+                                {
+                                "word":"은",
+                                "romanization":"eun",
+                                "translation":"topic particle",
+                                "synonyms":"also: emphasis particle, noun modifier",
+                                "particle": true       
+                                }, 
+                                {
+                                "word":"해",
+                                "romanization":"hae",
+                                "translation":"to do",
+                                "base":"하다"
+                                },
+                               {
+                                "word":"야 한다",
+                                "romanization":"ya-han-da",
+                                "translation":"to have to, to must, should",
+                                "base":"야 하다",
+                                "particle": true  
+                                },
+                                {
+                                "word":".",
+                                "particle":true
+                                }
+                                ],
+                    "enGroup": [
+                    {
+                                "word":"I",
+                                "translation":"저,나"
+                                },
+                                {
+                                "word":"must",
+                                "translation":"..야 하다" 
+                                },
+                                {
+                                "word":"do",
+                                "translation":"하다"
+                                },
+                                {
+                                "word":"it",
+                                "translation":"그것"
+                                },
+                                {
+                                "word":"anyway",
+                                "translation":"어차피"
+                                },
+                                {
+                                "word":".",
+                                "particle":true
+                                }
+                                ]
+                    
+                    },
+                   {
+                    "krGroup": [{
+                                "word":"언제",
+                                "romanization":"eon-je",
+                                "translation":"when"
+                                },
+                                {
+                                "word":"그렇게",
+                                "romanization":"geu-leo-geh",
+                                "translation":"like so, to be or do like that",
+                                "base":"그렇다"
+                                },
+                               {
+                                "word":"결정",
+                                "romanization":"gyeol-jeong",
+                                "translation":"decision"
+                                },
+                                 {
+                                "word":"을",
+                                "romanization":"eul",
+                                "translation":"object particle",
+                                "synonyms":"also: particle to add meaning of perhaps, future tense modifier",
+                                "particle":true
+                                },
+                              {
+                                "word":"했어",
+                                "romanization":"hae-sseo",
+                                "translation":"to do (past tense)",
+                                "base":"하다"
+                                },
+                              {
+                                "word":"요",
+                                "romanization":"yo",
+                                "translation":"polite marker",
+                                "particle":true
+                                },
+                                {
+                                "word":"?",
+                                "particle":true
+                                }
+                                ],
+                    "enGroup": [
+                    {
+                                "word":"when",
+                                "translation":"언제"
+                                },
+                                {
+                                "word":"did",
+                                "translation":"했다"
+                                },
+                               {
+                                "word":"you",
+                                "translation":"당신,너"
+                                },
+                                 {
+                                "word":"decide",
+                                "translation":"결정하다"
+                                },
+                              {
+                                "word":"that",
+                                "translation":"저,그,그렇게"
+                                },
+                                {
+                                "word":"?",
+                                "particle":true
+                                }
+                                ]
+                    
+                    },
+                    {
+                    "krGroup": [{
+                                "word":"불",
+                                "romanization":"bool",
+                                "translation":"light",
+                                "synonyms":"also: fire, flame, non- un- (attached to other word), dollar, buck"
+                                },
+                                {
+                                "word":"좀",
+                                "romanization":"jom",
+                                "translation":"please (request)"
+                                },
+                                {
+                                "word":"꺼",
+                                "romanization":"ggeo",
+                                "translation":"to turn off, to blow out",
+                                "base":"끄다"
+                                }, 
+                                {
+                                "word":"주",
+                                "romanization":"ju",
+                                "translation":"please (do for me)",
+                                "synonyms":"also: to give, offer",
+                                "base":"주다",
+                                "particle": true  
+                                },
+                                {
+                                "word":"세",
+                                "romanization":"seh",
+                                "translation":"particle to add politeness, honorific particle",
+                                "base":"(으)시",
+                                "particle":true
+                                },
+                                {
+                                "word":"요",
+                                "romanization":"yo",
+                                "translation":"polite marker",
+                                "particle":true
+                                },
+                                 {
+                                "word":".",
+                                "particle":true
+                                }
+                                ],
+                    "enGroup": [
+                    {
+                                "word":"Please",
+                                "translation":"좀,주다!"
+                                },
+                                {
+                                "word":"turn off",
+                                "translation":"끄다"
+                                },
+                                {
+                                "word":"the light",
+                                "translation":"불"
+                                },
+                                {
+                                "word":".",
+                                "particle":true
+                                }
+                                ]
+                    
+                    }
+                    ]
+    }
+    
+}

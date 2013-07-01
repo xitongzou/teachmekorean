@@ -1,0 +1,226 @@
+{
+    "vocab1-content": {
+        "title": "",
+        "contents": [],
+        "details": ""
+    },
+	"vocab1-vocab": {
+		"title": "Vocabulary Lesson 1",
+		"vocabs": [
+                    {
+                    "krGroup": [{
+                                "word":"그",
+                                "romanization":"keu",
+                                 "translation":"he",
+                                 "synonyms":"also: him,his,the,that"
+                                },
+                                {
+                                "word":"는",
+                                "romanization":"neun",
+                                "translation":"topic particle",
+                                "synonyms":"also: emphasis particle, noun modifier",
+                                "particle": true       
+                                },
+                                {
+                                "word":"손",
+                                "romanization":"son",
+                                "translation":"hand"
+                                }, 
+                                {
+                                "word":"을",
+                                "romanization":"eul",
+                                "translation":"object particle",
+                                "synonyms":"also: particle to add meaning of perhaps, future tense modifier",
+                                "particle": true  
+                                },
+                                {
+                                "word":"다쳤다",
+                                "romanization":"da-cheot-da",
+                                "translation":"to be hurt, injured (past tense)",
+                                "base":"다치다"
+                                },
+                                {
+                                "word":".",
+                                "particle":true
+                                }
+                                ],
+                    "enGroup": [
+                    {
+                                "word":"He",
+                                "translation":"그",
+                                "synonyms":"him"
+                                },
+                                {
+                                "word":"hurt",
+                                "translation":"다치다",
+                                "synonyms":"injure"
+                                },
+                                {
+                                "word":"his",
+                                "translation":"그의"
+                                },
+                                {
+                                "word":"hand",
+                                "translation":"손"
+                                },
+                                {
+                                "word":".",
+                                "particle":true
+                                }
+                                ]
+                    
+                    },
+                    {
+                    "krGroup": [{
+                                "word":"저",
+                                "romanization":"jeo",
+                                "synonyms":"제가, 내가, 나는",
+                                "translation":"I,me (polite)",
+                                "synonyms":"also: that"
+                                },
+                                {
+                                "word":"는",
+                                "romanization":"neun",
+                                "translation":"topic particle",
+                                "synonyms":"also: emphasis particle, noun modifier",
+                                "particle": true       
+                                },
+                                {
+                                "word":"아이",
+                                "romanization":"ah-ee",
+                                "translation":"kid,son"
+                                }, 
+                                {
+                                "word":"가",
+                                "romanization":"ga",
+                                "translation":"subject particle",
+                                "synonyms":"also: to go,polite question particle",
+                                "particle": true  
+                                },
+                                {
+                                "word":"없",
+                                "romanization":"eop",
+                                "translation":"without, not to have/exist",
+                                "base":"없다"
+                                },
+                                {
+                                "word":"습니다",
+                                "romanization":"seum-ni-da",
+                                "translation":"ending for honorific form",
+                                "particle":"yes"
+                                },
+                                {
+                                "word":".",
+                                "particle":true
+                                }
+                                ],
+                    "enGroup": [
+                    {
+                                "word":"I",
+                                "translation":"저,나",
+                                "synonyms":"me"
+                                },
+                                {
+                                "word":"don't have",
+                                "translation":"없다"
+                                },
+                                {
+                                "word":"children",
+                                "translation":"아이",
+                                "synonyms":"kids"
+                                },
+                                {
+                                "word":".",
+                                "particle":true
+                                }
+                                ]
+                    
+                    },
+                    {
+                    "krGroup": [{
+                                "word":"전화번호",
+                                "romanization":"jeon-hwa-bun-ho",
+                                "translation":"telephone number"
+                                },
+                                {
+                                "word":"좀",
+                                "romanization":"jom",
+                                "translation":"please (request)",
+                                "synonyms":"also: a little, somewhat"
+                                },
+                                {
+                                "word":"알",
+                                "romanization":"al",
+                                "translation":"to know",
+                                "base": "알다"
+                                }, 
+                                {
+                                "word":"수 있",
+                                "romanization":"su iss",
+                                "translation":"can",
+                                "base": "수 있다"
+                                },
+                                {
+                                "word":"을",
+                                "romanization":"eul",
+                                "translation":"object particle",
+                                "synonyms":"also: particle to add meaning of perhaps, future tense modifier",
+                                "particle": true
+                                },
+                                {
+                                "word":"까",
+                                "romanization":"gga",
+                                "translation":"particle for polite question",
+                                "synonyms":"also: particle to add meaning of should we?, will it be?",
+                                "particle": true
+                                },
+                                {
+                                "word":"요",
+                                "romanization":"yo",
+                                "translation": "polite marker",
+                                "particle":true
+                                },
+                                {
+                                "word":"?",
+                                "particle":true
+                                }
+                                ],
+                    "enGroup": [
+                    {
+                                "word":"Can",
+                                "translation":"수 있다",
+                                "synonyms":"be able"
+                                },
+                                {
+                                "word":"I",
+                                "translation":"저,나",
+                                "synonyms":"me"
+                                },
+                                {
+                                "word":"have",
+                                "translation":"있다"
+                                },
+                                {
+                                "word":"your",
+                                "translation":"당신의,너의,니"
+                                },
+                                {
+                                "word":"telephone",
+                                "translation":"전화",
+                                "synonyms":"phone"
+                                },
+                                {
+                                "word":"number",
+                                "translation":"번호"
+                                },
+                                {
+                                "word":"?",
+                                "particle":true
+                                }
+                                ]
+                    
+                    }
+                    ]
+    }
+    
+}

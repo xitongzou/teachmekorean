@@ -1,0 +1,163 @@
+{
+    "vocab4-content": {
+        "title": "",
+        "contents": [],
+        "details": ""
+    },
+    "vocab4-vocab": {
+        "title": "Vocabulary Lesson 4",
+        "vocabs": [
+                                        {
+                    "krGroup": [{
+                                "word":"상관없어",
+                                "romanization":"sang-gwan-opseo",
+                                "translation":"it doesn&apos;t matter, I don&apos;t care",
+                                "synonyms":"also: have nothing to do with"
+                                },
+                                {
+                                "word":"요",
+                                "romanization":"yo",
+                                "translation":"polite marker",
+                                "particle":true
+                                },
+                                {
+                                "word":".",
+                                "particle":true
+                                }
+                                ],
+                    "enGroup": [
+                    {
+                                "word":"It doesn&apos;t matter",
+                                "translation":"상관없어요",
+                                "synonyms":"I don&apos;t care"
+                                },
+                                {
+                                "word":".",
+                                "particle":true
+                                }
+                                ]
+                    
+                    },
+                    {
+                    "krGroup": [{
+                                "word":"저",
+                                "romanization":"jeo",
+                                "translation":"that",
+                                "synonyms":"also: I, me (polite)"
+                                },
+                                {
+                                "word":"게",
+                                "romanization":"geh",
+                                "translation":"thing, object (used as the subject)",
+                                "synonyms":"also: that, which (relative)",
+                                "base":"것 + 이",
+                                "particle":true
+                                },
+                                {
+                                "word":"뭐",
+                                "romanization":"mweo",
+                                "translation":"what",
+                                "synonyms":"also: kind of",
+                                "base":"무엇"
+                                }, 
+                                {
+                                "word":"죠",
+                                "romanization":"jyo",
+                                "translation":"particle to add semi politeness and finish sentence or question",
+                                "synonyms":"also: particle to seek confirmation from listener",
+                                "base":"지+요",
+                                "particle": true  
+                                },
+                                {
+                                "word":"?",
+                                "particle":true
+                                }
+                                ],
+                    "enGroup": [
+                    {
+                                "word":"What",
+                                "translation":"뭐,무슨"
+                                },
+                                {
+                                "word":"is",
+                                "translation":"이다" 
+                                },
+                                {
+                                "word":"that",
+                                "translation":"저,그"
+                                },
+                                {
+                                "word":"?",
+                                "particle":true
+                                }
+                                ]
+                    
+                    },
+                    {
+                    "krGroup": [{
+                                "word":"즐거",
+                                "romanization":"cheul-geo",
+                                "translation":"happy,merry,pleasant",
+                                "base":"즐겁다"
+                                },
+                                {
+                                "word":"운",
+                                "romanization":"oon",
+                                "translation":"particle to make adjective",
+                                "particle":true
+                                },
+                                {
+                                "word":"저녁",
+                                "romanization":"jeo-nyeog",
+                                "translation":"evening",
+                                "synonyms":"also: dinner, supper"
+                                }, 
+                                {
+                                "word":"되",
+                                "romanization":"dwae",
+                                "translation":"to be, to become, passive particle",
+                                "synonyms":"also: valid, available, okay",
+                                "base":"되다"
+                                },
+                                {
+                                "word":"세",
+                                "romanization":"seh",
+                                "translation":"particle to add politeness, honorific particle",
+                                "base":"(으)시",
+                                "particle":true
+                                },
+                                {
+                                "word":"요",
+                                "romanization":"yo",
+                                "translation":"polite marker",
+                                "particle":true
+                                },
+                                 {
+                                "word":"!",
+                                "particle":true
+                                }
+                                ],
+                    "enGroup": [
+                    {
+                                "word":"Have a",
+                                "translation":"...되세요!"
+                                },
+                                {
+                                "word":"pleasant",
+                                "translation":"즐겁다"
+                                },
+                                {
+                                "word":"evening",
+                                "translation":"밤,저녁"
+                                },
+                                {
+                                "word":"!",
+                                "particle":true
+                                }
+                                ]
+                    
+                    }
+                    ]
+    }
+    
+}

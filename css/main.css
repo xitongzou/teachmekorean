@@ -1,8 +1,19 @@
-#lesson-content .korean-word,
-#lesson-content .english-word {
+#korean-app .page-header {
+  margin-bottom: 30px;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 30px;
+  color: inherit;
+  background-color: #eeeeee;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  padding: 10px; }
+#korean-app #lesson-content .korean-word,
+#korean-app #lesson-content .english-word {
   font-weight: bold;
   font-size: 20px; }
-#lesson-content .phrase {
+#korean-app #lesson-content .phrase {
   margin: 0 0 0 10px; }
-#lesson-content .popover {
+#korean-app #lesson-content .popover {
   max-width: 500px; }

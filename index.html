@@ -71,6 +71,7 @@
     </menu>
     </header>
       <script id="content-template" type="text/x-handlebars-template">
+          {{#if title}}
           <div class="hero-unit">
           <h1>{{title}}</h1>
           <p class="lead">
@@ -78,18 +79,21 @@
           
           {{/content-helper}}
           </p>
-          {{#if details}}
+            {{#if details}}
           <p><a href="#" class="btn btn-primary btn-large">{{{details}}}</a></p>
+            {{/if}}
           {{/if}}
           </div>
       </script>
       <script id="vocab-template" type="text/x-handlebars-template">
+      {{#if title}}
           <div class="row-fluid">
 		  <h3>{{title}}</h3>
 		  {{#vocab-helper vocabs}}
 		  
 		  {{/vocab-helper}}
           </div>
+          {{/if}}
           </script>
     <main id="korean-app" class="container-fluid">
       <div class="row-fluid">
@@ -102,21 +106,20 @@
               <li><a href="#lesson3">Lesson 3</a></li>
               <li><a href="#lesson4">Lesson 4</a></li>
               <li class="nav-header">Vocabulary</li>
-              <li><a href="#">Vocab 1</a></li>
-              <li><a href="#">Vocab 2</a></li>
-              <li><a href="#">Vocab 3</a></li>
-              <li><a href="#">Vocab 4</a></li>
-              <li><a href="#">Vocab 5</a></li>
-              <li><a href="#">Vocab 6</a></li>
-              <li class="nav-header">Sidebar</li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
+              <li><a href="#vocab1">Vocab 1</a></li>
+              <li><a href="#vocab2">Vocab 2</a></li>
+              <li><a href="#vocab3">Vocab 3</a></li>
+              <li><a href="#vocab4">Vocab 4</a></li>
+              <li><a href="#vocab5">Vocab 5</a></li>
+              <li><a href="#vocab6">Vocab 6</a></li>
+              <li><a href="#vocab7">Vocab 7</a></li>
+              <li><a href="#vocab8">Vocab 8</a></li>
+              <li><a href="#vocab9">Vocab 9</a></li>
             </ul>
           </aside><!--/.well -->
         </nav><!--/span-->
         <article id="lesson-content" class="span9">
-          <div id="content-holder" class="hero-unit">
+          <div id="content-holder">
           </div>
             <div id="vocab-holder">
              </div>
