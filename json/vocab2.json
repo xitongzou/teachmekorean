@@ -17,7 +17,8 @@
                                 {
                                 "word":"아프",
                                 "romanization":"ah-peu",
-                                "translation":"sick,painful",
+                                "translation":"painful",
+                                "synonyms":"also: sick",
                                 "base":"아프다"    
                                 },
                                 {
@@ -77,7 +78,8 @@
                                 {
                                 "word":"잡아",
                                 "romanization":"jap-ah",
-                                "translation":"to catch, hold, take",
+                                "translation":"to catch",
+                                "synonyms":"also: to hold, to take",
                                 "base":"잡다"
                                 }, 
                                 {

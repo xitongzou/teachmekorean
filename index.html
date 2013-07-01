@@ -70,31 +70,6 @@
       </div>
     </menu>
     </header>
-      <script id="content-template" type="text/x-handlebars-template">
-          {{#if title}}
-          <div class="hero-unit">
-          <h1>{{title}}</h1>
-          <p class="lead">
-          {{#content-helper content}}
-          
-          {{/content-helper}}
-          </p>
-            {{#if details}}
-          <p><a href="#" class="btn btn-primary btn-large">{{{details}}}</a></p>
-            {{/if}}
-          {{/if}}
-          </div>
-      </script>
-      <script id="vocab-template" type="text/x-handlebars-template">
-      {{#if title}}
-          <div class="row-fluid">
-		  <h3>{{title}}</h3>
-		  {{#vocab-helper vocabs}}
-		  
-		  {{/vocab-helper}}
-          </div>
-          {{/if}}
-          </script>
     <main id="korean-app" class="container-fluid">
       <div class="row-fluid">
         <nav id="sidebar-nav" class="span3">
@@ -118,13 +93,28 @@
             </ul>
           </aside><!--/.well -->
         </nav><!--/span-->
-        <article id="lesson-content" class="span9">
+        <article id="lesson-content" class="span6">
           <div id="content-holder">
           </div>
             <div id="vocab-holder">
              </div>
                 <!--/row-->
         </article><!--/span-->
+        <section id="vocab-section" class="span3">
+            <div class="vocab-content container-fluid well well-small">
+           <div id="vocab-list-holder">
+           <table class="table table-condensed table-hover">
+            <caption>Vocabulary List</caption>
+           <thead>
+           <tr><td>Word</td><td>Translation</td></tr>
+          </thead>
+            <tbody>
+             <tr><td></td><td></td></tr>
+             </tbody>
+           </table>
+           </div>
+            </div>
+        </section>
       </div><!--/row-->
 
     </main><!--/.fluid-container-->
@@ -132,8 +122,48 @@
       <hr>
       
       <footer>
-          <p>&copy; Tong Zou 2013</p>
+          <p class="muted">&copy; Tong Zou 2013</p>
       </footer>
+      <!-- Handlebar templates --> 
+         <script id="content-template" type="text/x-handlebars-template">
+          {{#if title}}
+          <div class="hero-unit">
+          <h1>{{title}}</h1>
+          <p class="lead">
+          {{#content-helper content}}
+          
+          {{/content-helper}}
+          </p>
+            {{#if details}}
+          <p><a href="#" class="btn btn-primary btn-large">{{{details}}}</a></p>
+            {{/if}}
+          {{/if}}
+          </div>
+      </script>
+      <script id="vocab-template" type="text/x-handlebars-template">
+      {{#if title}}
+          <div class="row-fluid">
+      <h3>{{title}}</h3>
+      {{#vocab-helper vocabs}}
+      
+      {{/vocab-helper}}
+          </div>
+          {{/if}}
+          </script>
+        <script id="vocab-list-template" type="text/x-handlebars-template">
+           <table class="table table-condensed table-hover">
+            <caption>Vocabulary List</caption>
+           <thead>
+           <tr><td>Word</td><td>Translation</td></tr>
+          </thead>
+            <tbody>
+            {{#each words}}
+             <tr><td>{{this.word}}</td><td>{{this.translation}}</td></tr>
+            {{/each}}
+             </tbody>
+           </table>
+         </script>
+
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->

@@ -32,6 +32,26 @@ var VocabContainer = Backbone.Model.extend({
 });
 
 /** functions **/
+/* To enable an element to follow you down the page smoothly */
+function enableFollowNav(navElement, padding) {
+            var $sidebar = navElement,
+                $window = $(window),
+                offset = $sidebar.offset(),
+                topPadding = padding;
+
+            $window.scroll(function() {
+                if ($window.scrollTop() > offset.top) {
+                    $sidebar.stop().animate({
+                        marginTop: $window.scrollTop() - offset.top + topPadding
+                    });
+                } else {
+                    $sidebar.stop().animate({
+                        marginTop: 0
+                    });
+                }
+            });
+        }
+
 function applyPopups() {
 	_.each($("[data-toggle='popover']"),function(word) {
            $(word).on('click',function(e) {e.preventDefault();});
@@ -127,40 +147,48 @@ Handlebars.registerHelper('vocab-helper', function(vocabgroup) {
 		out += "<div class='page-header'>";
 	   _.each(vocab.get("krGroup").models, function(krWord) {
 	   	 var romanization = krWord.get('romanization'), 
+       word = krWord.get('word'),
        translation = krWord.get('translation'), 
        synonyms = krWord.get('synonyms'), 
        base = krWord.get('base'),
+       id = krWord.get('id'),
        toolTipContent = "";
 		 if (romanization) {
-		 toolTipContent += "<h3>" + romanization + "</h3>";
+		 toolTipContent += "<h4>" + romanization + "</h4>";
 		 } 
 		 if (translation) {
-		 toolTipContent += "<h3>" + translation + "</h3>";
+		 toolTipContent += "<h4>" + translation + "</h4>";
 		 } 
 		 if (synonyms) {
-		 toolTipContent += "<h3>" + synonyms + "</h3>";
+		 toolTipContent += "<h4>" + synonyms + "</h4>";
 		 }
      if (base) {
-      toolTipContent += "<h3>" + base + "</h3>";
+      toolTipContent += "<h4>" + base + "</h4>";
      }
+     toolTipContent += "<h4><a>Add to vocab list</a></h4>"; 
          var classNames = "korean-word";
          if (krWord.get('particle')) {
               classNames += " particle";
           } else {
               classNames += " phrase";
           }
-	     out += "<span class='" + classNames + "'><a href='#' data-toggle='popover' title='"+toolTipContent+"'>";
-		 out += krWord.get('word');
+	     out += "<span class='" + classNames + "'><a href='#' class='popover-link' ";
+       out += "data-id='" + word + translation + "'";
+       out += " data-toggle='popover' title='"+toolTipContent+"'>";
+		 out += word;
          out += "</a></span>";
+             //add to hash map
+             App.VocabListMap[word+translation] = krWord;
 	   });
         out += "<p></p>";
+
 	   _.each(vocab.get("enGroup").models, function(enWord) {
 	     var translation = enWord.get('translation'), synonyms = enWord.get('synonyms'), toolTipContent = "";
 		 if (translation) {
-		 toolTipContent += "<h3>" + translation + "</h3>";
+		 toolTipContent += "<h4>" + translation + "</h4>";
 		 }
 		 if (synonyms) {
-		 toolTipContent += "<h3>" + synonyms + "</h3>";
+		 toolTipContent += "<h4>" + synonyms + "</h4>";
 		 }
          var classNames = "english-word";
          if (enWord.get('particle')) {
@@ -168,7 +196,7 @@ Handlebars.registerHelper('vocab-helper', function(vocabgroup) {
           } else {
               classNames += " phrase";
           }
-		 out += "<span class='" + classNames + "'><a href='#' data-toggle='popover' title='"+toolTipContent+"'>";
+		 out += "<span class='" + classNames + "'><a href='#' class='popover-link' data-toggle='popover' title='"+toolTipContent+"'>";
          out += enWord.get('word');
          out += "</a></span>";
 	   });
@@ -270,12 +298,37 @@ var VocabView = Backbone.View.extend({
                                      initialize: function() {
                                         this.model.on('change', this.render, this);
                                      },
+                                     events: {
+                                      "click a" : "addToVocabList"
+                                     },
                                      render: function(){
                                         var source = $("#vocab-template").html();
                                         var template = Handlebars.compile(source);
                                         this.$el.html(template(this.model.toJSON()));
                                          console.log(this.model.toJSON());
+                                     },
+                                     addToVocabList: function(evt) {
+                                        var target = $(evt.target);
+                                        if (target.parents('.popover').length > 0) {
+                                          var wordId = target.parents('.popover').prev('.popover-link').attr('data-id');
+                                          App.VocabList.add(App.VocabListMap[wordId]);
+                                          console.log(wordId);
+                                        }
                                      }
+});
+
+var VocabListView = Backbone.View.extend({
+    model: null,
+    el: $('#vocab-list-holder'),
+    initialize: function() {
+      this.model.on('add', this.render, this);
+    },
+    render: function() {
+      console.log('something was added to the collection');
+      var source = $('#vocab-list-template').html();
+      var template = Handlebars.compile(source);
+      this.$el.html(template({words:this.model.toJSON()}));
+    }
 });
 
 /** init **/
@@ -286,5 +339,10 @@ $(function() {
      App.VocabContainer = new VocabContainer();
      App.ContentView = new ContentView({model:App.ContentContainer});
      App.VocabView = new VocabView({model:App.VocabContainer});
+     App.VocabList = new Backbone.Collection();
+     App.VocabListView = new VocabListView({model:App.VocabList});
+     App.VocabListMap = {};
      Backbone.history.start();
+     enableFollowNav($('#sidebar-nav'), 20);
+     enableFollowNav($('#vocab-section'), 20);
 });
