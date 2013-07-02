@@ -9,42 +9,38 @@
   -moz-border-radius: 6px;
   border-radius: 6px;
   padding: 10px; }
-#korean-app #lesson-content .korean-word,
-#korean-app #lesson-content .english-word {
+#korean-app #lesson-content #vocab-holder .korean-word,
+#korean-app #lesson-content #vocab-holder .english-word {
   font-weight: bold;
   font-size: 20px; }
-#korean-app #lesson-content .phrase {
+#korean-app #lesson-content #vocab-holder .phrase {
   margin: 0 0 0 10px; }
-#korean-app #lesson-content .popover {
+#korean-app #lesson-content #vocab-holder .page-header .popover {
   max-width: 500px; }
-.vocab-content {
-    display: block;
-    padding: 3px 15px;
-    font-size: 11px;
+  #korean-app #lesson-content #vocab-holder .page-header .popover a {
+    cursor: pointer; }
+  #korean-app #lesson-content #vocab-holder .page-header .popover button {
+    float: right;
+    font-size: 20px;
     font-weight: bold;
     line-height: 20px;
-    color: #999999;
-    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
-    text-transform: uppercase;
-  }
-footer p {
-  margin-left: 20px;
-}
-.popover a {
-  cursor: pointer;
-}
-#vocab-holder .popover button {
-  float: right;
-  font-size: 20px;
+    color: #000000;
+    text-shadow: 0 1px 0 white;
+    opacity: 0.2;
+    filter: alpha(opacity=20);
+    padding: 0;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    -webkit-appearance: none; }
+#korean-app #lesson-content .vocab-content {
+  display: block;
+  padding: 3px 15px;
+  font-size: 11px;
   font-weight: bold;
   line-height: 20px;
-  color: #000000;
-  text-shadow: 0 1px 0 #ffffff;
-  opacity: 0.2;
-  filter: alpha(opacity=20);
-  padding: 0;
-  cursor: pointer;
-  background: transparent;
-  border: 0;
-  -webkit-appearance: none;
-}
+  color: #999999;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  text-transform: uppercase; }
+#korean-app footer p {
+  margin-left: 20px; }
