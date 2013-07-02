@@ -52,6 +52,10 @@ function enableFollowNav(navElement, padding) {
             });
         }
 
+  function escape(string) {
+    return String(string).replace(/[&<>",;'\s\/]/g,"");
+  }
+
 function applyPopups() {
 	_.each($("[data-toggle='popover']"),function(word) {
            $(word).on('click',function(e) {e.preventDefault();});
@@ -153,6 +157,8 @@ Handlebars.registerHelper('vocab-helper', function(vocabgroup) {
        base = krWord.get('base'),
        id = krWord.get('id'),
        toolTipContent = "";
+     var wordId = escape(word+translation);
+     toolTipContent += "<button>&times;</button>"
 		 if (romanization) {
 		 toolTipContent += "<h4>" + romanization + "</h4>";
 		 } 
@@ -173,12 +179,12 @@ Handlebars.registerHelper('vocab-helper', function(vocabgroup) {
               classNames += " phrase";
           }
 	     out += "<span class='" + classNames + "'><a href='#' class='popover-link' ";
-       out += "data-id='" + word + translation + "'";
+       out += "data-id='" + wordId + "'";
        out += " data-toggle='popover' title='"+toolTipContent+"'>";
 		 out += word;
          out += "</a></span>";
              //add to hash map
-             App.VocabListMap[word+translation] = krWord;
+             App.VocabListMap[wordId] = krWord;
 	   });
         out += "<p></p>";
 
@@ -299,7 +305,8 @@ var VocabView = Backbone.View.extend({
                                         this.model.on('change', this.render, this);
                                      },
                                      events: {
-                                      "click a" : "addToVocabList"
+                                      "click a" : "addToVocabList",
+                                      "click button": "closePopover"
                                      },
                                      render: function(){
                                         var source = $("#vocab-template").html();
@@ -311,9 +318,13 @@ var VocabView = Backbone.View.extend({
                                         var target = $(evt.target);
                                         if (target.parents('.popover').length > 0) {
                                           var wordId = target.parents('.popover').prev('.popover-link').attr('data-id');
+                                          wordId = escape(wordId);
                                           App.VocabList.add(App.VocabListMap[wordId]);
                                           console.log(wordId);
                                         }
+                                     },
+                                     closePopover: function(evt) {
+                                           $(evt.target).parents('.popover').prev('.popover-link').popover('hide')
                                      }
 });
 
