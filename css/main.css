@@ -33,7 +33,7 @@
     background: transparent;
     border: 0;
     -webkit-appearance: none; }
-#korean-app #lesson-content .vocab-content {
+#korean-app .vocab-content {
   display: block;
   padding: 3px 15px;
   font-size: 11px;
