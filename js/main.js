@@ -148,7 +148,7 @@ Handlebars.registerHelper('vocab-helper', function(vocabgroup) {
 	 
 	 //loop over backbone collection
 	_.each(vocabgroup.models, function(vocab) {
-		out += "<div class='page-header'>";
+		out += "<div class='page-header row-fluid'>";
 	   _.each(vocab.get("krGroup").models, function(krWord) {
 	   	 var romanization = krWord.get('romanization'), 
        word = krWord.get('word'),
@@ -189,22 +189,31 @@ Handlebars.registerHelper('vocab-helper', function(vocabgroup) {
         out += "<p></p>";
 
 	   _.each(vocab.get("enGroup").models, function(enWord) {
-	     var translation = enWord.get('translation'), synonyms = enWord.get('synonyms'), toolTipContent = "";
+	     var translation = enWord.get('translation'), 
+       word = enWord.get('word'), 
+       synonyms = enWord.get('synonyms'), 
+       toolTipContent = "";
+       var wordId = escape(word+translation);
+      toolTipContent += "<button>&times;</button>"
 		 if (translation) {
 		 toolTipContent += "<h4>" + translation + "</h4>";
 		 }
 		 if (synonyms) {
 		 toolTipContent += "<h4>" + synonyms + "</h4>";
 		 }
+    toolTipContent += "<h4><a>Add to vocab list</a></h4>"; 
          var classNames = "english-word";
          if (enWord.get('particle')) {
               classNames += " particle";
           } else {
               classNames += " phrase";
           }
-		 out += "<span class='" + classNames + "'><a href='#' class='popover-link' data-toggle='popover' title='"+toolTipContent+"'>";
+		 out += "<span class='" + classNames + "'><a href='#' class='popover-link'";
+     out += "data-id='" + wordId + "'";
+      out += " data-toggle='popover' title='"+toolTipContent+"'>";
          out += enWord.get('word');
          out += "</a></span>";
+          App.VocabListMap[wordId] = enWord;
 	   });
 		out += "</div>";
 	});
@@ -214,71 +223,25 @@ Handlebars.registerHelper('vocab-helper', function(vocabgroup) {
 /** Routers **/
 var AppRouter = Backbone.Router.extend({
 	routes: {
-		"":"home",
-		"lesson1":"lesson1",
-		"lesson2":"lesson2",
-    "lesson3":"lesson3",
-    "lesson4":"lesson4",
-    "vocab1":"vocab1",
-    "vocab2":"vocab2",
-    "vocab3":"vocab3",
-    "vocab4":"vocab4",
-    "vocab5":"vocab5",
-    "vocab6":"vocab6",
-    "vocab7":"vocab7",
-    "vocab8":"vocab8",
-    "vocab9":"vocab9",
+		"":"home"
 	},
 	
 	home:function() {
         loadJSON("home");
 	},
-	
-	lesson1:function() {
-        loadJSON("lesson1");
-    },
-    
-    lesson2:function() {
-        loadJSON("lesson2");
-    },
 
-    lesson3:function() {
-      loadJSON("lesson3");
-    },
+  initialize: function (options) {
 
-    lesson4:function() {
-      loadJSON("lesson4");
-    },
+  // Matches #lesson/10, passing "10"
+  this.route("lesson/:number", "page", function(number){ 
+      loadJSON("lesson"+number);
+   });
 
-    vocab1: function() {
-      loadJSON("vocab1");
-    },
+    // Matches #lesson/10, passing "10"
+  this.route("vocab/:number", "page", function(number){ 
+      loadJSON("vocab"+number);
+   });
 
-    vocab2: function() {
-      loadJSON("vocab2");
-    },
-        vocab3: function() {
-      loadJSON("vocab3");
-    },
-        vocab4: function() {
-      loadJSON("vocab4");
-    },
-        vocab5: function() {
-      loadJSON("vocab5");
-    },
-        vocab6: function() {
-      loadJSON("vocab6");
-    },
-        vocab7: function() {
-      loadJSON("vocab7");
-    },
-
-        vocab8: function() {
-      loadJSON("vocab8");
-    },
-
-        vocab9: function() {
-      loadJSON("vocab9");
     }
                                        
 });
@@ -354,6 +317,6 @@ $(function() {
      App.VocabListView = new VocabListView({model:App.VocabList});
      App.VocabListMap = {};
      Backbone.history.start();
-     enableFollowNav($('#sidebar-nav'), 20);
-     enableFollowNav($('#vocab-section'), 20);
+     //enableFollowNav($('#sidebar-nav'), 20);
+     //enableFollowNav($('#vocab-section'), 20);
 });

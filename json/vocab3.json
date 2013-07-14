@@ -27,16 +27,10 @@
                                 "translation":"delicious, tasty"
                                 }, 
                                 {
-                                "word":"나",
-                                "romanization":"na",
-                                "translation":"polite question particle",
+                                "word":"나요",
+                                "romanization":"na-yo",
+                                "translation":"particle to finish question in semi polite manner (attached to verbs)",
                                 "particle": true  
-                                },
-                                {
-                                "word":"요",
-                                "romanization":"yo",
-                                "translation":"polite marker",
-                                "particle":true
                                 },
                                 {
                                 "word":"?",

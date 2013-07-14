@@ -154,16 +154,9 @@
                                 "base":"안전하다"
                                 },
                                 {
-                                "word":"가",
-                                "romanization":"ga",
-                                "translation": "polite question particle",
-                                "synonyms":"also: subject particle,to go",
-                                "particle":true
-                                },
-                                {
-                                "word":"요",
-                                "romanization":"yo",
-                                "translation":"polite marker",
+                                "word":"가요",
+                                "romanization":"ga-yo",
+                                "translation": "particle to finish question in semi polite manner (attached to adjectives)",
                                 "particle":true
                                 },
                                 {

@@ -18,7 +18,7 @@
                                 "word":"그것",
                                 "romanization":"geu-geot",
                                 "translation":"it, that",
-                                "base":"그거"
+                                "base":"그거,그건,그게,그걸"
                                 },
                                 {
                                 "word":"은",
@@ -152,7 +152,8 @@
                                 {
                                 "word":"좀",
                                 "romanization":"jom",
-                                "translation":"please (request)"
+                                "translation":"please (request)",
+                                "synonyms":"also: a little, somewhat"
                                 },
                                 {
                                 "word":"꺼",

@@ -1,0 +1,209 @@
+{
+    "vocab6-content": {
+        "title": "",
+        "contents": [],
+        "details": ""
+    },
+    "vocab6-vocab": {
+        "title": "Vocabulary Lesson 6",
+        "vocabs": [
+
+                    {
+                    "krGroup": [{
+                                "word":"제",
+                                "romanization":"je",
+                                "translation":"my (polite)",
+                                "synonyms":"저의,나의,내"
+                                },
+                                {
+                                "word":"소개",
+                                "romanization":"so-gae",
+                                "translation":"introduction"
+                                },
+                                {
+                                "word":"를",
+                                "romanization":"leul",
+                                "translation":"object particle",
+                                "synonyms":"also: particle to add meaning of perhaps, future tense modifier",
+                                "particle": true     
+                                }, 
+                                {
+                                "word":"해",
+                                "romanization":"hae",
+                                "translation":"to do",
+                                "base":"하다"
+                                },
+                               {
+                                "word":"도",
+                                "romanization":"doh",
+                                "translation":"as well, too",
+                                "synonyms":"also: either, neither, even, degree, province, island, drawing, picture, group, doctrine, but, however",
+                                "particle": true  
+                                },
+                                {
+                                "word":"될",
+                                "romanization":"dwael",
+                                "translation":"available, okay",
+                                "synonyms":"also: to become, to be, passive particle, valid",
+                                "base":"되다"
+                                },
+                               {
+                                "word":"까",
+                                "romanization":"gga",
+                                "translation":"particle for polite question",
+                                "synonyms":"also: particle to add meaning of should we?, will it be?",
+                                "particle": true
+                                },
+                                {
+                                "word":"요",
+                                "romanization":"yo",
+                                "translation":"polite marker",
+                                "particle":true
+                                },
+                               {
+                                "word":"?",
+                                "particle": true  
+                                }
+                                ],
+                    "enGroup": [
+                                {
+                                "word":"May",
+                                "translation":"...될까요?",
+                                "synonyms":"Can"
+                                },
+                               {
+                                "word":"I",
+                                "translation":"저,나"
+                                },
+                                {
+                                "word":"introduce",
+                                "translation":"소개" 
+                                },
+                                {
+                                "word":"myself",
+                                "translation":"내 자신,나,저"
+                                },
+                                {
+                                "word":"?",
+                                "particle":true
+                                }
+                                ]
+                    
+                    },
+                   {
+                    "krGroup": [{
+                                "word":"당신",
+                                "romanization":"dang-shin",
+                                "translation":"you (between lovers)",
+                                "synonyms":"너"
+                                },
+                                {
+                                "word":"때문에",
+                                "romanization":"dae-mun-eh",
+                                "translation":"because"
+                                },
+                               {
+                                "word":"놀랐어",
+                                "romanization":"noh-la-sseo",
+                                "translation":"to be surprised (past tense)",
+                                "base":"놀라다"
+                                },
+                              {
+                                "word":"요",
+                                "romanization":"yo",
+                                "translation":"polite marker",
+                                "particle":true
+                                },
+                                {
+                                "word":".",
+                                "particle":true
+                                }
+                                ],
+                    "enGroup": [
+                    {
+                                "word":"You",
+                                "translation":"당신,너"
+                                },
+                                {
+                                "word":"frightened",
+                                "translation":"놀라다"
+                                },
+                               {
+                                "word":"me",
+                                "translation":"저,나"
+                                },
+                                {
+                                "word":".",
+                                "particle":true
+                                }
+                                ]
+                    
+                    },
+                    {
+                    "krGroup": [{
+                                "word":"저",
+                                "romanization":"jeo",
+                                "translation":"I, me (polite)",
+                                "synonyms":"also: that"
+                                },
+                                {
+                                "word":"는",
+                                "romanization":"neun",
+                                "translation":"topic particle",
+                                "synonyms":"also:emphasis particle, noun modifier",
+                                "particle": true       
+                                },
+                                {
+                                "word":"일본",
+                                "romanization":"il-bon",
+                                "translation":"Japan"
+                                }, 
+                                {
+                                "word":"에서",
+                                "romanization":"eh-seo",
+                                "translation":"particle denoting action happening at a time, place or location",
+                                "particle": true 
+                                }, 
+                                {
+                                "word":"왔",
+                                "romanization":"wass",
+                                "translation":"to come, to arrive (past tense)",
+                                "synonyms":"also: to keep, to continue",
+                                "base":"오다"
+                                },
+                                {
+                                "word":"습니다",
+                                "romanization":"seum-ni-da",
+                                "translation":"ending for honorific form",
+                                "particle":"yes"
+                                },
+                                 {
+                                "word":".",
+                                "particle":true
+                                }
+                                ],
+                    "enGroup": [
+                    {
+                                "word":"I&apos;m",
+                                "translation":"저는,나는",
+                                "base":"I am"
+                                },
+                                {
+                                "word":"from",
+                                "translation":"에서"
+                                },
+                                {
+                                "word":"Japan",
+                                "translation":"일본"
+                                },
+                                {
+                                "word":".",
+                                "particle":true
+                                }
+                                ]
+                    
+                    }
+                    ]
+    }
+    
+}
