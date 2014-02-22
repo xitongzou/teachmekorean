@@ -8,45 +8,30 @@
     <meta name="author" content="">
 
     <!-- Le styles -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <style type="text/css">
-      body {
-        padding-top: 60px;
-        padding-bottom: 40px;
-      }
-      .sidebar-nav {
-        padding: 9px 0;
-      }
-
-      @media (max-width: 980px) {
-        /* Enable use of floated navbar text */
-        .navbar-text.pull-right {
-          float: none;
-          padding-left: 5px;
-          padding-right: 5px;
-        }
-      }
-    </style>
-    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="js/html5shiv.js"></script>
     <![endif]-->
 
+    <!-- load require -->
+    <script src="js/require-2.1.11.js"></script>
+    <script src="js/requirejs-config.js"></script>
+
     <!-- Fav and touch icons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
-      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
-                    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
-                                   <link rel="shortcut icon" href="ico/favicon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="ico/favicon.png">
   </head>
 
   <body>
     <header class="container-fluid">
     <menu id="korean-menu" class="navbar">
-      <div class="navbar-inner row-fluid">
-          <nav class="top-nav span4">
+      <div class="navbar-inner row">
+          <nav class="top-nav col-sm-4">
            <ul class="nav">
             <li><a href="#">Teach me Korean</a></li>
             <li class="divider-vertical"></li>
@@ -54,7 +39,7 @@
             <li><a href="#contact">Contact</a></li>
            </ul>
           </nav>
-          <div class="nav-collapse collapse offset4 span3">
+          <div class="nav-collapse collapse col-sm-offset-4 col-sm-3">
             <p class="navbar-text pull-right">
               Logged in as <a href="#" class="navbar-link">Username</a>
             </p>
@@ -63,15 +48,15 @@
     </menu>
     </header>
     <main id="korean-app" class="container-fluid">
-      <div class="row-fluid">
-        <nav id="sidebar-nav" class="span3">
+      <div class="row">
+        <nav id="sidebar-nav" class="col-sm-3">
           <aside class="well sidebar-nav">
             <ul class="nav nav-list lesson-list">
-              <li class="nav-header">Lessons</li>
-              <li><a href="#lesson/1">Lesson 1</a></li>
-              <li><a href="#lesson/2">Lesson 2</a></li>
-              <li><a href="#lesson/3">Lesson 3</a></li>
-              <li><a href="#lesson/4">Lesson 4</a></li>
+              <li class="nav-header">Grammar</li>
+              <li><a href="#lesson/1">Grammar 1</a></li>
+              <li><a href="#lesson/2">Grammar 2</a></li>
+              <li><a href="#lesson/3">Grammar 3</a></li>
+              <li><a href="#lesson/4">Grammar 4</a></li>
               <li class="nav-header">Vocabulary</li>
               <li><a href="#vocab/1">Vocab 1</a></li>
               <li><a href="#vocab/2">Vocab 2</a></li>
@@ -85,14 +70,14 @@
             </ul>
           </aside><!--/.well -->
         </nav><!--/span-->
-        <article id="lesson-content" class="span6">
+        <article id="lesson-content" class="col-sm-6">
           <div id="content-holder">
           </div>
             <div id="vocab-holder">
              </div>
                 <!--/row-->
         </article><!--/span-->
-        <section id="vocab-section" class="span3">
+        <section id="vocab-section" class="col-sm-3">
             <div class="vocab-content container-fluid well well-small">
            <div id="vocab-list-holder">
            <table class="table table-condensed table-hover">
@@ -159,12 +144,6 @@
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/underscore-min.js"></script>
-    <script src="js/backbone-min.js"></script>
-    <script src="js/handlebars.js"></script>
-    <script src="js/bootstrap-tooltip.js"></script>
-    <script src="js/main.js"></script> 
+    <script src="js/main.js"></script>
   </body>
 </html>
