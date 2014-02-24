@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <title>Teach me Korean</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +12,7 @@
     <link href="css/main.css" rel="stylesheet">
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
-      <script src="js/html5shiv.js"></script>
+    <script src="js/html5shiv.js"></script>
     <![endif]-->
 
     <!-- load require -->
@@ -25,125 +25,224 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
     <link rel="shortcut icon" href="ico/favicon.png">
-  </head>
+</head>
 
-  <body>
+<body>
+
+<nav class="navbar navbar-default" role="navigation">
     <header class="container-fluid">
-    <menu id="korean-menu" class="navbar">
-      <div class="navbar-inner row">
-          <nav class="top-nav col-sm-4">
-           <ul class="nav">
-            <li><a href="#">Teach me Korean</a></li>
-            <li class="divider-vertical"></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-           </ul>
-          </nav>
-          <div class="nav-collapse collapse col-sm-offset-4 col-sm-3">
-            <p class="navbar-text pull-right">
-              Logged in as <a href="#" class="navbar-link">Username</a>
-            </p>
-          </div><!--/.nav-collapse -->
-      </div>
-    </menu>
-    </header>
-    <main id="korean-app" class="container-fluid">
-      <div class="row">
-        <nav id="sidebar-nav" class="col-sm-3">
-          <aside class="well sidebar-nav">
-            <ul class="nav nav-list lesson-list">
-              <li class="nav-header">Grammar</li>
-              <li><a href="#lesson/1">Grammar 1</a></li>
-              <li><a href="#lesson/2">Grammar 2</a></li>
-              <li><a href="#lesson/3">Grammar 3</a></li>
-              <li><a href="#lesson/4">Grammar 4</a></li>
-              <li class="nav-header">Vocabulary</li>
-              <li><a href="#vocab/1">Vocab 1</a></li>
-              <li><a href="#vocab/2">Vocab 2</a></li>
-              <li><a href="#vocab/3">Vocab 3</a></li>
-              <li><a href="#vocab/4">Vocab 4</a></li>
-              <li><a href="#vocab/5">Vocab 5</a></li>
-              <li><a href="#vocab/6">Vocab 6</a></li>
-              <li><a href="#vocab/7">Vocab 7</a></li>
-              <li><a href="#vocab/8">Vocab 8</a></li>
-              <li><a href="#vocab/9">Vocab 9</a></li>
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#header-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Teach me Korean</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="header-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
-          </aside><!--/.well -->
-        </nav><!--/span-->
+        </div>
+        <!-- /.navbar-collapse -->
+    </header>
+    <!-- /.container-fluid -->
+</nav>
+<main id="korean-app" class="container-fluid">
+    <div class="row">
+        <nav id="sidebar-nav" class="col-sm-3">
+
+            <div class="panel-group" id="accordian">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordian" href="#grammar">
+                                Grammar
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="grammar" class="panel-collapse collapse">
+                        <div class="panel-body">
+
+                            <div class="panel-group" id="grammar-accordian">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#grammar-accordian"
+                                               href="#causation">
+                                                Showing Causation
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="causation" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <ul class="nav">
+                                                <li><a href="#">V. + (아/어/여)서</a></li>
+                                                <li><a href="#">N. + (이)라(서)</a></li>
+                                                <li><a href="#">V. + (으)니까</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#grammar-accordion" href="#future">
+                                                Showing future action
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="future" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <ul class="nav">
+                                                <li><a href="#">V. + ㄹ/을 거예요</a></li>
+                                                <li><a href="#">A.V. + (으)려고 하다</a></li>
+                                                <li><a href="#">A.V. + ㄹ/을게(요)</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#grammar-accordian" href="#suggest">
+                                                Asking or Suggesting
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="suggest" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <ul class="nav">
+                                                <li><a href="#">V. + ㄹ/을까(요)?</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#vocab">
+                                Vocabulary
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="vocab" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <ul class="nav">
+                                <li><a href="#">Basic</a></li>
+                                <li><a href="#">Food</a></li>
+                                <li><a href="#">Travel</a></li>
+                                <li><a href="#">Furniture</a></li>
+                                <li><a href="#">Animals</a></li>
+                                <li><a href="#">Hobbies</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!--/span-->
         <article id="lesson-content" class="col-sm-6">
-          <div id="content-holder">
-          </div>
+            <div id="content-holder">
+            </div>
             <div id="vocab-holder">
-             </div>
-                <!--/row-->
-        </article><!--/span-->
+            </div>
+            <!--/row-->
+        </article>
+        <!--/span-->
         <section id="vocab-section" class="col-sm-3">
             <div class="vocab-content container-fluid well well-small">
-           <div id="vocab-list-holder">
-           <table class="table table-condensed table-hover">
-            <caption>Vocabulary List</caption>
-           <thead>
-           <tr><td>Word</td><td>Translation</td></tr>
-          </thead>
-            <tbody>
-             <tr><td></td><td></td></tr>
-             </tbody>
-           </table>
-           </div>
+                <div id="vocab-list-holder">
+                    <table class="table table-condensed table-hover">
+                        <caption>Vocabulary List</caption>
+                        <thead>
+                        <tr>
+                            <td>Word</td>
+                            <td>Translation</td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </section>
-      </div><!--/row-->
+    </div>
+    <!--/row-->
 
-    </main><!--/.fluid-container-->
-      
-      <hr>
-      
-      <footer class="container-fluid">
-          <p class="muted">&copy; Tong Zou 2013</p>
-      </footer>
-      <!-- Handlebar templates --> 
-         <script id="content-template" type="text/x-handlebars-template">
-          {{#if title}}
-          <div class="hero-unit">
-          <h1>{{title}}</h1>
-          <p class="lead">
-          {{#content-helper content}}
-          
-          {{/content-helper}}
-          </p>
-            {{#if details}}
-          <p><a href="#" class="btn btn-primary btn-large">{{{details}}}</a></p>
-            {{/if}}
-          {{/if}}
-          </div>
-      </script>
-      <script id="vocab-template" type="text/x-handlebars-template">
-      {{#if title}}
-          <div class="row-fluid">
-      <h3>{{title}}</h3>
-      {{#vocab-helper vocabs}}
-      
-      {{/vocab-helper}}
-          </div>
-          {{/if}}
-          </script>
-        <script id="vocab-list-template" type="text/x-handlebars-template">
-           <table class="table table-condensed table-hover">
-            <caption>Vocabulary List</caption>
-           <thead>
-           <tr><td>Word</td><td>Translation</td></tr>
-          </thead>
-            <tbody>
-            {{#each words}}
-             <tr><td>{{this.word}}</td><td>{{{this.translation}}}</td></tr>
-            {{/each}}
-             </tbody>
-           </table>
-         </script>
+</main>
+<!--/.fluid-container-->
 
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/main.js"></script>
-  </body>
+<hr>
+
+<footer class="container-fluid">
+    <p class="muted">&copy; Tong Zou 2014</p>
+</footer>
+<!-- Handlebar templates -->
+<script id="content-template" type="text/x-handlebars-template">
+    {{#if title}}
+    <div class="hero-unit">
+        <h1>{{title}}</h1>
+
+        <p class="lead">
+            {{#content-helper content}}
+
+            {{/content-helper}}
+        </p>
+        {{#if details}}
+        <p><a href="#" class="btn btn-primary btn-large">{{{details}}}</a></p>
+        {{/if}}
+        {{/if}}
+    </div>
+</script>
+<script id="vocab-template" type="text/x-handlebars-template">
+    {{#if title}}
+    <div class="row-fluid">
+        <h3>{{title}}</h3>
+        {{#vocab-helper vocabs}}
+
+        {{/vocab-helper}}
+    </div>
+    {{/if}}
+</script>
+<script id="vocab-list-template" type="text/x-handlebars-template">
+    <table class="table table-condensed table-hover">
+        <caption>Vocabulary List</caption>
+        <thead>
+        <tr>
+            <td>Word</td>
+            <td>Translation</td>
+        </tr>
+        </thead>
+        <tbody>
+        {{#each words}}
+        <tr>
+            <td>{{this.word}}</td>
+            <td>{{{this.translation}}}</td>
+        </tr>
+        {{/each}}
+        </tbody>
+    </table>
+</script>
+
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="js/main.js"></script>
+</body>
 </html>

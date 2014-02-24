@@ -1,3 +1,34 @@
+#korean-app .panel-heading {
+    color: #777;
+}
+
+#korean-app #grammar .panel-body,
+#korean-app #vocab .panel-body
+{
+    padding: 0;
+}
+
+#korean-app #vocab .nav li a {
+    padding-left: 30px;
+}
+
+#korean-app #grammar-accordian {
+    margin-bottom: 0;
+}
+
+#korean-app #grammar-accordian .nav li a {
+    padding-left: 45px;
+}
+
+#korean-app #grammar-accordian .panel-default {
+    margin-top: 0;
+    border: none;
+}
+
+#korean-app #grammar-accordian .panel-default .panel-title {
+    padding-left: 15px;
+}
+
 #korean-app .page-header {
   margin-bottom: 30px;
   font-size: 18px;
