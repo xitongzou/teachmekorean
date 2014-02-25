@@ -1,5 +1,5 @@
 require.config({
-    baseUrl: "/Users/Tong/Documents/GitHub/teachmekorean/js",
+    baseUrl: "js",
     paths: {
         "jquery": "jquery-2.1.0.min",
         "backbone": "backbone-1.1.2.min",
