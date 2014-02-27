@@ -2,12 +2,15 @@ define([
     'jquery',
     'underscore',
     'backbone',
-    'header.view'
-], function ($, _, Backbone, HeaderView) {
+    'header.view',
+    'footer.view',
+    'sidebar.view',
+    'vocab.view'
+], function ($, _, Backbone, HeaderView, FooterView, SidebarView, VocabView) {
 
     var AppRouter = Backbone.Router.extend({
         routes: {
-            "": "home"
+           // "": "home"
         },
 
         home: function () {
@@ -17,6 +20,9 @@ define([
         initialize: function () {
 
             this.renderHeader();
+            this.renderFooter();
+            this.renderSidebar();
+            this.renderVocab();
 
             /*            // Matches #lesson/10, passing "10"
              this.route("lesson/:number", "page", function (number) {
@@ -50,7 +56,23 @@ define([
         },
 
         renderHeader: function () {
-            var HeaderView = new HeaderView();
+            var header = new HeaderView();
+            $('#header').html(header.$el);
+        },
+
+        renderFooter: function () {
+            var footer = new FooterView();
+            $('#footer').html(footer.$el);
+        },
+
+        renderSidebar: function () {
+            var sidebar = new SidebarView();
+            $('#sidebar').html(sidebar.$el);
+        },
+
+        renderVocab: function () {
+            var vocab = new VocabView();
+            $('#vocab').html(vocab.$el);
         },
 
         renderView: function (jsonContent) {

@@ -3,7 +3,8 @@ require([
     'underscore',
     'backbone',
     'handlebars',
-    'app.router'
+    'app.router',
+    'bootstrap'
 ], function ($, _, Backbone, Handlebars, AppRouter) {
 
     /** Backbone Models/Collections **/

@@ -7,10 +7,10 @@ require.config({
         "handlebars": "handlebars-1.3.0",
         "underscore": "lodash-2.4.1.min",
         "app.router": "router/app.router",
-        "header.view": "views/header.view"
-       // "nav.sidebar.view": "views/nav.sidebar.view",
-      //  "vocab.view": "views/vocab.view",
-      //  "footer.view": "views/footer.view"
+        "header.view": "views/header.view",
+        "footer.view": "views/footer.view",
+        "sidebar.view": "views/sidebar.view",
+        "vocab.view": "views/vocab.view"
     },
     shim: {
         handlebars: {
@@ -27,6 +27,5 @@ require.config({
             deps: ['jquery'],
             exports: 'bootstrap'
         }
-    },
-    waitSeconds: 15
+    }
 });

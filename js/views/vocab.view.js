@@ -5,11 +5,11 @@ define([
     'handlebars'
 ], function ($, _, Backbone, Handlebars) {
 
-    var HeaderView = Backbone.View.extend({
+    var VocabView = Backbone.View.extend({
 
-        tagName: 'header',
-        className: 'container-fluid',
-        template: '#header-template',
+        tagName: 'div',
+        className: 'vocab-content col-sm-3 well well-small',
+        template: '#vocab-template',
 
         initialize: function () {
             this.render();
@@ -23,5 +23,5 @@ define([
 
     });
 
-    return HeaderView;
+    return VocabView;
 });
