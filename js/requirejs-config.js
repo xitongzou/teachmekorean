@@ -10,7 +10,13 @@ require.config({
         "header.view": "views/header.view",
         "footer.view": "views/footer.view",
         "sidebar.view": "views/sidebar.view",
-        "vocab.view": "views/vocab.view"
+        "vocab.view": "views/vocab.view",
+        "content.view": "views/content.view",
+        "word.view": "views/word.view",
+        "content.model": "models/content.model",
+        "content.collection": "collections/content.collection",
+        "word.model": "models/word.model",
+        "word.collection": "collections/word.collection"
     },
     shim: {
         handlebars: {
