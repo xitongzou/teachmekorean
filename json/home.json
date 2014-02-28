@@ -5,10 +5,5 @@
             "details": "Learn Korean by starting off with simple sentences with popovers for each word, and learn to combine words together to create proper sentences and structures, with help from the vocabulary builder."
         }
     ],
-    "home-words": [
-        {
-           "word":"안녕하세요",
-           "translation":"Hello, Hi"
-        }
-    ]
+    "home-words": []
 }

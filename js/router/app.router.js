@@ -126,47 +126,6 @@ define([
 
         escape: function (string) {
             return String(string).replace(/[&<>",;'\s\/]/g, "");
-        },
-
-        renderView: function (jsonContent) {
-
-            /** populate and render lesson content **/
-            if (jsonContent) {
-                var lessonContentCol = new ContentCollection();
-
-                /** for each content data, create a new content model **/
-                _.each(jsonContent, function (contentmodel) {
-                    lessonContentCol.add(new ContentModel(contentmodel));
-                });
-            }
-
-            /** populate and render lesson vocab **/
-
-            else if (jsonContent.vocabs) {
-                var vocabGroup = new VocabGroup();
-
-                /** for each vocab data, create a new word model **/
-                _.each(jsonContent.vocabs, function (vocab) {
-                    var vocabModel = new Vocab();
-
-                    var krWordGroup = new WordGroup();
-                    //loop over korean words
-                    _.each(vocab.krGroup, function (krWord) {
-                        krWordGroup.add(new Word(krWord));
-                    });
-
-                    var enWordGroup = new WordGroup();
-                    //loop over english words
-                    _.each(vocab.enGroup, function (enWord) {
-                        enWordGroup.add(new Word(enWord));
-                    });
-                    vocabModel.set({enGroup: enWordGroup, krGroup: krWordGroup});
-                    vocabGroup.add(vocabModel);
-                });
-
-                App.VocabContainer.set({title: jsonContent['title'], vocabs: vocabGroup});
-                applyPopups();
-            }
         }
 
     });

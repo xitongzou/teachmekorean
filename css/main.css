@@ -40,17 +40,17 @@
   -moz-border-radius: 6px;
   border-radius: 6px;
   padding: 10px; }
-#korean-app #lesson-content #vocab-holder .korean-word,
-#korean-app #lesson-content #vocab-holder .english-word {
+#korean-app #lesson-content #word-holder .korean-word,
+#korean-app #lesson-content #word-holder .english-word {
   font-weight: bold;
   font-size: 20px; }
-#korean-app #lesson-content #vocab-holder .phrase {
+#korean-app #lesson-content #word-holder .phrase {
   margin: 0 0 0 10px; }
-#korean-app #lesson-content #vocab-holder .page-header .popover {
+#korean-app #lesson-content #word-holder .page-header .popover {
   max-width: 500px; }
-  #korean-app #lesson-content #vocab-holder .page-header .popover a {
+  #korean-app #lesson-content #word-holder .page-header .popover a {
     cursor: pointer; }
-  #korean-app #lesson-content #vocab-holder .page-header .popover button {
+  #korean-app #lesson-content #word-holder .page-header .popover button {
     float: right;
     font-size: 20px;
     font-weight: bold;
