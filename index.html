@@ -445,16 +445,16 @@
     {{/each}}
 </script>
 <script id="word-template" type="text/x-handlebars-template">
-    <div class="page-header row">
-        {{#each entries}}
+    {{#each entries}}
+        <div class="page-header row">
             <span class="word">
                 <a href="#" class="popover-link" data-id="{{this.dataid}}" data-toggle="popover"
                    title="{{{this.tooltip}}}">
                     {{this.word}}
                 </a>
             </span>
-        {{/each}}
-    </div>
+        </div>
+    {{/each}}
 </script>
 <script id="vocab-list-template" type="text/x-handlebars-template">
     <table class="table table-condensed table-hover">

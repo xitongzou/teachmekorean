@@ -3,29 +3,37 @@
 }
 
 #korean-app #grammar .panel-body,
-#korean-app #vocab .panel-body
+#korean-app #vocabulary .panel-body
 {
     padding: 0;
 }
 
-#korean-app #vocab .nav li a {
+#korean-app #vocabulary .nav li a {
     padding-left: 30px;
 }
 
-#korean-app #grammar-accordian {
+#korean-app #grammar-accordian,
+#korean-app #vocab-accordian
+{
     margin-bottom: 0;
 }
 
-#korean-app #grammar-accordian .nav li a {
+#korean-app #grammar-accordian .nav li a,
+#korean-app #vocab-accordian .nav li a
+{
     padding-left: 45px;
 }
 
-#korean-app #grammar-accordian .panel-default {
+#korean-app #grammar-accordian .panel-default,
+#korean-app #vocab-accordian .panel-default
+{
     margin-top: 0;
     border: none;
 }
 
-#korean-app #grammar-accordian .panel-default .panel-title {
+#korean-app #grammar-accordian .panel-default .panel-title,
+#korean-app #vocab-accordian .panel-default .panel-title
+{
     padding-left: 15px;
 }
 
