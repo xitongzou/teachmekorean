@@ -10,7 +10,8 @@ define([
             "translation": "",
             "expanded": "",
             "dataid":"",
-            "tooltip": ""
+            "title": "",
+            "content": ""
         }
     });
 

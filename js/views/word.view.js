@@ -15,8 +15,9 @@ define([
             "click button": "closePopover"
         },
 
-        initialize: function (collection) {
-            this.render(collection);
+        initialize: function (opts) {
+            this.title = opts.title;
+            this.render(opts.collection);
         },
 
         closePopover: function (evt) {
@@ -24,9 +25,11 @@ define([
         },
 
         render: function (collection) {
+            var title = this.title;
             var source = $(this.template).html();
             var template = Handlebars.compile(source);
             this.$el.html(template({
+                title: title,
                 entries: collection.toJSON()
             }));
         }

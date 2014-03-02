@@ -6,6 +6,7 @@ require.config({
         "bootstrap": "bootstrap-3.1.1.min",
         "handlebars": "handlebars-1.3.0",
         "underscore": "lodash-2.4.1.min",
+        "backbone.babysitter": "backbone.babysitter-0.1.0",
         "app.router": "router/app.router",
         "header.view": "views/header.view",
         "footer.view": "views/footer.view",
@@ -28,6 +29,10 @@ require.config({
         'backbone': {
             deps: ['underscore', 'jquery'],
             exports: 'Backbone'
+        },
+        'backbone.babysitter': {
+            deps: ['jquery','underscore', 'backbone'],
+            exports: 'Backbone.ChildViewContainer'
         },
         'bootstrap': {
             deps: ['jquery'],

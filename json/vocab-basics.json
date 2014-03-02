@@ -1,0 +1,19 @@
+{
+    "vocab-basics-words": {
+        "title": "Basic Vocabulary",
+        "words": [
+            {
+                "word": "안녕하세요",
+                "translation": "Hi, Hello"
+            },
+            {
+                "word": "감사합니다",
+                "translation": "Thank You, Thanks"
+            },
+            {
+                "word": "고맙습니다",
+                "translation": "Thank You, Thanks"
+            }
+        ]
+    }
+}

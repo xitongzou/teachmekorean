@@ -11,14 +11,18 @@ define([
         className: 'container-fluid',
         template: '#content-template',
 
-        initialize: function (collection) {
-            this.render(collection);
+        initialize: function (opts) {
+            this.title = opts.title;
+            this.render(opts.collection);
         },
 
         render: function (collection) {
+            var self = this;
             var source = $(this.template).html();
             var template = Handlebars.compile(source);
-            this.$el.html(template({entries: collection.toJSON()}));
+            this.$el.html(template({
+                title: self.title,
+                entries: collection.toJSON()}));
         }
 
     });

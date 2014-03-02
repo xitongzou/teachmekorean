@@ -357,17 +357,17 @@
                     <div id="words" class="panel-collapse collapse">
                         <div class="panel-body">
                             <ul class="nav">
-                                <li><a href="#">Basic</a></li>
-                                <li><a href="#">Numbers</a></li>
-                                <li><a href="#">Time,Days,Month,Year</a></li>
-                                <li><a href="#">Counting</a></li>
-                                <li><a href="#">Emphasis</a></li>
-                                <li><a href="#">Frequency</a></li>
-                                <li><a href="#">Food</a></li>
-                                <li><a href="#">Travel</a></li>
-                                <li><a href="#">Furniture</a></li>
-                                <li><a href="#">Animals</a></li>
-                                <li><a href="#">Hobbies</a></li>
+                                <li><a href="#vocab/basics">Basic</a></li>
+                                <li><a href="#vocab/numbers">Numbers</a></li>
+                                <li><a href="#vocab/time">Time,Days,Month,Year</a></li>
+                                <li><a href="#vocab/counting">Counting</a></li>
+                                <li><a href="#vocab/emphasis">Emphasis</a></li>
+                                <li><a href="#vocab/frequency">Frequency</a></li>
+                                <li><a href="#vocab/food">Food</a></li>
+                                <li><a href="#vocab/travel">Travel</a></li>
+                                <li><a href="#vocab/furniture">Furniture</a></li>
+                                <li><a href="#vocab/animals">Animals</a></li>
+                                <li><a href="#vocab/hobbies">Hobbies</a></li>
                             </ul>
                         </div>
                     </div>
@@ -434,6 +434,11 @@
 </script>
 
 <script id="content-template" type="text/x-handlebars-template">
+    {{#if title}}
+    <div class="page-header">
+        <h1>{{title}}</h1>
+    </div>
+    {{/if}}
     {{#each entries}}
     <div class="well">
         <h2>{{this.title}}</h2>
@@ -445,13 +450,19 @@
     {{/each}}
 </script>
 <script id="word-template" type="text/x-handlebars-template">
+    {{#if title}}
+    <div class="page-header">
+        <h1>{{title}}</h1>
+    </div>
+    {{/if}}
     {{#each entries}}
-        <div class="page-header row">
+        <div class="entries row">
             <span class="word">
                 <a href="#" class="popover-link" data-id="{{this.dataid}}" data-toggle="popover"
-                   title="{{{this.tooltip}}}">
+                   data-title="{{{this.title}}}" data-content="{{{this.content}}}">
                     {{this.word}}
                 </a>
+                = {{this.translation}}
             </span>
         </div>
     {{/each}}

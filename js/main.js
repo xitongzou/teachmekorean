@@ -4,7 +4,8 @@ require([
     'backbone',
     'handlebars',
     'app.router',
-    'bootstrap'
+    'bootstrap',
+    'backbone.babysitter'
 ], function ($, _, Backbone, Handlebars, AppRouter) {
 
     /** Backbone Models/Collections **/
