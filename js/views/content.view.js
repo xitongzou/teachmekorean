@@ -23,6 +23,7 @@ define([
             this.$el.html(template({
                 title: self.title,
                 entries: collection.toJSON()}));
+            $('#content-holder').html(this.$el);
         }
 
     });

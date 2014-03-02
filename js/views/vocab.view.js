@@ -2,23 +2,39 @@ define([
     'jquery',
     'underscore',
     'backbone',
-    'handlebars'
-], function ($, _, Backbone, Handlebars) {
+    'handlebars',
+    'word.model',
+    'word.collection'
+], function ($, _, Backbone, Handlebars, WordModel, WordCollection) {
 
     var VocabView = Backbone.View.extend({
 
         tagName: 'div',
         className: 'vocab-content col-sm-3 well well-small',
-        template: '#vocab-template',
+        template: '#vocab-list-template',
+        words: null,
 
         initialize: function () {
-            this.render();
+            this.words = new WordCollection();
+            this.render(this.words);
         },
 
-        render: function () {
+        render: function (collection) {
             var source = $(this.template).html();
             var template = Handlebars.compile(source);
-            this.$el.html(template());
+            this.$el.html(template({
+                words: collection.toJSON()
+            }));
+            $('#vocab').html(this.$el);
+        },
+
+        addToVocabList: function (wordId) {
+            var wordModel = new WordModel({
+                word: wordId.split("-")[0],
+                translation: wordId.split("-")[1]
+            });
+            this.words.add(wordModel);
+            this.render(this.words);
         }
 
     });

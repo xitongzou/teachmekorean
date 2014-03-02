@@ -12,7 +12,8 @@ define([
         template: '#word-template',
 
         events: {
-            "click button": "closePopover"
+            "click button": "closePopover",
+            "click a": "addToVocabList"
         },
 
         initialize: function (opts) {
@@ -24,14 +25,29 @@ define([
             $(evt.target).parents('.popover').prev('.popover-link').popover('hide')
         },
 
+        escape: function (string) {
+            return String(string).replace(/[&<>",;'\s\/]/g, "");
+        },
+
+        addToVocabList: function (evt) {
+            var target = $(evt.target);
+            if (target.parents('.popover').length > 0) {
+                var wordId = target.parents('.popover').prev('.popover-link').attr('data-id');
+                //wordId = this.escape(wordId);
+                App.VocabView.addToVocabList(wordId);
+                console.log(wordId);
+            }
+        },
+
         render: function (collection) {
-            var title = this.title;
+            var self = this;
             var source = $(this.template).html();
             var template = Handlebars.compile(source);
             this.$el.html(template({
-                title: title,
+                title: self.title,
                 entries: collection.toJSON()
             }));
+            $('#word-holder').html(this.$el);
         }
 
     });

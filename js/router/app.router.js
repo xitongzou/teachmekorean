@@ -11,8 +11,10 @@ define([
     'content.view',
     'word.model',
     'word.collection',
-    'word.view'
-], function ($, _, Backbone, HeaderView, FooterView, SidebarView, VocabView, ContentModel, ContentCollection, ContentView, WordModel, WordCollection, WordView) {
+    'word.view',
+    'sentence.model',
+    'sentence.collection'
+], function ($, _, Backbone, HeaderView, FooterView, SidebarView, VocabView, ContentModel, ContentCollection, ContentView, WordModel, WordCollection, WordView, SentenceModel, SentenceCollection) {
 
     var AppRouter = Backbone.Router.extend({
 
@@ -99,27 +101,19 @@ define([
         },
 
         renderHeader: function () {
-            var header = new HeaderView();
-            $('#header').html(header.$el);
-            return header;
+            return new HeaderView();
         },
 
         renderFooter: function () {
-            var footer = new FooterView();
-            $('#footer').html(footer.$el);
-            return footer;
+            return new FooterView();
         },
 
         renderSidebar: function () {
-            var sidebar = new SidebarView();
-            $('#sidebar').html(sidebar.$el);
-            return sidebar;
+            return new SidebarView();
         },
 
         renderVocab: function () {
-            var vocab = new VocabView();
-            $('#vocab').html(vocab.$el);
-            return vocab;
+            return new VocabView();
         },
 
         renderContentView: function (contentArray) {
@@ -128,39 +122,42 @@ define([
             _.each(contentArray.content, function (content) {
                 contentCollection.add(new ContentModel(content));
             });
-            var contentView = new ContentView({
+            return new ContentView({
                 title: title,
                 collection: contentCollection
             });
-            $('#content-holder').html(contentView.$el);
-            return contentView;
         },
 
         renderWordView: function (wordArray) {
-            var self = this;
             var title = wordArray.title;
-            var wordCollection = new WordCollection();
-            _.each(wordArray.words, function (word) {
-                var wordModel = new WordModel(word);
-                var dataid = self.escape(word.word+word.translation);
-                var content =
-                    "<h4>" + word.translation + "</h4>" +
-                    "<h4><a>Add to vocab list</a></h4>";
-                var title =
-                    "<button>&times;</button>";
-                wordModel.set({
-                    "dataid":dataid,
-                    "title": title,
-                    "content":content
+            var sentenceCollection = new SentenceCollection();
+            _.each(wordArray.sentences, function (sentence) {
+                var wordCollection = new WordCollection();
+                _.each(sentence.words, function (word) {
+                    var wordModel = new WordModel(word);
+                    var dataid = word.word + "-" + word.translation;
+                    var content =
+                        "<h4>" + word.translation + "</h4>" +
+                            "<h4><a>Add to vocab list</a></h4>";
+                    var title =
+                        "<button>&times;</button>";
+                    wordModel.set({
+                        "dataid":dataid,
+                        "title": title,
+                        "content":content
+                    });
+                    wordCollection.add(wordModel);
                 });
-                wordCollection.add(wordModel);
+
+                sentenceCollection.add(new SentenceModel({
+                    translation: sentence.translation,
+                    words: wordCollection.toJSON()
+                }));
             });
-            var wordView = new WordView({
+            return new WordView({
                 title: title,
-                collection: wordCollection
+                collection: sentenceCollection
             });
-            $('#word-holder').html(wordView.$el);
-            return wordView;
         },
 
         applyPopups: function () {
@@ -170,10 +167,6 @@ define([
                 });
                 $(word).popover({html: true, placement: 'top'});
             });
-        },
-
-        escape: function (string) {
-            return String(string).replace(/[&<>",;'\s\/]/g, "");
         }
 
     });

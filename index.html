@@ -457,13 +457,17 @@
     {{/if}}
     {{#each entries}}
         <div class="entries row">
-            <span class="word">
-                <a href="#" class="popover-link" data-id="{{this.dataid}}" data-toggle="popover"
-                   data-title="{{{this.title}}}" data-content="{{{this.content}}}">
-                    {{this.word}}
-                </a>
-                = {{this.translation}}
-            </span>
+            {{#each words}}
+                <span class="word">
+                    <a href="#" class="popover-link" data-id="{{this.dataid}}" data-toggle="popover"
+                       {{#if this.translation}}
+                           data-title="{{{this.title}}}" data-content="{{{this.content}}}"
+                        {{/if}}>
+                        {{this.word}}
+                    </a>
+                </span>
+            {{/each}}
+            <span class="translation"> = {{this.translation}}</span>
         </div>
     {{/each}}
 </script>

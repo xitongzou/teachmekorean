@@ -19,6 +19,7 @@ define([
             var source = $(this.template).html();
             var template = Handlebars.compile(source);
             this.$el.html(template());
+            $('#footer').html(this.$el);
         }
 
     });

@@ -15,6 +15,8 @@ require.config({
         "content.view": "views/content.view",
         "word.view": "views/word.view",
         "content.model": "models/content.model",
+        "sentence.model": "models/sentence.model",
+        "sentence.collection": "collections/sentence.collection",
         "content.collection": "collections/content.collection",
         "word.model": "models/word.model",
         "word.collection": "collections/word.collection"

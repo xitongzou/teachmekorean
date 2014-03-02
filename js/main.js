@@ -4,9 +4,10 @@ require([
     'backbone',
     'handlebars',
     'app.router',
+    'vocab.view',
     'bootstrap',
     'backbone.babysitter'
-], function ($, _, Backbone, Handlebars, AppRouter) {
+], function ($, _, Backbone, Handlebars, AppRouter, VocabView) {
 
     /** Backbone Models/Collections **/
     var ContentModel = Backbone.Model.extend({ title: "", content: ""});
@@ -185,36 +186,6 @@ require([
         }
     });
 
-    var VocabView = Backbone.View.extend({
-        model: null,
-        el: $("#vocab-holder"),
-        initialize: function () {
-            this.model.on('change', this.render, this);
-        },
-        events: {
-            "click a": "addToVocabList",
-            "click button": "closePopover"
-        },
-        render: function () {
-            var source = $("#vocab-template").html();
-            var template = Handlebars.compile(source);
-            this.$el.html(template(this.model.toJSON()));
-            console.log(this.model.toJSON());
-        },
-        addToVocabList: function (evt) {
-            var target = $(evt.target);
-            if (target.parents('.popover').length > 0) {
-                var wordId = target.parents('.popover').prev('.popover-link').attr('data-id');
-                wordId = escape(wordId);
-                App.VocabList.add(App.VocabListMap[wordId]);
-                console.log(wordId);
-            }
-        },
-        closePopover: function (evt) {
-            $(evt.target).parents('.popover').prev('.popover-link').popover('hide')
-        }
-    });
-
     var VocabListView = Backbone.View.extend({
         model: null,
         el: $('#vocab-list-holder'),
@@ -232,6 +203,7 @@ require([
     /** init **/
     $(function () {
         App = {};
+        App.VocabView = new VocabView();
         App.AppRouter = new AppRouter();
         /*         App.ContentContainer = new ContentContainer();
          App.VocabContainer = new VocabContainer();
