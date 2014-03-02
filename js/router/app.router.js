@@ -35,7 +35,6 @@ define([
             this.renderHeader();
             this.renderFooter();
             this.renderSidebar();
-            this.renderVocab();
 
             // Matches #lesson/10, passing "10"
             this.route("lesson/:number", "page", function (number) {
@@ -110,10 +109,6 @@ define([
 
         renderSidebar: function () {
             return new SidebarView();
-        },
-
-        renderVocab: function () {
-            return new VocabView();
         },
 
         renderContentView: function (contentArray) {
