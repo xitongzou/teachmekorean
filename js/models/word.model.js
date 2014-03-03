@@ -11,7 +11,8 @@ define([
             "expanded": "",
             "dataid":"",
             "title": "",
-            "content": ""
+            "content": "",
+            "forms": ""
         }
     });
 

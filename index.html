@@ -86,6 +86,81 @@
 <script id="sidebar-template" type="text/x-handlebars-template">
 <div class="panel-group" id="accordian">
 <div class="panel panel-default">
+    <div class="panel-heading">
+        <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#vocabulary">
+                Vocabulary
+            </a>
+        </h4>
+    </div>
+    <div id="vocabulary" class="panel-collapse collapse">
+        <div class="panel-body">
+            <div class="panel-group" id="vocab-accordian">
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#vocab-accordian" href="#expressions">
+                                Expressions
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="expressions" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <ul class="nav">
+                                <li><a href="#vocab/expressions-basic">Basic</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#vocab-accordian" href="#words">
+                                Words
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="words" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <ul class="nav">
+                                <li><a href="#vocab/basics">Basic</a></li>
+                                <li><a href="#vocab/numbers">Numbers</a></li>
+                                <li><a href="#vocab/time">Time,Days,Month,Year</a></li>
+                                <li><a href="#vocab/counting">Counting</a></li>
+                                <li><a href="#vocab/emphasis">Emphasis</a></li>
+                                <li><a href="#vocab/frequency">Frequency</a></li>
+                                <li><a href="#vocab/food">Food</a></li>
+                                <li><a href="#vocab/travel">Travel</a></li>
+                                <li><a href="#vocab/furniture">Furniture</a></li>
+                                <li><a href="#vocab/animals">Animals</a></li>
+                                <li><a href="#vocab/hobbies">Hobbies</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#vocab-accordian" href="#idioms">
+                                Idioms
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="idioms" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <ul class="nav">
+                                <li><a href="#">Greeting</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="panel panel-default">
 <div class="panel-heading">
     <h4 class="panel-title">
         <a data-toggle="collapse" data-parent="#accordian" href="#grammar">
@@ -334,82 +409,6 @@
 </div>
 </div>
 </div>
-<div class="panel panel-default">
-    <div class="panel-heading">
-        <h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#vocabulary">
-                Vocabulary
-            </a>
-        </h4>
-    </div>
-    <div id="vocabulary" class="panel-collapse collapse">
-        <div class="panel-body">
-            <div class="panel-group" id="vocab-accordian">
-
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#vocab-accordian" href="#words">
-                                Words
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="words" class="panel-collapse collapse">
-                        <div class="panel-body">
-                            <ul class="nav">
-                                <li><a href="#vocab/basics">Basic</a></li>
-                                <li><a href="#vocab/numbers">Numbers</a></li>
-                                <li><a href="#vocab/time">Time,Days,Month,Year</a></li>
-                                <li><a href="#vocab/counting">Counting</a></li>
-                                <li><a href="#vocab/emphasis">Emphasis</a></li>
-                                <li><a href="#vocab/frequency">Frequency</a></li>
-                                <li><a href="#vocab/food">Food</a></li>
-                                <li><a href="#vocab/travel">Travel</a></li>
-                                <li><a href="#vocab/furniture">Furniture</a></li>
-                                <li><a href="#vocab/animals">Animals</a></li>
-                                <li><a href="#vocab/hobbies">Hobbies</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#vocab-accordian" href="#idioms">
-                                Idioms
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="idioms" class="panel-collapse collapse">
-                        <div class="panel-body">
-                            <ul class="nav">
-                                <li><a href="#">Greeting</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#vocab-accordian" href="#expressions">
-                                Situational Expressions
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="expressions" class="panel-collapse collapse">
-                        <div class="panel-body">
-                            <ul class="nav">
-                                <li><a href="#">Greeting</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 </div>
 </script>
 
@@ -485,6 +484,7 @@
         <tr>
             <td>{{this.word}}</td>
             <td>{{{this.translation}}}</td>
+            <td><a href="#remove/{{this.dataid}}"><span class="glyphicon glyphicon-remove"></span></a></td>
         </tr>
         {{/each}}
         </tbody>

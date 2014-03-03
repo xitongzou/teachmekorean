@@ -29,11 +29,20 @@ define([
         },
 
         addToVocabList: function (wordId) {
+            var word = wordId.split("-")[0];
+            var translation = wordId.split("-")[1];
             var wordModel = new WordModel({
-                word: wordId.split("-")[0],
-                translation: wordId.split("-")[1]
+                dataid: word+translation,
+                word: word,
+                translation: translation
             });
             this.words.add(wordModel);
+            this.render(this.words);
+        },
+
+        removeFromVocabList: function (id) {
+            var model = this.words.find(function(model) { return model.get('dataid') === id });
+            this.words.remove(model);
             this.render(this.words);
         }
 

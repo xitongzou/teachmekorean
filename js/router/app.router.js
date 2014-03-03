@@ -45,6 +45,11 @@ define([
             this.route("vocab/:id", "page", function (id) {
                 this.loadView("vocab-" + id);
             });
+
+            // Matches remove routes
+            this.route("remove/:id", function (id) {
+                App.VocabView.removeFromVocabList(id);
+            });
         },
 
         loadView: function (lessonName) {
@@ -134,7 +139,7 @@ define([
                     var content =
                         "<h4>" + word.translation + "</h4>" +
                             "<h4><a>Add to vocab list</a></h4>";
-                    var title =
+                    var title = word.word +
                         "<button>&times;</button>";
                     wordModel.set({
                         "dataid":dataid,
