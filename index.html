@@ -250,7 +250,7 @@
                 <li><a href="#">거나 (or)</a></li>
                 <li><a href="#">지만 (but)</a></li>
                 <li><a href="#">(으)면 (if)</a></li>
-                <li><a href="#">아/어/여서,(으)니까 (because,so)</a></li>
+                <li><a href="#">아/어/여서,(으)니까,더니 (because,so,therefore)</a></li>
                 <li><a href="#">(으)며,(으)면서 (while, at the same time)</a></li>
                 <li><a href="#">밖에 (except for)</a></li>
                 <li><a href="#">(ㄴ/은) 후에/뒤에/다음에 (after doing)</a></li>
@@ -290,6 +290,8 @@
     <div id="copula" class="panel-collapse collapse">
         <div class="panel-body">
             <ul class="nav">
+                <li><a href="#">이에요 (to be)</a></li>
+                <li><a href="#">있어요 (to have,to exist)</a></li>
                 <li><a href="#">주세요/줘 (request)</a></li>
                 <li><a href="#">고 싶다 (to want)</a></li>
                 <li><a href="#">ㄹ 수 있다 (can do)</a></li>
@@ -301,7 +303,7 @@
                 <li><a href="#">마세요,말고 (stop doing)</a></li>
                 <li><a href="#">ㄹ게요 (promise to do)</a></li>
                 <li><a href="#">ㄹ래요?,자 (let's do)</a></li>
-                <li><a href="#">ㄹ래요,러/려고 하다 (intention to do)</a></li>
+                <li><a href="#">ㄹ래요,러/려고 하다 (going to do)</a></li>
                 <li><a href="#">(으)ㄹ까요? (wonder,suggestion)</a></li>
                 <li><a href="#">잖아요 (c'mon, you know)</a></li>
                 <li><a href="#">네요 (emotion,surprise)</a></li>
@@ -311,6 +313,7 @@
                 <li><a href="#">거든요 (explanation,since)</a></li>
                 <li><a href="#">는 구나/군요 (realization)</a></li>
                 <li><a href="#">더라,던데요 (experienced)</a></li>
+                <li><a href="#">ㄹ/을 텐데요 (suppose,assume,would)</a></li>
             </ul>
         </div>
     </div>
@@ -333,6 +336,7 @@
                 <li><a href="#">아/어/여 지다 (to become,to improve)</a></li>
                 <li><a href="#">게 되다 (end up doing)</a></li>
                 <li><a href="#">(ㄹ/을) 뻔 했다 (almost did)</a></li>
+                <li><a href="#">기로 하다 (to decide to)</a></li>
                 <li><a href="#">나 보다 (guess,suppose,assume)</a></li>
                 <li><a href="#">(으)려나 보다 (assumption about future)</a></li>
                 <li><a href="#">ㄴ/은/는 편이다 (rather,quite)</a></li>
@@ -348,7 +352,6 @@
                 <li><a href="#">아/어/여 버리다,고 말다 (feelings about completed action)</a></li>
                 <li><a href="#">아/어/여 보이다 (looks like,seems like)</a></li>
                 <li><a href="#">(으)ㄹ까 보다 (concern,reason,inclination)</a></li>
-                <li><a href="#">기로 하다 (to decide to)</a></li>
             </ul>
         </div>
     </div>
@@ -455,8 +458,8 @@
     </div>
     {{/if}}
     {{#each entries}}
-        <div class="entries row">
-            {{#each words}}
+    <div class="entries row">
+        {{#each words}}
                 <span class="word">
                     <a href="#" class="popover-link" data-id="{{this.dataid}}" data-toggle="popover"
                        {{#if this.translation}}
@@ -465,9 +468,9 @@
                         {{this.word}}
                     </a>
                 </span>
-            {{/each}}
-            <span class="translation"> = {{this.translation}}</span>
-        </div>
+        {{/each}}
+        <span class="translation"> = {{this.translation}}</span>
+    </div>
     {{/each}}
 </script>
 <script id="vocab-list-template" type="text/x-handlebars-template">
