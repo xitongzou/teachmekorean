@@ -9,7 +9,7 @@ define([
             "word": "",
             "translation": "",
             "expanded": "",
-            "dataid":"",
+            "dataid": "",
             "title": "",
             "content": "",
             "forms": ""

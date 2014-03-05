@@ -91,17 +91,17 @@ define([
                 var lessonWords = data[wordid];
 
                 if (lessonContent) {
-                    self.container.add(self.renderContentView(lessonContent),contentid);
+                    self.container.add(self.renderContentView(lessonContent), contentid);
                 }
 
                 if (lessonWords) {
-                    self.container.add(self.renderWordView(lessonWords),wordid);
+                    self.container.add(self.renderWordView(lessonWords), wordid);
                 }
 
             }).done(function () {
-                self.applyPopups();
-                console.log('done');
-            });
+                    self.applyPopups();
+                    console.log('done');
+                });
         },
 
         renderHeader: function () {
@@ -142,9 +142,9 @@ define([
                     var title = word.word +
                         "<button>&times;</button>";
                     wordModel.set({
-                        "dataid":dataid,
+                        "dataid": dataid,
                         "title": title,
-                        "content":content
+                        "content": content
                     });
                     wordCollection.add(wordModel);
                 });

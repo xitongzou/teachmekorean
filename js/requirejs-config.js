@@ -33,7 +33,7 @@ require.config({
             exports: 'Backbone'
         },
         'backbone.babysitter': {
-            deps: ['jquery','underscore', 'backbone'],
+            deps: ['jquery', 'underscore', 'backbone'],
             exports: 'Backbone.ChildViewContainer'
         },
         'bootstrap': {

@@ -32,7 +32,7 @@ define([
             var word = wordId.split("-")[0];
             var translation = wordId.split("-")[1];
             var wordModel = new WordModel({
-                dataid: word+translation,
+                dataid: word + translation,
                 word: word,
                 translation: translation
             });
@@ -41,7 +41,9 @@ define([
         },
 
         removeFromVocabList: function (id) {
-            var model = this.words.find(function(model) { return model.get('dataid') === id });
+            var model = this.words.find(function (model) {
+                return model.get('dataid') === id
+            });
             this.words.remove(model);
             this.render(this.words);
         }
