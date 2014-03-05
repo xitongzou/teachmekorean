@@ -2,12 +2,11 @@ require([
     'jquery',
     'underscore',
     'backbone',
-    'handlebars',
     'app.router',
     'vocab.view',
     'bootstrap',
     'backbone.babysitter'
-], function ($, _, Backbone, Handlebars, AppRouter, VocabView) {
+], function ($, _, Backbone, AppRouter, VocabView) {
     /** init **/
     $(function () {
         App = {};
