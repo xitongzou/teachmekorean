@@ -1,0 +1,78 @@
+{
+    "subject-content": {
+        "title": "이/가 (subject particle)",
+        "content": [
+            {
+                "title": "Appending 이/가 to a noun denotes the subject of the sentence.",
+                "details": "When the noun ends in a consonant, the ending 이 is used. When the noun ends in a vowel, 가 is used. The subject particle is used to indicate the subject of the sentence. This is a more general usage than the topic particle (which is used more specifically)."
+            }
+        ]},
+    "subject-words": {
+        "sentences": [
+            {
+                "translation": "What is good?",
+                "words": [
+                    {
+                        "word": "뭐",
+                        "translation": "What"
+                    },
+                    {
+                        "word": "가",
+                        "translation": "Subject particle",
+                        "particle": true
+                    },
+                    {
+                        "word": "좋아",
+                        "translation": "To be good"
+                    },
+                    {
+                        "word": "요",
+                        "translation": "Polite marker",
+                        "particle": true
+                    },
+                    {
+                        "word": "?",
+                        "particle": true
+                    }
+                ]
+            },
+            {
+                "translation": "I'm working tomorrow",
+                "words": [
+                    {
+                        "word": "오늘",
+                        "translation": "Today"
+                    },
+                    {
+                        "word": "은",
+                        "translation": "Topic particle",
+                        "particle": true
+                    },
+                    {
+                        "word": "날씨",
+                        "translation": "Weather"
+                    },
+                    {
+                        "word": "가",
+                        "translation": "Subject particle",
+                        "particle": true
+                    },
+                    {
+                        "word": "좋",
+                        "translation": "To be good"
+                    },
+                    {
+                        "word": "네",
+                        "translation": "Particle expressing emotion or surprise",
+                        "particle": true
+                    },
+                    {
+                        "word": "요",
+                        "translation": "Polite marker",
+                        "particle": true
+                    }
+                ]
+            }
+        ]
+    }
+}

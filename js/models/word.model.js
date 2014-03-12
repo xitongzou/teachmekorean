@@ -9,6 +9,7 @@ define([
             "word": "",
             "translation": "",
             "expanded": "",
+            "particle": false,
             "dataid": "",
             "title": "",
             "content": "",

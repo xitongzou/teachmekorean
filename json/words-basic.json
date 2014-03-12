@@ -1,0 +1,54 @@
+{
+    "words-basic-words": {
+        "title": "Basic Words",
+        "sentences": [
+            {
+                "translation": "This thing",
+                "words": [
+                    {
+                        "word": "이",
+                        "translation": "This"
+                    },
+                    {
+                        "word": "것",
+                        "translation": "Thing"
+                    }
+                ]
+            },
+            {
+                "translation": "That person over there",
+                "words": [
+                    {
+                        "word": "그",
+                        "translation": "That (close)"
+                    },
+                    {
+                        "word": "사람",
+                        "translation": "Person"
+                    }
+                ]
+            },
+            {
+                "translation": "That is not alcohol over there",
+                "words": [
+                    {
+                        "word": "저",
+                        "translation": "That (far)"
+                    },
+                    {
+                        "word": "거",
+                        "translation": "Thing"
+                    },
+                    {
+                        "word": "술",
+                        "translation": "Alcohol"
+                    },
+                    {
+                        "word": "아니에요",
+                        "translation": "Is not"
+                    }
+                ]
+            }
+        ]
+    }
+}

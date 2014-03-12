@@ -37,13 +37,13 @@ define([
             this.renderSidebar();
 
             // Matches #lesson/10, passing "10"
-            this.route("lesson/:number", "page", function (number) {
-                this.loadView("grammar" + number);
+            this.route("grammar/:id", "page", function (id) {
+                this.loadView(id);
             });
 
             // Matches #vocab/10, passing "10"
             this.route("vocab/:id", "page", function (id) {
-                this.loadView("vocab-" + id);
+                this.loadView(id);
             });
 
             // Matches remove routes
@@ -144,7 +144,8 @@ define([
                     wordModel.set({
                         "dataid": dataid,
                         "title": title,
-                        "content": content
+                        "content": content,
+                        "particle": word.particle
                     });
                     wordCollection.add(wordModel);
                 });

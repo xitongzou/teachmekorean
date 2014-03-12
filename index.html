@@ -124,7 +124,7 @@
                     <div id="words" class="panel-collapse collapse">
                         <div class="panel-body">
                             <ul class="nav">
-                                <li><a href="#vocab/basics">Basic</a></li>
+                                <li><a href="#vocab/words-basic">Basic</a></li>
                                 <li><a href="#vocab/numbers">Numbers</a></li>
                                 <li><a href="#vocab/time">Time,Days,Month,Year</a></li>
                                 <li><a href="#vocab/counting">Counting</a></li>
@@ -182,8 +182,8 @@
     <div id="basics" class="panel-collapse collapse">
         <div class="panel-body">
             <ul class="nav">
-                <li><a href="#">은/는 (topic)</a></li>
-                <li><a href="#">이/가 (subject)</a></li>
+                <li><a href="#grammar/topic">은/는 (topic)</a></li>
+                <li><a href="#grammar/subject">이/가 (subject)</a></li>
                 <li><a href="#">을/를 (object)</a></li>
                 <li><a href="#">아/어/여 (present tense)</a></li>
                 <li><a href="#">았/었/였 (past tense)</a></li>
@@ -290,7 +290,7 @@
     <div id="copula" class="panel-collapse collapse">
         <div class="panel-body">
             <ul class="nav">
-                <li><a href="#">이에요 (to be)</a></li>
+                <li><a href="#grammar/tobe">이다 (to be)</a></li>
                 <li><a href="#">있어요 (to have,to exist)</a></li>
                 <li><a href="#">주세요/줘 (request)</a></li>
                 <li><a href="#">고 싶다 (to want)</a></li>
@@ -460,7 +460,7 @@
     {{#each entries}}
     <div class="entries row">
         {{#each words}}
-                <span class="word">
+                <span class="word {{#if this.particle}}particle{{/if}}">
                     <a href="#" class="popover-link" data-id="{{this.dataid}}" data-toggle="popover"
                        {{#if this.translation}}
                            data-title="{{{this.title}}}" data-content="{{{this.content}}}"

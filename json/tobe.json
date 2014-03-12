@@ -1,0 +1,71 @@
+{
+    "tobe-content": {
+        "title": "이다 (to be)",
+        "content": [
+            {
+                "title": "The verb 이다 means to be.",
+                "details": "When the verb ends in a consonant, the ending 이에요 is used. When the verb ends in a noun, 예요 is used. The casual ending form is 이야."
+            }
+        ]},
+    "tobe-words": {
+        "sentences": [
+            {
+                "translation": "It's a bag",
+                "words": [
+                    {
+                    "word": "가방",
+                    "translation": "Bag"
+                    },
+                    {
+                        "word": "이에",
+                        "translation": "To be, is, are",
+                        "particle": true
+                    },
+                    {
+                        "word": "요",
+                        "translation": "Polite marker",
+                        "particle": true
+                    }
+                ]
+            },
+            {
+                "translation": "It's me",
+                "words": [
+                    {
+                        "word": "저",
+                        "translation": "I, Me"
+                    },
+                    {
+                        "word": "예",
+                        "translation": "To be, is, are",
+                        "particle": true
+                    },
+                    {
+                        "word": "요",
+                        "translation": "Polite marker",
+                        "particle": true
+                    }
+                ]
+            },
+            {
+                "translation": "It's a school",
+                "words": [
+                    {
+                        "word": "학교",
+                        "translation": "school"
+                    },
+                    {
+                        "word": "예",
+                        "translation": "To be, is, are",
+                        "particle": true
+                    },
+                    {
+                        "word": "요",
+                        "translation": "Polite marker",
+                        "particle": true
+                    }
+                ]
+            }
+        ]
+    }
+}

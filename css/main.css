@@ -37,6 +37,10 @@
     padding-left: 15px;
 }
 
+#korean-app .particle {
+    margin-left: -5px;
+}
+
 #korean-app .entries {
   margin-bottom: 30px;
   font-size: 18px;

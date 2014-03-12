@@ -1,0 +1,74 @@
+{
+    "topic-content": {
+        "title": "은/는 (topic particle)",
+        "content": [
+            {
+                "title": "Appending 은/는 to a noun denotes the topic of the sentence.",
+                "details": "When the noun ends in a consonant, the ending 은 is used. When the noun ends in a vowel, 는 is used. The topic particle is used to specify which thing you are talking about, in contrast to other things. The English equivalent might be the use of The [noun] to indicate a specific noun."
+            }
+        ]},
+    "topic-words": {
+        "sentences": [
+            {
+                "translation": "I'm a student",
+                "words": [
+                    {
+                        "word": "저",
+                        "translation": "I, Me"
+                    },
+                    {
+                        "word": "는",
+                        "translation": "Topic particle",
+                        "particle": true
+                    },
+                    {
+                        "word": "학생",
+                        "translation": "Student"
+                    },
+                    {
+                        "word": "이에",
+                        "translation": "To be",
+                        "particle": true
+                    },
+                    {
+                        "word": "요",
+                        "translation": "Polite marker",
+                        "particle": true
+                    }
+                ]
+            },
+            {
+                "translation": "I'm working tomorrow",
+                "words": [
+                    {
+                        "word": "내일",
+                        "translation": "Tomorrow"
+                    },
+                    {
+                        "word": "은",
+                        "translation": "Topic particle",
+                        "particle": true
+                    },
+                    {
+                        "word": "저",
+                        "translation": "I, Me"
+                    },
+                    {
+                        "word": "는",
+                        "translation": "Topic particle",
+                        "particle": true
+                    },
+                    {
+                        "word": "일해",
+                        "translation": "To work"
+                    },
+                    {
+                        "word": "요",
+                        "translation": "Polite marker",
+                        "particle": true
+                    }
+                ]
+            }
+        ]
+    }
+}
