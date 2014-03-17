@@ -1,0 +1,64 @@
+{
+    "towant-content": {
+        "title": "고 싶다 (to want)",
+        "content": [
+            {
+                "title": "Appending -고 싶다 to a verb means to want to do [verb].",
+                "details": "The usual polite form of this is V+ 고 싶어요."
+            }
+        ]},
+    "towant-words": {
+        "sentences": [
+            {
+                "translation": "What do you want to eat?",
+                "words": [
+                    {
+                        "word": "뭐",
+                        "expanded": "무엇 (contraction)",
+                        "translation": "What"
+                    },
+                    {
+                        "word": "먹",
+                        "expanded": "먹다",
+                        "translation": "to eat"
+                    },
+                    {
+                        "word": "고싶어요",
+                        "expanded": "고 싶다 + 요",
+                        "translation": "to want",
+                        "particle": true
+                    },
+                    {
+                        "word": "?",
+                        "particle": true
+                    }
+                ]
+            },
+            {
+                "translation": "I want to go back to Korea.",
+                "words": [
+                    {
+                        "word": "한국",
+                        "translation": "Korea"
+                    },
+                    {
+                        "word": "에",
+                        "translation": "location particle",
+                        "particle": true
+                    },
+                    {
+                        "word": "가",
+                        "expanded": "가다",
+                        "translation": "to eat"
+                    },
+                    {
+                        "word": "고싶어요",
+                        "expanded": "고 싶다 + 요",
+                        "translation": "to want",
+                        "particle": true
+                    }
+                ]
+            }
+        ]
+    }
+}

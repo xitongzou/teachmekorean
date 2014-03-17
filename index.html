@@ -250,7 +250,8 @@
                 <li><a href="#">거나 (or)</a></li>
                 <li><a href="#">지만 (but)</a></li>
                 <li><a href="#">(으)면 (if)</a></li>
-                <li><a href="#">아/어/여서,(으)니까,더니 (because,so,therefore)</a></li>
+                <li><a href="#">아/어/여서,(으)니까 (because,so,therefore)</a></li>
+                <li><a href="#">느라,길래,더니 (showing result with nuances)</a></li>
                 <li><a href="#">(으)며,(으)면서 (while, at the same time)</a></li>
                 <li><a href="#">밖에 (except for)</a></li>
                 <li><a href="#">(ㄴ/은) 후에/뒤에/다음에 (after doing)</a></li>
@@ -264,7 +265,6 @@
                 <li><a href="#">(ㄹ/을) 겸 (slash,and)</a></li>
                 <li><a href="#">(ㄹ/을) 때 (at the time)</a></li>
                 <li><a href="#">아/어/여 봤자,(으)나마나 (even if)</a></li>
-                <li><a href="#">느라고 (showing negative result)</a></li>
                 <li><a href="#">(ㄹ/을) 테니까 (assumption)</a></li>
                 <li><a href="#">고 나서 (after doing)</a></li>
                 <li><a href="#">(은/는) 이상 (since)</a></li>
@@ -291,9 +291,9 @@
         <div class="panel-body">
             <ul class="nav">
                 <li><a href="#grammar/tobe">이다 (to be)</a></li>
-                <li><a href="#">있어요 (to have,to exist)</a></li>
-                <li><a href="#">주세요/줘 (request)</a></li>
-                <li><a href="#">고 싶다 (to want)</a></li>
+                <li><a href="#grammar/tohave">있다,없다 (to have,to exist)</a></li>
+                <li><a href="#grammar/request">주다 (request)</a></li>
+                <li><a href="#grammar/towant">고 싶다 (to want)</a></li>
                 <li><a href="#">ㄹ 수 있다 (can do)</a></li>
                 <li><a href="#">ㄹ 수도 있다 (might do)</a></li>
                 <li><a href="#">(아/어/여 야)되다/하다 (must,should)</a></li>
@@ -415,26 +415,6 @@
 </div>
 </script>
 
-<script id="vocab-template" type="text/x-handlebars-template">
-    <div id="vocab-list-holder">
-        <table class="table table-condensed table-hover">
-            <caption>Vocabulary List</caption>
-            <thead>
-            <tr>
-                <td>Word</td>
-                <td>Translation</td>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td></td>
-                <td></td>
-            </tr>
-            </tbody>
-        </table>
-    </div>
-</script>
-
 <script id="content-template" type="text/x-handlebars-template">
     {{#if title}}
     <div class="page-header">
@@ -472,6 +452,25 @@
         <span class="translation"> = {{this.translation}}</span>
     </div>
     {{/each}}
+</script>
+<script id="vocab-template" type="text/x-handlebars-template">
+    <table class="table table-condensed table-hover">
+        <caption>Vocabulary List</caption>
+        <thead>
+        <tr>
+            <td>Word</td>
+            <td>Translation</td>
+        </tr>
+        </thead>
+        <tbody>
+        {{#each words}}
+        <tr>
+            <td>{{this.word}}</td>
+            <td>{{{this.translation}}}</td>
+        </tr>
+        {{/each}}
+        </tbody>
+    </table>
 </script>
 <script id="vocab-list-template" type="text/x-handlebars-template">
     <table class="table table-condensed table-hover">

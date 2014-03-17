@@ -34,7 +34,7 @@ define([
             if (target.parents('.popover').length > 0) {
                 var wordId = target.parents('.popover').prev('.popover-link').attr('data-id');
                 //wordId = this.escape(wordId);
-                App.VocabView.addToVocabList(wordId);
+                App.VocabListView.addToVocabList(wordId);
                 console.log(wordId);
             }
         },

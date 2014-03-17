@@ -3,14 +3,14 @@ require([
     'underscore',
     'backbone',
     'app.router',
-    'vocab.view',
+    'vocab.list.view',
     'bootstrap',
     'backbone.babysitter'
-], function ($, _, Backbone, AppRouter, VocabView) {
+], function ($, _, Backbone, AppRouter, VocabListView) {
     /** init **/
     $(function () {
         App = {};
-        App.VocabView = new VocabView();
+        App.VocabListView = new VocabListView();
         App.AppRouter = new AppRouter();
         Backbone.history.start();
     });

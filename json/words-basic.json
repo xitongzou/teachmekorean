@@ -11,7 +11,8 @@
                     },
                     {
                         "word": "것",
-                        "translation": "Thing"
+                        "translation": "Thing",
+                        "particle": true
                     }
                 ]
             },
@@ -37,15 +38,21 @@
                     },
                     {
                         "word": "거",
-                        "translation": "Thing"
+                        "translation": "Thing",
+                        "particle": true
                     },
                     {
                         "word": "술",
                         "translation": "Alcohol"
                     },
                     {
-                        "word": "아니에요",
-                        "translation": "Is not"
+                        "word": "아니에",
+                        "translation": "To not be"
+                    },
+                    {
+                        "word": "요",
+                        "translation": "Polite marker",
+                        "particle": true
                     }
                 ]
             }

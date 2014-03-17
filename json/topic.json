@@ -26,13 +26,9 @@
                         "translation": "Student"
                     },
                     {
-                        "word": "이에",
+                        "word": "이에요",
+                        "expanded": "이다 + 요)",
                         "translation": "To be",
-                        "particle": true
-                    },
-                    {
-                        "word": "요",
-                        "translation": "Polite marker",
                         "particle": true
                     }
                 ]
@@ -59,13 +55,9 @@
                         "particle": true
                     },
                     {
-                        "word": "일해",
+                        "word": "일해요",
+                        "expanded": "일하다 + 요",
                         "translation": "To work"
-                    },
-                    {
-                        "word": "요",
-                        "translation": "Polite marker",
-                        "particle": true
                     }
                 ]
             }

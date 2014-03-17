@@ -1,6 +1,6 @@
 {
     "tobe-content": {
-        "title": "이다 (to be)",
+        "title": "이다",
         "content": [
             {
                 "title": "The verb 이다 means to be.",
@@ -17,13 +17,9 @@
                     "translation": "Bag"
                     },
                     {
-                        "word": "이에",
+                        "word": "이에요",
+                        "expanded": "이다 (polite form)",
                         "translation": "To be, is, are",
-                        "particle": true
-                    },
-                    {
-                        "word": "요",
-                        "translation": "Polite marker",
                         "particle": true
                     }
                 ]
@@ -36,13 +32,8 @@
                         "translation": "I, Me"
                     },
                     {
-                        "word": "예",
-                        "translation": "To be, is, are",
-                        "particle": true
-                    },
-                    {
-                        "word": "요",
-                        "translation": "Polite marker",
+                        "word": "예요",
+                        "translation": "이다 (polite form)",
                         "particle": true
                     }
                 ]
@@ -55,13 +46,8 @@
                         "translation": "school"
                     },
                     {
-                        "word": "예",
-                        "translation": "To be, is, are",
-                        "particle": true
-                    },
-                    {
-                        "word": "요",
-                        "translation": "Polite marker",
+                        "word": "예요",
+                        "translation": "이다 (polite form)",
                         "particle": true
                     }
                 ]

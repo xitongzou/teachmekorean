@@ -16,6 +16,7 @@
                 "words": [
                     {
                         "word": "감사합니다",
+                        "expanded": "감사하다 (honorific form)",
                         "translation": "Thank You, Thanks"
                     },
                     {
@@ -23,6 +24,7 @@
                     },
                     {
                         "word": "고맙습니다",
+                        "expanded": "고맙다 (honorific form)",
                         "translation": "Thank You, Thanks"
                     }
                 ]
@@ -41,6 +43,7 @@
                 "words": [
                     {
                         "word": "아니요",
+                        "expanded": "아니다 (polite form)",
                         "translation": "No"
                     }
                 ]
@@ -50,6 +53,7 @@
                 "words": [
                     {
                         "word": "맞아요",
+                        "expanded": "맞다 (polite form)",
                         "translation": "Yes, Correct"
                     }
                 ]
@@ -75,6 +79,7 @@
                 "words": [
                     {
                         "word": "죄송합니다",
+                        "expanded": "죄송하다 (honorific form)",
                         "translation": "Sorry"
                     },
                     {
@@ -82,6 +87,7 @@
                     },
                     {
                         "word": "미안합니다",
+                        "expanded": "미안하다 (honorific form)",
                         "translation": "Sorry"
                     }
                 ]
@@ -108,6 +114,49 @@
                     {
                         "word": "잠깐만요",
                         "translation": "Just a moment, Wait one second"
+                    }
+                ]
+            },
+            {
+                "translation": "Nice to meet you.",
+                "words": [
+                    {
+                        "word": "만나서",
+                        "expanded": "만나다 + 아서",
+                        "translation": "To meet"
+                    },
+                    {
+                        "word": "반갑습니다",
+                        "expanded": "반갑다 (honorific form)",
+                        "translation": "To be happy, to be glad"
+                    }
+                ]
+            },
+            {
+                "translation": "Let's enjoy our meal.",
+                "words": [
+                    {
+                        "word": "잘",
+                        "translation": "Good, Well"
+                    },
+                    {
+                        "word": "먹겠습니다",
+                        "expanded": "먹다 + 겠 + honorific form",
+                        "translation": "To eat"
+                    }
+                ]
+            },
+            {
+                "translation": "I ate well.",
+                "words": [
+                    {
+                        "word": "잘",
+                        "translation": "Good, Well"
+                    },
+                    {
+                        "word": "먹었습니다",
+                        "expanded": "먹다 + past tense + honorific form",
+                        "translation": "To eat"
                     }
                 ]
             }

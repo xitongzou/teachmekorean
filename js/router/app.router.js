@@ -6,6 +6,7 @@ define([
     'footer.view',
     'sidebar.view',
     'vocab.view',
+    'vocab.list.view',
     'content.model',
     'content.collection',
     'content.view',
@@ -14,7 +15,7 @@ define([
     'word.view',
     'sentence.model',
     'sentence.collection'
-], function ($, _, Backbone, HeaderView, FooterView, SidebarView, VocabView, ContentModel, ContentCollection, ContentView, WordModel, WordCollection, WordView, SentenceModel, SentenceCollection) {
+], function ($, _, Backbone, HeaderView, FooterView, SidebarView, VocabView, VocabListView, ContentModel, ContentCollection, ContentView, WordModel, WordCollection, WordView, SentenceModel, SentenceCollection) {
 
     var AppRouter = Backbone.Router.extend({
 
@@ -48,7 +49,7 @@ define([
 
             // Matches remove routes
             this.route("remove/:id", function (id) {
-                App.VocabView.removeFromVocabList(id);
+                App.VocabListView.removeFromVocabList(id);
             });
         },
 
@@ -81,6 +82,7 @@ define([
             var self = this;
             var contentid = lessonName + "-content";
             var wordid = lessonName + "-words";
+            var vocabid = lessonName + "-vocab";
 
             $.getJSON("json/" + lessonName + ".json",function (data) {
 
@@ -90,12 +92,19 @@ define([
                 /** get words **/
                 var lessonWords = data[wordid];
 
+                /** get vocab table **/
+                var lessonVocab = data[vocabid];
+
                 if (lessonContent) {
                     self.container.add(self.renderContentView(lessonContent), contentid);
                 }
 
                 if (lessonWords) {
                     self.container.add(self.renderWordView(lessonWords), wordid);
+                }
+
+                if (lessonVocab) {
+                    self.container.add(self.renderVocabView(lessonVocab), vocabid);
                 }
 
             }).done(function () {
@@ -128,6 +137,45 @@ define([
             });
         },
 
+        renderVocabView: function (vocabArray) {
+            var title = vocabArray.title;
+            var sentenceCollection = new SentenceCollection();
+            _.each(vocabArray.sentences, function (sentence) {
+                var wordCollection = new WordCollection();
+                _.each(sentence.words, function (word) {
+                    var wordModel = new WordModel(word);
+                    var title;
+                    var dataid = word.word + "-" + word.translation;
+                    var content =
+                        "<h4>" + word.translation + "</h4>" +
+                            "<h4><a>Add to vocab list</a></h4>";
+                    if (word.expanded) {
+                        title = word.expanded +
+                            "<button>&times;</button>";
+                    } else {
+                        title = word.word +
+                            "<button>&times;</button>";
+                    }
+                    wordModel.set({
+                        "dataid": dataid,
+                        "title": title,
+                        "content": content,
+                        "particle": word.particle
+                    });
+                    wordCollection.add(wordModel);
+                });
+
+                sentenceCollection.add(new SentenceModel({
+                    translation: sentence.translation,
+                    words: wordCollection.toJSON()
+                }));
+            });
+            return new WordView({
+                title: title,
+                collection: sentenceCollection
+            });
+        },
+
         renderWordView: function (wordArray) {
             var title = wordArray.title;
             var sentenceCollection = new SentenceCollection();
@@ -139,7 +187,7 @@ define([
                     var content =
                         "<h4>" + word.translation + "</h4>" +
                             "<h4><a>Add to vocab list</a></h4>";
-                    var title = word.word +
+                    var title = word.expanded +
                         "<button>&times;</button>";
                     wordModel.set({
                         "dataid": dataid,

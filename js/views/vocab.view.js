@@ -3,15 +3,14 @@ define([
     'underscore',
     'backbone',
     'handlebars',
-    'word.model',
     'word.collection'
-], function ($, _, Backbone, Handlebars, WordModel, WordCollection) {
+], function ($, _, Backbone, Handlebars, WordCollection) {
 
     var VocabView = Backbone.View.extend({
 
         tagName: 'div',
-        className: 'vocab-content col-sm-3 well well-small',
-        template: '#vocab-list-template',
+        className: 'vocab-content col-sm-3',
+        template: '#vocab-template',
         words: null,
 
         initialize: function () {
@@ -26,26 +25,6 @@ define([
                 words: collection.toJSON()
             }));
             $('#vocab').html(this.$el);
-        },
-
-        addToVocabList: function (wordId) {
-            var word = wordId.split("-")[0];
-            var translation = wordId.split("-")[1];
-            var wordModel = new WordModel({
-                dataid: word + translation,
-                word: word,
-                translation: translation
-            });
-            this.words.add(wordModel);
-            this.render(this.words);
-        },
-
-        removeFromVocabList: function (id) {
-            var model = this.words.find(function (model) {
-                return model.get('dataid') === id
-            });
-            this.words.remove(model);
-            this.render(this.words);
         }
 
     });

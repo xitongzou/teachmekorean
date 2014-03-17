@@ -22,13 +22,9 @@
                         "particle": true
                     },
                     {
-                        "word": "좋아",
+                        "word": "좋아요",
+                        "expanded": "좋다 + 요",
                         "translation": "To be good"
-                    },
-                    {
-                        "word": "요",
-                        "translation": "Polite marker",
-                        "particle": true
                     },
                     {
                         "word": "?",

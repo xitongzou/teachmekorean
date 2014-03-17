@@ -1,0 +1,49 @@
+{
+    "request-content": {
+        "title": "주다 (to request)",
+        "content": [
+            {
+                "title": "The verb 주다 means to give, or saying please.",
+                "details": " Appending 주다 to the end of another verb after conjugation with 아/어/여 gives it a request meaning. 줘 is the plain form, and 주세요 is the polite form. 드리다 is the honorific version of this verb."
+            }
+        ]},
+    "request-words": {
+        "sentences": [
+            {
+                "translation": "Please give me some kimchi.",
+                "words": [
+                    {
+                        "word": "김치",
+                        "translation": "Kimchi"
+                    },
+                    {
+                        "word": "주세요",
+                        "expanded": "주다 + 시 + 요",
+                        "translation": "To not have, to not exist"
+                    }
+                ]
+            },
+            {
+                "translation": "Please speak slowly.",
+                "words": [
+                    {
+                        "word": "천천히",
+                        "expanded": "천천하다 (adverb form)",
+                        "translation": "slowly"
+                    },
+                    {
+                        "word": "말해",
+                        "expanded": "말하다",
+                        "translation": "to speak"
+                    },
+                    {
+                        "word": "주세요",
+                        "expanded": "주다 + 시 + 요",
+                        "translation": "To not have, to not exist",
+                        "particle": true
+                    }
+                ]
+            }
+        ]
+    }
+}
