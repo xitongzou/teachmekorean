@@ -14,19 +14,29 @@
                 "words": [
                     {
                         "word": "뭐",
-                        "expanded": "무엇 (contraction)",
+                        "root": "무엇",
                         "translation": "What"
                     },
                     {
                         "word": "먹",
-                        "expanded": "먹다",
-                        "translation": "to eat"
+                        "root": "먹다",
+                        "translation": "To eat"
                     },
                     {
-                        "word": "고싶어요",
-                        "expanded": "고 싶다 + 요",
-                        "translation": "to want",
+                        "word": "고",
+                        "particle": true,
+                        "translation": "And"
+                    },
+                    {
+                        "word": "싶어",
+                        "root": "싶다",
+                        "translation": "To want",
                         "particle": true
+                    },
+                    {
+                        "word": "요",
+                        "particle": true,
+                        "translation": "Particle for polite ending"
                     },
                     {
                         "word": "?",
@@ -43,19 +53,29 @@
                     },
                     {
                         "word": "에",
-                        "translation": "location particle",
+                        "translation": "Location particle",
                         "particle": true
                     },
                     {
                         "word": "가",
-                        "expanded": "가다",
+                        "root": "가다",
                         "translation": "to eat"
                     },
                     {
-                        "word": "고싶어요",
-                        "expanded": "고 싶다 + 요",
-                        "translation": "to want",
+                        "word": "고",
+                        "particle": true,
+                        "translation": "And"
+                    },
+                    {
+                        "word": "싶어",
+                        "root": "싶다",
+                        "translation": "To want",
                         "particle": true
+                    },
+                    {
+                        "word": "요",
+                        "particle": true,
+                        "translation": "Particle for polite ending"
                     }
                 ]
             }

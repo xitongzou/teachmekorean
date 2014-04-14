@@ -47,12 +47,13 @@
                     },
                     {
                         "word": "아니에",
+                        "root": "아니다",
                         "translation": "To not be"
                     },
                     {
                         "word": "요",
-                        "translation": "Polite marker",
-                        "particle": true
+                        "particle": true,
+                        "translation": "Particle for polite ending"
                     }
                 ]
             }

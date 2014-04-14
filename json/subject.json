@@ -18,13 +18,19 @@
                     },
                     {
                         "word": "가",
+                        "root": "이/가",
                         "translation": "Subject particle",
                         "particle": true
                     },
                     {
-                        "word": "좋아요",
-                        "expanded": "좋다 + 요",
+                        "word": "좋아",
+                        "expanded": "좋다",
                         "translation": "To be good"
+                    },
+                    {
+                        "word": "요",
+                        "particle": true,
+                        "translation": "Particle for polite ending"
                     },
                     {
                         "word": "?",
@@ -41,6 +47,7 @@
                     },
                     {
                         "word": "은",
+                        "root": "은/는",
                         "translation": "Topic particle",
                         "particle": true
                     },
@@ -50,11 +57,13 @@
                     },
                     {
                         "word": "가",
+                        "root": "이/가",
                         "translation": "Subject particle",
                         "particle": true
                     },
                     {
                         "word": "좋",
+                        "root": "좋다",
                         "translation": "To be good"
                     },
                     {
@@ -64,8 +73,8 @@
                     },
                     {
                         "word": "요",
-                        "translation": "Polite marker",
-                        "particle": true
+                        "particle": true,
+                        "translation": "Particle for polite ending"
                     }
                 ]
             }

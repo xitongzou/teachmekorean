@@ -17,10 +17,15 @@
                     "translation": "Bag"
                     },
                     {
-                        "word": "이에요",
-                        "expanded": "이다 (polite form)",
-                        "translation": "To be, is, are",
+                        "word": "이에",
+                        "root": "이다",
+                        "translation": "To be",
                         "particle": true
+                    },
+                    {
+                        "word": "요",
+                        "particle": true,
+                        "translation": "Particle for polite ending"
                     }
                 ]
             },
@@ -32,9 +37,15 @@
                         "translation": "I, Me"
                     },
                     {
-                        "word": "예요",
-                        "translation": "이다 (polite form)",
+                        "word": "예",
+                        "root": "이다",
+                        "translation": "To be",
                         "particle": true
+                    },
+                    {
+                        "word": "요",
+                        "particle": true,
+                        "translation": "Particle for polite ending"
                     }
                 ]
             },
@@ -46,9 +57,15 @@
                         "translation": "school"
                     },
                     {
-                        "word": "예요",
-                        "translation": "이다 (polite form)",
+                        "word": "예",
+                        "root": "이다",
+                        "translation": "To be",
                         "particle": true
+                    },
+                    {
+                        "word": "요",
+                        "particle": true,
+                        "translation": "Particle for polite ending"
                     }
                 ]
             }

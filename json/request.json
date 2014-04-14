@@ -17,9 +17,20 @@
                         "translation": "Kimchi"
                     },
                     {
-                        "word": "주세요",
-                        "expanded": "주다 + 시 + 요",
-                        "translation": "To not have, to not exist"
+                        "word": "주",
+                        "root": "주다",
+                        "translation": "To give, to request"
+                    },
+                    {
+                        "word": "세",
+                        "root": "(으)시",
+                        "particle": true,
+                        "translation": "Honorific marker"
+                    },
+                    {
+                        "word": "요",
+                        "particle": true,
+                        "translation": "Particle for polite ending"
                     }
                 ]
             },
@@ -28,19 +39,30 @@
                 "words": [
                     {
                         "word": "천천히",
-                        "expanded": "천천하다 (adverb form)",
+                        "root": "천천하다",
                         "translation": "slowly"
                     },
                     {
                         "word": "말해",
-                        "expanded": "말하다",
+                        "root": "말하다",
                         "translation": "to speak"
                     },
                     {
-                        "word": "주세요",
-                        "expanded": "주다 + 시 + 요",
-                        "translation": "To not have, to not exist",
-                        "particle": true
+                        "word": "주",
+                        "particle": true,
+                        "root": "주다",
+                        "translation": "To give, to request"
+                    },
+                    {
+                        "word": "세",
+                        "root": "(으)시",
+                        "particle": true,
+                        "translation": "Honorific marker"
+                    },
+                    {
+                        "word": "요",
+                        "particle": true,
+                        "translation": "Particle for polite ending"
                     }
                 ]
             }

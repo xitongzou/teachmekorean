@@ -17,9 +17,14 @@
                         "translation": "Coffee"
                     },
                     {
-                        "word": "있어요",
-                        "expanded": "있다 + 요",
+                        "word": "있어",
+                        "root": "있다",
                         "translation": "To have, to exist"
+                    },
+                    {
+                        "word": "요",
+                        "particle": true,
+                        "translation": "Particle for polite ending"
                     },
                     {
                         "word": "?",
@@ -37,13 +42,19 @@
                     },
                     {
                         "word": "이",
+                        "root": "이/가",
                         "translation": "Subject particle",
                         "particle": true
                     },
                     {
-                        "word": "없어요",
-                        "expanded": "없다 + 요",
+                        "word": "없어",
+                        "root": "없다",
                         "translation": "To not have, to not exist"
+                    },
+                    {
+                        "word": "요",
+                        "particle": true,
+                        "translation": "Particle for polite ending"
                     }
                 ]
             }

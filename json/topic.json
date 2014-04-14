@@ -18,6 +18,7 @@
                     },
                     {
                         "word": "는",
+                        "root": "은/는",
                         "translation": "Topic particle",
                         "particle": true
                     },
@@ -26,10 +27,15 @@
                         "translation": "Student"
                     },
                     {
-                        "word": "이에요",
-                        "expanded": "이다 + 요)",
+                        "word": "이에",
+                        "root": "이다",
                         "translation": "To be",
                         "particle": true
+                    },
+                    {
+                        "word": "요",
+                        "particle": true,
+                        "translation": "Particle for polite ending"
                     }
                 ]
             },
@@ -42,6 +48,7 @@
                     },
                     {
                         "word": "은",
+                        "root": "은/는",
                         "translation": "Topic particle",
                         "particle": true
                     },
@@ -51,13 +58,19 @@
                     },
                     {
                         "word": "는",
+                        "root": "은/는",
                         "translation": "Topic particle",
                         "particle": true
                     },
                     {
-                        "word": "일해요",
-                        "expanded": "일하다 + 요",
+                        "word": "일해",
+                        "root": "일하다",
                         "translation": "To work"
+                    },
+                    {
+                        "word": "요",
+                        "particle": true,
+                        "translation": "Particle for polite ending"
                     }
                 ]
             }

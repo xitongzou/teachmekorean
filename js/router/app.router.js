@@ -183,12 +183,17 @@ define([
                 var wordCollection = new WordCollection();
                 _.each(sentence.words, function (word) {
                     var wordModel = new WordModel(word);
-                    var dataid = word.word + "-" + word.translation;
+                    var dataid = word.word;
+                    var title = '';
+                    if (word.root) {
+                        dataid = word.root;
+                        title = word.root;
+                    }
+                    dataid += "-" + word.translation;
+                    title += "<button>&times;</button>";
                     var content =
                         "<h4>" + word.translation + "</h4>" +
                             "<h4><a>Add to vocab list</a></h4>";
-                    var title = word.expanded +
-                        "<button>&times;</button>";
                     wordModel.set({
                         "dataid": dataid,
                         "title": title,
