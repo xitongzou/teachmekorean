@@ -1,0 +1,75 @@
+{
+    "numbers-vocab": {
+        "title": "Numbers",
+        "words": [
+            {
+                "word": "일,하나",
+                "translation": "One"
+            },
+            {
+                "word": "이,둘",
+                "translation": "Two"
+            },
+            {
+                "word": "삼,셋",
+                "translation": "Three"
+            },
+            {
+                "word": "사,넷",
+                "translation": "Four"
+            },
+            {
+                "word": "오,다섯",
+                "translation": "Five"
+            },
+            {
+                "word": "육,여섯",
+                "translation": "Six"
+            },
+            {
+                "word": "칠,일곱",
+                "translation": "Seven"
+            },
+            {
+                "word": "팔,여덟",
+                "translation": "Eight"
+            },
+            {
+                "word": "구,아홉",
+                "translation": "Nine"
+            },
+            {
+                "word": "십,열",
+                "translation": "Ten"
+            },
+            {
+                "word": "이십,스물",
+                "translation": "Twenty"
+            },
+            {
+                "word": "삼십,서른",
+                "translation": "Thirty"
+            },
+            {
+                "word": "백",
+                "translation": "One Hundred"
+            },
+            {
+                "word": "천",
+                "translation": "One thousand"
+            },
+            {
+                "word": "만",
+                "translation": "Ten thousand"
+            },
+            {
+                "word": "억",
+                "translation": "One hundred million"
+            },
+            {
+                "word": "영,공",
+                "translation": "Zero"
+            }
+        ]
+    }
+}

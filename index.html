@@ -124,17 +124,19 @@
                     <div id="words" class="panel-collapse collapse">
                         <div class="panel-body">
                             <ul class="nav">
-                                <li><a href="#vocab/words-basic">Basic</a></li>
+                                <li><a href="#vocab/words-noun-basic">Basic Nouns</a></li>
+                                <li><a href="#vocab/words-verb-basic">Basic Verbs</a></li>
+                                <li><a href="#vocab/words-adjective-basic">Basic Adjectives</a></li>
+                                <li><a href="#vocab/words-other-basic">Additional Basic Vocab</a></li>
                                 <li><a href="#vocab/numbers">Numbers</a></li>
-                                <li><a href="#vocab/time">Time,Days,Month,Year</a></li>
-                                <li><a href="#vocab/counting">Counting</a></li>
+                                <li><a href="#vocab/time">Time,Frequency</a></li>
                                 <li><a href="#vocab/emphasis">Emphasis</a></li>
-                                <li><a href="#vocab/frequency">Frequency</a></li>
                                 <li><a href="#vocab/food">Food</a></li>
                                 <li><a href="#vocab/travel">Travel</a></li>
                                 <li><a href="#vocab/furniture">Furniture</a></li>
                                 <li><a href="#vocab/animals">Animals</a></li>
                                 <li><a href="#vocab/hobbies">Hobbies</a></li>
+                                <li><a href="#vocab/emotion">Emotions,Personality</a></li>
                                 <li><a href="#vocab/body">Body, Health</a></li>
                             </ul>
                         </div>
@@ -186,15 +188,16 @@
                 <li><a href="#grammar/topic">은/는 (topic)</a></li>
                 <li><a href="#grammar/subject">이/가 (subject)</a></li>
                 <li><a href="#">을/를 (object)</a></li>
-                <li><a href="#">아/어/여 (present tense)</a></li>
-                <li><a href="#">았/었/였 (past tense)</a></li>
+                <li><a href="#grammar/present">아/어/여 (present tense)</a></li>
+                <li><a href="#grammar/past">았/었/였 (past tense)</a></li>
                 <li><a href="#">ㄹ거예요 (future tense)</a></li>
-                <li><a href="#">으시 (honorific particle)</a></li>
-                <li><a href="#">ㅂ니다 (honorific form)</a></li>
+                <li><a href="#grammar/counting">일,한 (korean numbers)</a></li>
+                <li><a href="#grammar/negation">안,지 않다 (negation)</a></li>
+                <li><a href="#">(으)시 (honorific particle)</a></li>
+                <li><a href="#">(ㅂ/습)니다 (honorific form)</a></li>
                 <li><a href="#">고 있어요 (present progressive)</a></li>
-                <li><a href="#">안,지 않다 (negation)</a></li>
-                <li><a href="#">에,에서 (location, time)</a></li>
-                <li><a href="#">에서,부터,까지 (from, to)</a></li>
+                <li><a href="#grammar/location">에,에서 (location, time)</a></li>
+                <li><a href="#grammar/fromto">에서,부터,까지 (from, to)</a></li>
                 <li><a href="#">기,는 것,(으)ㅁ (verb into noun)</a></li>
                 <li><a href="#">(으)ㄴ,는,(으)ㄹ (verb into adjective)</a></li>
                 <li><a href="#">이,히,리,기,되다 (passive tense)</a></li>
@@ -424,10 +427,10 @@
     {{/if}}
     {{#each entries}}
     <div class="well-sm">
-        <h2>{{this.title}}</h2>
+        <h2>{{{this.title}}}</h2>
 
         <p class="lead">
-            {{this.details}}
+            {{{this.details}}}
         </p>
     </div>
     {{/each}}

@@ -1,0 +1,60 @@
+{
+    "fromto-content": {
+        "title": "에서,부터,까지 (from, to)",
+        "content": [
+            {
+                "title": "에서 and 부터 means from, and 까지 means to or until.",
+                "details": "These particles are attached after a noun, with 에서 being used more with location and 부터 used more with time, and 까지 used as to (for location) and until (for time)."
+            }
+        ]},
+    "fromto-words": {
+        "sentences": [
+            {
+                "translation": "From Korea to USA",
+                "words": [
+                    {
+                        "word": "한국",
+                        "translation": "Korea"
+                    },
+                    {
+                        "word": "에서",
+                        "particle": true,
+                        "translation": "Dynamic location particle (at,in,of,from)"
+                    },
+                    {
+                        "word": "미국",
+                        "translation": "America,USA"
+                    },
+                    {
+                        "word": "까지",
+                        "particle": true,
+                        "translation": "To,until"
+                    }
+                ]
+            },
+            {
+                "translation": "From morning to evening",
+                "words": [
+                    {
+                        "word": "아침",
+                        "translation": "Morning,breakfast"
+                    },
+                    {
+                        "word": "부터",
+                        "particle": true,
+                        "translation": "From (time)"
+                    },
+                    {
+                        "word": "저녁",
+                        "translation": "Evening,dinner"
+                    },
+                    {
+                        "word": "까지",
+                        "particle": true,
+                        "translation": "To,until"
+                    }
+                ]
+            }
+        ]
+    }
+}

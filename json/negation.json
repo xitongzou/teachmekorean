@@ -1,0 +1,54 @@
+{
+    "negation-content": {
+        "title": "안,지 않다 (negation)",
+        "content": [
+            {
+                "title": "There's two different ways to make a negative sentence, either using 안 before a verb or conjugating it with -지 않다",
+                "details": "1. Putting 안 before a verb makes it negative and doesn't change its tense<br/>2. Conjugating the verb by replacing '다' with '지 않다' makes it negative, this way is also slightly more formal."
+            }
+        ]},
+    "negation-words": {
+        "sentences": [
+            {
+                "translation": "I'm not going",
+                "words": [
+                    {
+                        "word": "안",
+                        "translation": "Particle before a verb to negate it"
+                    },
+                    {
+                        "word": "가",
+                        "root": "가다",
+                        "translation": "to go"
+                    },
+                    {
+                        "word": "요",
+                        "particle": true,
+                        "translation": "Particle for polite ending"
+                    }
+                ]
+            },
+            {
+                "translation": "I'm not eating",
+                "words": [
+                    {
+                        "word": "먹",
+                        "root": "먹다",
+                        "translation": "to eat"
+                    },
+                    {
+                        "word": "지 않아",
+                        "particle": true,
+                        "root": "지 않다",
+                        "translation": "Particle after a verb to negate it"
+                    },
+                    {
+                        "word": "요",
+                        "particle": true,
+                        "translation": "Particle for polite ending"
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,62 @@
+{
+    "location-content": {
+        "title": "에,에서 (location, time)",
+        "content": [
+            {
+                "title": "에 is a particle used to mark location, time or other static situations, and 에서 is used to mark locations where some action is happening.",
+                "details": "에 roughly corresponds to 'at,to,in,of,by', and it usually attached to the location or situation it is marking. 에서 is used the same way, except an action or event is happening there."
+            }
+        ]},
+    "location-words": {
+        "sentences": [
+            {
+                "translation": "I am going to my home",
+                "words": [
+                    {
+                        "word": "집",
+                        "translation": "House,home"
+                    },
+                    {
+                        "word": "에",
+                        "particle": true,
+                        "translation": "Location particle (at,to,in,of,by)"
+                    },
+                    {
+                        "word": "가",
+                        "root": "가다",
+                        "translation": "to go"
+                    },
+                    {
+                        "word": "요",
+                        "particle": true,
+                        "translation": "Particle for polite ending"
+                    }
+                ]
+            },
+            {
+                "translation": "I eat at home",
+                "words": [
+                    {
+                        "word": "집",
+                        "translation": "House,home"
+                    },
+                    {
+                        "word": "에서",
+                        "particle": true,
+                        "translation": "Dynamic location particle (at,in,of,from)"
+                    },
+                    {
+                        "word": "먹어",
+                        "root": "먹다",
+                        "translation": "to eat"
+                    },
+                    {
+                        "word": "요",
+                        "particle": true,
+                        "translation": "Particle for polite ending"
+                    }
+                ]
+            }
+        ]
+    }
+}

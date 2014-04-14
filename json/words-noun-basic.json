@@ -1,0 +1,119 @@
+{
+    "words-noun-basic-vocab": {
+        "title": "Basic Words",
+                "words": [
+                    {
+                        "word": "것,거",
+                        "translation": "Thing"
+                    },
+                    {
+                        "word": "사람",
+                        "translation": "Person"
+                    },
+                    {
+                        "word": "분",
+                        "translation": "Person (formal)"
+                    },
+                    {
+                        "word": "시간",
+                        "translation": "Time"
+                    },
+                    {
+                        "word": "년",
+                        "translation": "Year"
+                    },
+                    {
+                        "word": "남자",
+                        "translation": "Man,Boy"
+                    },
+                    {
+                        "word": "여자",
+                        "translation": "Woman,Girl"
+                    },
+                    {
+                        "word": "날,하루,일",
+                        "translation": "Day"
+                    },
+                    {
+                        "word": "세계",
+                        "translation": "World"
+                    },
+                    {
+                        "word": "생활,삶,생명",
+                        "translation": "Life"
+                    },
+                    {
+                        "word": "아이,어린이",
+                        "translation": "Kid,Child"
+                    },
+                    {
+                        "word": "손",
+                        "translation": "Hand"
+                    },
+                    {
+                        "word": "부분",
+                        "translation": "Part,Portion"
+                    },
+                    {
+                        "word": "눈",
+                        "translation": "Eyes"
+                    },
+                    {
+                        "word": "장소,곳",
+                        "translation": "Place"
+                    },
+                    {
+                        "word": "작업,직업",
+                        "translation": "Work,Job,Occupation"
+                    },
+                    {
+                        "word": "주",
+                        "translation": "Week"
+                    },
+                    {
+                        "word": "월",
+                        "translation": "Month"
+                    },
+                    {
+                        "word": "점",
+                        "translation": "Point"
+                    },
+                    {
+                        "word": "집",
+                        "translation": "House,home"
+                    },
+                    {
+                        "word": "정부",
+                        "translation": "Government"
+                    },
+                    {
+                        "word": "회사",
+                        "translation": "Company"
+                    },
+                    {
+                        "word": "상황,정황",
+                        "translation": "Situation"
+                    },
+                    {
+                        "word": "수",
+                        "translation": "Number"
+                    },
+                    {
+                        "word": "무리,반",
+                        "translation": "Group"
+                    },
+                    {
+                        "word": "질문",
+                        "translation": "Question"
+                    },
+                    {
+                        "word": "문제",
+                        "translation": "Problem"
+                    },
+                    {
+                        "word": "사실,진실,실상",
+                        "translation": "Fact,Truth"
+                    }
+                ]
+            }
+    }

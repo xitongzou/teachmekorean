@@ -1,0 +1,155 @@
+{
+    "time-vocab": {
+        "title": "Vocabulary based around time or frequency",
+        "words": [
+            {
+                "word": "시간",
+                "translation": "time,hour"
+            },
+            {
+                "word": "분",
+                "translation": "minute"
+            },
+            {
+                "word": "시기",
+                "translation": "time"
+            },
+            {
+                "word": "시대",
+                "translation": "generation,age,era"
+            },
+            {
+                "word": "지금,이제",
+                "translation": "now"
+            },
+            {
+                "word": "어제",
+                "translation": "yesterday"
+            },
+            {
+                "word": "오늘",
+                "translation": "today"
+            },
+            {
+                "word": "내일",
+                "translation": "tomorrow"
+            },
+            {
+                "word": "날,하루",
+                "translation": "day"
+            },
+            {
+                "word": "주",
+                "translation": "week"
+            },
+            {
+                "word": "월",
+                "translation": "month"
+            },
+            {
+                "word": "년",
+                "translation": "year"
+            },
+            {
+                "word": "작년",
+                "translation": "last year"
+            },
+            {
+                "word": "올해",
+                "translation": "this year"
+            },
+            {
+                "word": "내년",
+                "translation": "next year"
+            },
+            {
+                "word": "나중에,이따",
+                "translation": "later"
+            },
+            {
+                "word": "아까,방금",
+                "translation": "a while ago"
+            },
+            {
+                "word": "방금",
+                "translation": "just a moment ago"
+            },
+            {
+                "word": "곧,금방",
+                "translation": "soon"
+            },
+            {
+                "word": "잠시,잠깐",
+                "translation": "a while,a moment"
+            },
+            {
+                "word": "아침",
+                "translation": "morning"
+            },
+            {
+                "word": "오전",
+                "translation": "before noon"
+            },
+            {
+                "word": "오후",
+                "translation": "afternoon"
+            },
+            {
+                "word": "밤,저녁",
+                "translation": "evening,night"
+            },
+            {
+                "word": "자정",
+                "translation": "midnight,dusk"
+            },
+            {
+                "word": "새벽",
+                "translation": "dawn,early morning"
+            },
+            {
+                "word": "일주일",
+                "translation": "weekday"
+            },
+            {
+                "word": "주말",
+                "translation": "weekend"
+            },
+            {
+                "word": "절대로",
+                "translation": "never"
+            },
+            {
+                "word": "가끔,때때로",
+                "translation": "sometimes,occasionally"
+            },
+            {
+                "word": "자주,자꾸",
+                "translation": "often,frequently"
+            },
+            {
+                "word": "드물게",
+                "translation": "rarely,seldom"
+            },
+            {
+                "word": "전혀",
+                "translation": "if ever,at all"
+            },
+            {
+                "word": "항상,언제나",
+                "translation": "always"
+            },
+            {
+                "word": "보통,대개",
+                "translation": "usually"
+            },
+            {
+                "word": "일상",
+                "translation": "daily,day to day"
+            },
+            {
+                "word": "종일",
+                "translation": "whole day"
+            }
+        ]
+    }
+}

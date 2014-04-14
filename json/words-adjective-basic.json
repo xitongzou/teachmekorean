@@ -1,0 +1,131 @@
+{
+    "words-adjective-basic-vocab": {
+        "title": "Basic Adjectives",
+        "words": [
+            {
+                "word": "좋다",
+                "translation": "to be good"
+            },
+            {
+                "word": "싫다",
+                "translation": "to be bad"
+            },
+            {
+                "word": "새로운",
+                "translation": "new"
+            },
+            {
+                "word": "처음",
+                "translation": "first"
+            },
+            {
+                "word": "마지막",
+                "translation": "last"
+            },
+            {
+                "word": "지난",
+                "translation": "previous"
+            },
+            {
+                "word": "다음",
+                "translation": "next"
+            },
+            {
+                "word": "길다",
+                "translation": "to be long"
+            },
+            {
+                "word": "크다",
+                "translation": "to be big,to be large"
+            },
+            {
+                "word": "작다",
+                "translation": "to be small,to be little"
+            },
+            {
+                "word": "짧다",
+                "translation": "to be short"
+            },
+            {
+                "word": "예쁘다,이쁘다",
+                "translation": "to be pretty,to be beautiful"
+            },
+            {
+                "word": "아름답다",
+                "translation": "to be beautiful,to be gorgeous"
+            },
+            {
+                "word": "다르다",
+                "translation": "to be different"
+            },
+            {
+                "word": "같다",
+                "translation": "to be the same"
+            },
+            {
+                "word": "비슷하다",
+                "translation": "to be similar"
+            },
+            {
+                "word": "낡다",
+                "translation": "to be old"
+            },
+            {
+                "word": "젊다,어리다",
+                "translation": "to be young"
+            },
+            {
+                "word": "맞다",
+                "translation": "to be right,to be correct"
+            },
+            {
+                "word": "높다",
+                "translation": "to be high"
+            },
+            {
+                "word": "낮다",
+                "translation": "to be low"
+            },
+            {
+                "word": "넓다",
+                "translation": "to be wide"
+            },
+            {
+                "word": "좁다",
+                "translation": "to be narrow"
+            },
+            {
+                "word": "빠르다",
+                "translation": "to be fast"
+            },
+            {
+                "word": "느리다",
+                "translation": "to be slow"
+            },
+            {
+                "word": "바쁘다",
+                "translation": "to be busy"
+            },
+            {
+                "word": "일찍,이르다",
+                "translation": "to be early"
+            },
+            {
+                "word": "늦다",
+                "translation": "to be late"
+            },
+            {
+                "word": "중요하다",
+                "translation": "to be important"
+            },
+            {
+                "word": "적다",
+                "translation": "to be few"
+            },
+            {
+                "word": "많다",
+                "translation": "to be many,lots"
+            }
+        ]
+    }
+}

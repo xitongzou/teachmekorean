@@ -1,0 +1,95 @@
+{
+    "present-content": {
+        "title": "아/어/여 (present tense)",
+        "content": [
+            {
+                "title": "When we want to speak in present tense, we conjugate korean verbs by removing the verb stem '다' and replacing it with either 아,어 or 여.",
+                "details": "1. When the verb's last vowel ends in ㅏ or ㅗ, we replace the stem with '아'. <br/>2. When the verb's last vowel does not end in ㅏ or ㅗ, we replace the stem with '어'. <br/>3. When the verb ends in 하다 or 이다, we replace it with '여'.<br/>"
+            }
+        ]},
+    "present-words": {
+        "sentences": [
+            {
+                "translation": "가요 - go",
+                "words": [
+                    {
+                        "word": "가다",
+                        "root": "가다",
+                        "translation": "to go"
+                    },
+                    {
+                        "word": "+",
+                        "translation": ""
+                    },
+                    {
+                        "word": "아",
+                        "translation": ""
+                    },
+                    {
+                        "word": "+",
+                        "translation": ""
+                    },
+                    {
+                        "word": "요",
+                        "particle": true,
+                        "translation": "Particle for polite ending"
+                    }
+                ]
+            },
+            {
+                "translation": "먹어요 - eat",
+                "words": [
+                    {
+                        "word": "먹다",
+                        "root": "먹다",
+                        "translation": "to eat"
+                    },
+                    {
+                        "word": "+",
+                        "translation": ""
+                    },
+                    {
+                        "word": "어",
+                        "translation": ""
+                    },
+                    {
+                        "word": "+",
+                        "translation": ""
+                    },
+                    {
+                        "word": "요",
+                        "particle": true,
+                        "translation": "Particle for polite ending"
+                    }
+                ]
+            },
+            {
+                "translation": "좋아해요 - like",
+                "words": [
+                    {
+                        "word": "좋아하다",
+                        "root": "좋아하다",
+                        "translation": "to like"
+                    },
+                    {
+                        "word": "+",
+                        "translation": ""
+                    },
+                    {
+                        "word": "여",
+                        "translation": ""
+                    },
+                    {
+                        "word": "+",
+                        "translation": ""
+                    },
+                    {
+                        "word": "요",
+                        "particle": true,
+                        "translation": "Particle for polite ending"
+                    }
+                ]
+            }
+        ]
+    }
+}

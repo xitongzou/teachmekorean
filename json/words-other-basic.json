@@ -1,0 +1,151 @@
+{
+    "words-other-basic-vocab": {
+        "title": "Additional Basic Vocabulary",
+        "words": [
+            {
+                "word": "이",
+                "translation": "This"
+            },
+            {
+                "word": "그",
+                "translation": "That (close)"
+            },
+            {
+                "word": "저",
+                "translation": "That (far)"
+            },
+            {
+                "word": "나",
+                "translation": "I,me"
+            },
+            {
+                "word": "저",
+                "translation": "I,me (formal)"
+            },
+            {
+                "word": "나의,내",
+                "translation": "my,mine"
+            },
+            {
+                "word": "저의,제",
+                "translation": "my,mine (formal)"
+            },
+            {
+                "word": "너",
+                "translation": "you"
+            },
+            {
+                "word": "당신",
+                "translation": "you (formal)"
+            },
+            {
+                "word": "너의,네,니",
+                "translation": "your"
+            },
+            {
+                "word": "우리",
+                "translation": "we,us"
+            },
+            {
+                "word": "저희",
+                "translation": "we,us (formal)"
+            },
+            {
+                "word": "하고",
+                "translation": "and"
+            },
+            {
+                "word": "그리고",
+                "translation": "also,as well"
+            },
+            {
+                "word": "하지만,그런데,근데",
+                "translation": "but,however"
+            },
+            {
+                "word": "그러지만",
+                "translation": "yes but,moreover"
+            },
+            {
+                "word": "이렇게",
+                "translation": "like this"
+            },
+            {
+                "word": "그렇게",
+                "translation": "like that"
+            },
+            {
+                "word": "그러면",
+                "translation": "well,in that case"
+            },
+            {
+                "word": "그래서,그러니까",
+                "translation": "so,thus,therefore"
+            },
+            {
+                "word": "아직",
+                "translation": "still"
+            },
+            {
+                "word": "역시",
+                "translation": "also,yet"
+            },
+            {
+                "word": "아니면,또는",
+                "translation": "or"
+            },
+            {
+                "word": "아마,어쩌면,혹시",
+                "translation": "maybe,perhaps"
+            },
+            {
+                "word": "여기",
+                "translation": "here"
+            },
+            {
+                "word": "그기",
+                "translation": "there (close)"
+            },
+            {
+                "word": "저기",
+                "translation": "there (far)"
+            },
+            {
+                "word": "지금,이제",
+                "translation": "now"
+            },
+            {
+                "word": "어디",
+                "translation": "where"
+            },
+            {
+                "word": "뭐,무엇",
+                "translation": "what"
+            },
+            {
+                "word": "언제",
+                "translation": "when"
+            },
+            {
+                "word": "누구",
+                "translation": "who"
+            },
+            {
+                "word": "왜",
+                "translation": "why"
+            },
+            {
+                "word": "어떻게",
+                "translation": "how"
+            },
+            {
+                "word": "어느,어떤",
+                "translation": "which"
+            },
+            {
+                "word": "얼마나",
+                "translation": "how much"
+            }
+        ]
+    }
+}

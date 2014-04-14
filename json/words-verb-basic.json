@@ -1,0 +1,183 @@
+{
+    "words-verb-basic-vocab": {
+        "title": "Basic Verbs",
+        "words": [
+            {
+                "word": "이다",
+                "translation": "to be"
+            },
+            {
+                "word": "있다",
+                "translation": "to have,to exist"
+            },
+            {
+                "word": "계시다",
+                "translation": "to have (formal)"
+            },
+            {
+                "word": "하다",
+                "translation": "to do"
+            },
+            {
+                "word": "좋아하다",
+                "translation": "to like"
+            },
+            {
+                "word": "싫어하다",
+                "translation": "to hate"
+            },
+            {
+                "word": "말하다",
+                "translation": "to speak,to say"
+            },
+            {
+                "word": "말씀하다",
+                "translation": "to speak,to say (formal)"
+            },
+            {
+                "word": "죽다",
+                "translation": "to die"
+            },
+            {
+                "word": "자다",
+                "translation": "to sleep"
+            },
+            {
+                "word": "살다",
+                "translation": "to live"
+            },
+            {
+                "word": "주무시다",
+                "translation": "to sleep (formal)"
+            },
+            {
+                "word": "받다",
+                "translation": "to receive,to get"
+            },
+            {
+                "word": "얻다",
+                "translation": "to get,to obtain"
+            },
+            {
+                "word": "만들다",
+                "translation": "to make"
+            },
+            {
+                "word": "가다",
+                "translation": "to go"
+            },
+            {
+                "word": "먹다",
+                "translation": "to eat"
+            },
+            {
+                "word": "드시다",
+                "translation": "to eat (formal)"
+            },
+            {
+                "word": "마시다",
+                "translation": "to drink"
+            },
+            {
+                "word": "주다",
+                "translation": "to give,to request"
+            },
+            {
+                "word": "드리다",
+                "translation": "to give,to request (formal)"
+            },
+            {
+                "word": "없다",
+                "translation": "to not have,to not exist"
+            },
+            {
+                "word": "알다",
+                "translation": "to know"
+            },
+            {
+                "word": "모르다",
+                "translation": "to not know"
+            },
+            {
+                "word": "보다",
+                "translation": "to see,to look,to try"
+            },
+            {
+                "word": "오다",
+                "translation": "to come"
+            },
+            {
+                "word": "생각하다",
+                "translation": "to think"
+            },
+            {
+                "word": "보이다",
+                "translation": "to show,to display"
+            },
+            {
+                "word": "싶다,원하다",
+                "translation": "to want"
+            },
+            {
+                "word": "필요하다",
+                "translation": "to need"
+            },
+            {
+                "word": "사용하다,이용하다",
+                "translation": "to use"
+            },
+            {
+                "word": "찾다",
+                "translation": "to find"
+            },
+            {
+                "word": "검색하다",
+                "translation": "to look up,to search,to browse"
+            },
+            {
+                "word": "고르다,선택하다",
+                "translation": "to choose,to pick,to select"
+            },
+            {
+                "word": "취하다",
+                "translation": "to take"
+            },
+            {
+                "word": "묻다",
+                "translation": "to ask"
+            },
+            {
+                "word": "일하다",
+                "translation": "to work"
+            },
+            {
+                "word": "이해하다",
+                "translation": "to understand"
+            },
+            {
+                "word": "쓰다",
+                "translation": "to write"
+            },
+            {
+                "word": "읽다",
+                "translation": "to read"
+            },
+            {
+                "word": "듣다",
+                "translation": "to listen"
+            },
+            {
+                "word": "전화하다",
+                "translation": "to make a phone call"
+            },
+            {
+                "word": "부르다",
+                "translation": "to call,to sing"
+            },
+            {
+                "word": "연락하다",
+                "translation": "to contact"
+            }
+        ]
+    }
+}

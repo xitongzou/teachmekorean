@@ -8,7 +8,7 @@ define([
     var ContentView = Backbone.View.extend({
 
         tagName: 'div',
-        className: 'container-fluid',
+        className: 'container-fluid jumbotron',
         template: '#content-template',
 
         initialize: function (opts) {

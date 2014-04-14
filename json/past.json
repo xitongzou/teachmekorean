@@ -1,0 +1,119 @@
+{
+    "past-content": {
+        "title": "았/었/였 (past tense)",
+        "content": [
+            {
+                "title": "When we want to speak in past tense, we conjugate korean verbs by removing the verb stem '다' and replacing it with either 았다,었다 or 였다.",
+                "details": "1. When the verb's last vowel ends in ㅏ or ㅗ, we replace the stem with '았어'. <br/>2. When the verb's last vowel does not end in ㅏ or ㅗ, we replace the stem with '었어'. <br/>3. When the verb ends in 하다 or 이다, we replace it with '였어'.<br/>"
+            }
+        ]},
+    "past-words": {
+        "sentences": [
+            {
+                "translation": "갔어요 - went",
+                "words": [
+                    {
+                        "word": "가다",
+                        "root": "가다",
+                        "translation": "to go"
+                    },
+                    {
+                        "word": "+",
+                        "translation": ""
+                    },
+                    {
+                        "word": "았",
+                        "translation": "Past tense particle"
+                    },
+                    {
+                        "word": "+",
+                        "translation": ""
+                    },
+                    {
+                        "word": "어",
+                        "translation": ""
+                    },
+                    {
+                        "word": "+",
+                        "translation": ""
+                    },
+                    {
+                        "word": "요",
+                        "particle": true,
+                        "translation": "Particle for polite ending"
+                    }
+                ]
+            },
+            {
+                "translation": "먹었어요 - ate",
+                "words": [
+                    {
+                        "word": "먹다",
+                        "root": "먹다",
+                        "translation": "to eat"
+                    },
+                    {
+                        "word": "+",
+                        "translation": ""
+                    },
+                    {
+                        "word": "었",
+                        "translation": "Past tense particle"
+                    },
+                    {
+                        "word": "+",
+                        "translation": ""
+                    },
+                    {
+                        "word": "어",
+                        "translation": ""
+                    },
+                    {
+                        "word": "+",
+                        "translation": ""
+                    },
+                    {
+                        "word": "요",
+                        "particle": true,
+                        "translation": "Particle for polite ending"
+                    }
+                ]
+            },
+            {
+                "translation": "좋아했어요 - liked",
+                "words": [
+                    {
+                        "word": "좋아하다",
+                        "root": "좋아하다",
+                        "translation": "to like"
+                    },
+                    {
+                        "word": "+",
+                        "translation": ""
+                    },
+                    {
+                        "word": "였",
+                        "translation": "Past tense particle"
+                    },
+                    {
+                        "word": "+",
+                        "translation": ""
+                    },
+                    {
+                        "word": "어",
+                        "translation": ""
+                    },
+                    {
+                        "word": "+",
+                        "translation": ""
+                    },
+                    {
+                        "word": "요",
+                        "particle": true,
+                        "translation": "Particle for polite ending"
+                    }
+                ]
+            }
+        ]
+    }
+}

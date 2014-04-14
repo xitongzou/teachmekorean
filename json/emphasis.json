@@ -1,0 +1,59 @@
+{
+    "emphasis-vocab": {
+        "title": "Vocabulary based around emphasis",
+        "words": [
+            {
+                "word": "매우,아주",
+                "translation": "very"
+            },
+            {
+                "word": "정말",
+                "translation": "really,very"
+            },
+            {
+                "word": "진짜",
+                "translation": "really"
+            },
+            {
+                "word": "너무",
+                "translation": "too"
+            },
+            {
+                "word": "참,엄청",
+                "translation": "really,terribly,awfully"
+            },
+            {
+                "word": "대단히",
+                "translation": "greatly,extremely,highly"
+            },
+            {
+                "word": "무지,무척",
+                "translation": "very,really,extremely,awfully"
+            },
+            {
+                "word": "지극히,극히",
+                "translation": "extremely"
+            },
+            {
+                "word": "특히",
+                "translation": "especially"
+            },
+            {
+                "word": "굉장히",
+                "translation": "greatly,extremely,immensely"
+            },
+            {
+                "word": "좀,조금",
+                "translation": "few,a little bit"
+            },
+            {
+                "word": "약간",
+                "translation": "somewhat,a little"
+            },
+            {
+                "word": "훨씬",
+                "translation": "much,a lot"
+            }
+        ]
+    }
+}
