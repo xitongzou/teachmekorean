@@ -1,62 +1,31 @@
 {
-    "words-basic-words": {
+    "words-basic-vocab": {
         "title": "Basic Words",
-        "sentences": [
-            {
-                "translation": "This thing",
                 "words": [
                     {
                         "word": "이",
                         "translation": "This"
                     },
                     {
-                        "word": "것",
-                        "translation": "Thing",
-                        "particle": true
-                    }
-                ]
-            },
-            {
-                "translation": "That person over there",
-                "words": [
+                        "word": "것,거",
+                        "translation": "Thing"
+                    },
                     {
                         "word": "그",
                         "translation": "That (close)"
                     },
                     {
-                        "word": "사람",
-                        "translation": "Person"
-                    }
-                ]
-            },
-            {
-                "translation": "That is not alcohol over there",
-                "words": [
-                    {
                         "word": "저",
                         "translation": "That (far)"
                     },
                     {
-                        "word": "거",
-                        "translation": "Thing",
-                        "particle": true
+                        "word": "사람",
+                        "translation": "Person"
                     },
                     {
                         "word": "술",
                         "translation": "Alcohol"
-                    },
-                    {
-                        "word": "아니에",
-                        "root": "아니다",
-                        "translation": "To not be"
-                    },
-                    {
-                        "word": "요",
-                        "particle": true,
-                        "translation": "Particle for polite ending"
                     }
                 ]
             }
-        ]
     }
-}

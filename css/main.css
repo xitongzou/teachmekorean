@@ -1,3 +1,7 @@
+#korean-app {
+    width: 100%;
+}
+
 #korean-app .panel-heading {
     color: #777;
 }
@@ -89,5 +93,11 @@
   color: #999999;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
   text-transform: uppercase; }
+#korean-app .vocab-content.vocab-view {
+  font-size: 13px;
+}
+#korean-app .vocab-content.vocab-view a {
+    cursor: pointer;
+}
 #korean-app footer p {
   margin-left: 20px; }

@@ -56,11 +56,13 @@ define([
         loadView: function (lessonName) {
             var contentid = lessonName + "-content";
             var wordid = lessonName + "-words";
+            var vocabid = lessonName + "-vocab";
 
             this.container.call('remove');
 
             var contentView = this.container.findByCustom(contentid);
             var wordView = this.container.findByCustom(wordid);
+            var vocabView = this.container.findByCustom(vocabid);
 
             if (contentView) {
                 $('#content-holder').html(contentView.$el);
@@ -71,7 +73,7 @@ define([
                 this.applyPopups();
             }
 
-            if (!contentView || !wordView) {
+            if (!contentView || !wordView || !vocabView) {
                 this.loadJSON(lessonName);
             }
         },
@@ -139,40 +141,24 @@ define([
 
         renderVocabView: function (vocabArray) {
             var title = vocabArray.title;
-            var sentenceCollection = new SentenceCollection();
-            _.each(vocabArray.sentences, function (sentence) {
                 var wordCollection = new WordCollection();
-                _.each(sentence.words, function (word) {
+                _.each(vocabArray.words, function (word) {
                     var wordModel = new WordModel(word);
-                    var title;
                     var dataid = word.word + "-" + word.translation;
                     var content =
                         "<h4>" + word.translation + "</h4>" +
                             "<h4><a>Add to vocab list</a></h4>";
-                    if (word.expanded) {
-                        title = word.expanded +
-                            "<button>&times;</button>";
-                    } else {
-                        title = word.word +
-                            "<button>&times;</button>";
-                    }
+                    var title = "<button>&times;</button>";
                     wordModel.set({
                         "dataid": dataid,
                         "title": title,
-                        "content": content,
-                        "particle": word.particle
+                        "content": content
                     });
                     wordCollection.add(wordModel);
                 });
-
-                sentenceCollection.add(new SentenceModel({
-                    translation: sentence.translation,
-                    words: wordCollection.toJSON()
-                }));
-            });
-            return new WordView({
+            return new VocabView({
                 title: title,
-                collection: sentenceCollection
+                collection: wordCollection
             });
         },
 

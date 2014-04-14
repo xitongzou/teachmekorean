@@ -1,247 +1,71 @@
 {
-    "expressions-basic-words": {
+    "expressions-basic-vocab": {
         "title": "Basic Expressions",
-        "sentences": [
-            {
-                "translation": "Hi, Hello",
                 "words": [
                     {
                         "word": "안녕하세요",
                         "translation": "Hi, Hello"
-                    }
-                ]
-            },
-            {
-                "translation": "Thank You, Thanks",
-                "words": [
+                    },
                     {
-                        "word": "감사합",
-                        "root": "감사하다",
+                        "word": "감사합니다",
                         "translation": "Thank You, Thanks"
                     },
                     {
-                        "word": "니다",
-                        "root": "(ㅂ/습)니다",
-                        "particle": true,
-                        "translation": "Particle for honorific ending"
-                    },
-                    {
-                        "word": ","
-                    },
-                    {
-                        "word": "고맙",
-                        "root": "고맙다",
+                        "word": "고맙습니다",
                         "translation": "Thank You, Thanks"
                     },
-                    {
-                        "word": "습니다",
-                        "root": "(ㅂ/습)니다",
-                        "particle": true,
-                        "translation": "Particle for honorific ending"
-                    }
-                ]
-            },
-            {
-                "translation": "Yes, Yeah",
-                "words": [
                     {
                         "word": "네",
                         "translation": "Yes, Yeah"
-                    }
-                ]
-            },
-            {
-                "translation": "No",
-                "words": [
+                    },
                     {
-                        "word": "아니",
-                        "root": "아니다",
+                        "word": "아니요",
                         "translation": "No"
                     },
                     {
-                        "word": "요",
-                        "particle": true,
-                        "translation": "Particle for polite ending"
-                    }
-                ]
-            },
-            {
-                "translation": "Yes, Correct",
-                "words": [
-                    {
-                        "word": "맞아",
-                        "root": "맞다",
+                        "word": "맞아요",
                         "translation": "Yes, Correct"
                     },
-                    {
-                        "word": "요",
-                        "particle": true,
-                        "translation": "Particle for polite ending"
-                    }
-                ]
-            },
-            {
-                "translation": "Goodbye, Bye",
-                "words": [
                     {
                         "word": "안녕히 계세요",
                         "translation": "Goodbye (to person who is staying)"
                     },
                     {
-                        "word": ","
-                    },
-                    {
                         "word": "안녕히 가세요",
                         "translation": "Goodbye (to people who are leaving)"
-                    }
-                ]
-            },
-            {
-                "translation": "I'm Sorry",
-                "words": [
+                    },
                     {
-                        "word": "죄송합",
-                        "root": "죄송하다",
+                        "word": "죄송합니다",
                         "translation": "Sorry"
                     },
                     {
-                        "word": "니다",
-                        "root": "(ㅂ/습)니다",
-                        "particle": true,
-                        "translation": "Particle for honorific ending"
-                    },
-                    {
-                        "word": ","
-                    },
-                    {
-                        "word": "미안합",
-                        "root": "미안하다",
+                        "word": "미안합니다",
                         "translation": "Sorry"
                     },
                     {
-                        "word": "니다",
-                        "root": "(ㅂ/습)니다",
-                        "particle": true,
-                        "translation": "Particle for honorific ending"
-                    }
-                ]
-            },
-            {
-                "translation": "Excuse Me",
-                "words": [
-                    {
-                        "word": "저기",
+                        "word": "저기요",
                         "translation": "Excuse Me"
                     },
                     {
-                        "word": "요",
-                        "particle": true,
-                        "translation": "Particle for polite ending"
-                    }
-                ]
-            },
-            {
-                "translation": "Just a moment, Wait one second",
-                "words": [
-                    {
-                        "word": "잠시만",
+                        "word": "잠시만요",
                         "translation": "Just a moment, Wait one second"
                     },
                     {
-                        "word": "요",
-                        "particle": true,
-                        "translation": "Particle for polite ending"
-                    },
-                    {
-                        "word": ","
-                    },
-                    {
-                        "word": "잠깐만",
+                        "word": "잠깐만요",
                         "translation": "Just a moment, Wait one second"
                     },
                     {
-                        "word": "요",
-                        "particle": true,
-                        "translation": "Particle for polite ending"
-                    }
-                ]
-            },
-            {
-                "translation": "Nice to meet you.",
-                "words": [
-                    {
-                        "word": "만나",
-                        "root": "만나다",
-                        "translation": "To meet"
+                        "word": "만나서 반갑습니다",
+                        "translation": "Nice to meet you"
                     },
                     {
-                        "word": "서",
-                        "particle": true,
-                        "translation": "Particle after verb showing result or reason"
+                        "word": "잘 먹겠습니다",
+                        "translation": "Let's enjoy our meal"
                     },
                     {
-                        "word": "반갑",
-                        "root": "반갑다",
-                        "translation": "To be happy, to be glad"
-                    },
-                    {
-                        "word": "습니다",
-                        "root": "(ㅂ/습)니다",
-                        "particle": true,
-                        "translation": "Particle for honorific ending"
-                    }
-                ]
-            },
-            {
-                "translation": "Let's enjoy our meal.",
-                "words": [
-                    {
-                        "word": "잘",
-                        "translation": "Good, Well"
-                    },
-                    {
-                        "word": "먹",
-                        "root": "먹다",
-                        "translation": "To eat"
-                    },
-                    {
-                        "word": "겠",
-                        "particle": true,
-                        "translation": "Particle in verb to add meaning of future action or possibility"
-                    },
-                    {
-                        "word": "습니다",
-                        "root": "(ㅂ/습)니다",
-                        "particle": true,
-                        "translation": "Particle for honorific ending"
-                    }
-                ]
-            },
-            {
-                "translation": "I ate well.",
-                "words": [
-                    {
-                        "word": "잘",
-                        "translation": "Good, Well"
-                    },
-                    {
-                        "word": "먹",
-                        "root": "먹다",
-                        "translation": "To eat"
-                    },
-                    {
-                        "word": "었",
-                        "particle": true,
-                        "translation": "Particle in verb to make it past tense"
-                    },
-                    {
-                        "word": "습니다",
-                        "root": "(ㅂ/습)니다",
-                        "particle": true,
-                        "translation": "Particle for honorific ending"
+                        "word": "잘 먹었습니다",
+                        "translation": "I ate well"
                     }
                 ]
             }
-        ]
-    }
 }

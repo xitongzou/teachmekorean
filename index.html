@@ -135,6 +135,7 @@
                                 <li><a href="#vocab/furniture">Furniture</a></li>
                                 <li><a href="#vocab/animals">Animals</a></li>
                                 <li><a href="#vocab/hobbies">Hobbies</a></li>
+                                <li><a href="#vocab/body">Body, Health</a></li>
                             </ul>
                         </div>
                     </div>
@@ -455,7 +456,7 @@
 </script>
 <script id="vocab-template" type="text/x-handlebars-template">
     <table class="table table-condensed table-hover">
-        <caption>Vocabulary</caption>
+        <caption>{{this.title}}</caption>
         <thead>
         <tr>
             <td>Word</td>
@@ -464,9 +465,10 @@
         </thead>
         <tbody>
         {{#each words}}
-        <tr>
+        <tr data-id="{{this.dataid}}">
             <td>{{this.word}}</td>
             <td>{{{this.translation}}}</td>
+            <td><a>Add to Vocab List</a></td>
         </tr>
         {{/each}}
         </tbody>
