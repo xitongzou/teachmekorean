@@ -6,7 +6,9 @@
                 "title": "The verb 있다 means to have or to exist. The verb 없다 means to not have or to not exist.",
                 "details": "The polite ending for 있다 is 있어요. The polite ending for 없다 is 없어요. 계시다 is the honorific form of 있다."
             }
-        ]},
+        ],
+        "button": " <p><a href='#grammar/towant' class='btn btn-primary btn-lg' role='button'>Ok, next lesson</a></p>"
+    },
     "tohave-words": {
         "sentences": [
             {

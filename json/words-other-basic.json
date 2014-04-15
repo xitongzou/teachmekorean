@@ -1,6 +1,16 @@
 {
+    "words-other-basic-content": {
+        "title": "Basic Vocabulary",
+        "content": [
+            {
+                "title": "Ok, now let's learn some basic vocabulary.",
+                "details": "Here a list of some basic Korean vocabulary that you might find helpful. Again, you can always add it to your vocab list to keep track of it as we go along."
+            }
+        ],
+        "button": " <p><a href='#grammar/topic' class='btn btn-primary btn-lg' role='button'>Ok, next lesson</a></p>"
+    },
     "words-other-basic-vocab": {
-        "title": "Additional Basic Vocabulary",
+        "title": "Basic Vocabulary",
         "words": [
             {
                 "word": "이",
@@ -139,7 +149,7 @@
                 "translation": "how"
             },
             {
-                "word": "어느,어떤",
+                "word": "무슨,어느,어떤",
                 "translation": "which"
             },
             {

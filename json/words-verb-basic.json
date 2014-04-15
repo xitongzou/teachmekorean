@@ -1,4 +1,14 @@
 {
+    "words-verb-basic-content": {
+        "title": "Basic Korean Verbs",
+        "content": [
+            {
+                "title": "Ok, it's time to learn some basic Korean verbs.",
+                "details": "These are verbs that you will commonly use in Korean. Sometimes multiple verbs have the same meaning in English, or vice versa."
+            }
+        ],
+        "button": " <p><a href='#vocab/numbers' class='btn btn-primary btn-lg' role='button'>Ok, next lesson</a></p>"
+    },
     "words-verb-basic-vocab": {
         "title": "Basic Verbs",
         "words": [
@@ -35,16 +45,16 @@
                 "translation": "to speak,to say (formal)"
             },
             {
+                "word": "살다",
+                "translation": "to live"
+            },
+            {
                 "word": "죽다",
                 "translation": "to die"
             },
             {
                 "word": "자다",
                 "translation": "to sleep"
-            },
-            {
-                "word": "살다",
-                "translation": "to live"
             },
             {
                 "word": "주무시다",
@@ -107,6 +117,10 @@
                 "translation": "to come"
             },
             {
+                "word": "사다",
+                "translation": "to buy"
+            },
+            {
                 "word": "생각하다",
                 "translation": "to think"
             },
@@ -129,10 +143,6 @@
             {
                 "word": "찾다",
                 "translation": "to find"
-            },
-            {
-                "word": "검색하다",
-                "translation": "to look up,to search,to browse"
             },
             {
                 "word": "고르다,선택하다",

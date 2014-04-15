@@ -42,6 +42,8 @@
             </div>
             <div id="word-holder">
             </div>
+            <div id="vocab-holder">
+            </div>
             <!--/row-->
         </article>
         <!--/span-->
@@ -129,6 +131,7 @@
                                 <li><a href="#vocab/words-adjective-basic">Basic Adjectives</a></li>
                                 <li><a href="#vocab/words-other-basic">Additional Basic Vocab</a></li>
                                 <li><a href="#vocab/numbers">Numbers</a></li>
+                                <li><a href="#vocab/interrogative">Who,what,when,where,why,how</a></li>
                                 <li><a href="#vocab/time">Time,Frequency</a></li>
                                 <li><a href="#vocab/emphasis">Emphasis</a></li>
                                 <li><a href="#vocab/food">Food</a></li>
@@ -191,7 +194,6 @@
                 <li><a href="#grammar/present">아/어/여 (present tense)</a></li>
                 <li><a href="#grammar/past">았/었/였 (past tense)</a></li>
                 <li><a href="#">ㄹ거예요 (future tense)</a></li>
-                <li><a href="#grammar/counting">일,한 (korean numbers)</a></li>
                 <li><a href="#grammar/negation">안,지 않다 (negation)</a></li>
                 <li><a href="#">(으)시 (honorific particle)</a></li>
                 <li><a href="#">(ㅂ/습)니다 (honorific form)</a></li>
@@ -426,7 +428,7 @@
     </div>
     {{/if}}
     {{#each entries}}
-    <div class="well-sm">
+    <div class="entry">
         <h2>{{{this.title}}}</h2>
 
         <p class="lead">
@@ -434,6 +436,9 @@
         </p>
     </div>
     {{/each}}
+    {{#if this.button}}
+         {{{this.button}}}
+    {{/if}}
 </script>
 <script id="word-template" type="text/x-handlebars-template">
     {{#if title}}

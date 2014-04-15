@@ -1,0 +1,200 @@
+{
+    "negation-content": {
+        "title": "Who,what,when,where,why,how",
+        "content": [
+            {
+                "title": "Let's learn the basic interrogative words: who,what,when,where,why,how,how much,and which",
+                "details": "1. Who (누구), what (뭐), when (언제), where (어디), why (왜), and how (어떻게) are usually used before verbs.<br/>2. Which (어떤,무슨) is usually used before nouns.<br/>3. How much (얼마나) is usually used before adverbs or adjectives."
+            }
+        ],
+        "button": " <p><a href='#grammar/fromto' class='btn btn-primary btn-lg' role='button'>Ok, next lesson</a></p>"
+    },
+    "negation-words": {
+        "sentences": [
+            {
+                "translation": "Who is this?",
+                "words": [
+                    {
+                        "word": "누구",
+                        "translation": "Who"
+                    },
+                    {
+                        "word": "세",
+                        "root": "(으)시",
+                        "particle": true,
+                        "translation": "Honorific marker"
+                    },
+                    {
+                        "word": "요",
+                        "particle": true,
+                        "translation": "Particle for polite ending"
+                    },
+                    {
+                        "word": "?",
+                        "particle": true
+                    }
+                ]
+            },
+            {
+                "translation": "Where did you go?",
+                "words": [
+                    {
+                        "word": "어디",
+                        "translation": "Where"
+                    },
+                    {
+                        "word": "갔어",
+                        "root": "가다",
+                        "translation": "to go"
+                    },
+                    {
+                        "word": "요",
+                        "particle": true,
+                        "translation": "Particle for polite ending"
+                    },
+                    {
+                        "word": "?",
+                        "particle": true
+                    }
+                ]
+            },
+            {
+                "translation": "What are you doing?",
+                "words": [
+                    {
+                        "word": "뭐",
+                        "translation": "What"
+                    },
+                    {
+                        "word": "해",
+                        "root": "하다",
+                        "translation": "to do"
+                    },
+                    {
+                        "word": "요",
+                        "particle": true,
+                        "translation": "Particle for polite ending"
+                    },
+                    {
+                        "word": "?",
+                        "particle": true
+                    }
+                ]
+            },
+            {
+                "translation": "When did you come?",
+                "words": [
+                    {
+                        "word": "언제",
+                        "translation": "When"
+                    },
+                    {
+                        "word": "왔어",
+                        "root": "오다",
+                        "translation": "to come"
+                    },
+                    {
+                        "word": "요",
+                        "particle": true,
+                        "translation": "Particle for polite ending"
+                    },
+                    {
+                        "word": "?",
+                        "particle": true
+                    }
+                ]
+            },
+            {
+                "translation": "Why did you come?",
+                "words": [
+                    {
+                        "word": "왜",
+                        "translation": "Why"
+                    },
+                    {
+                        "word": "왔어",
+                        "root": "오다",
+                        "translation": "to come"
+                    },
+                    {
+                        "word": "요",
+                        "particle": true,
+                        "translation": "Particle for polite ending"
+                    },
+                    {
+                        "word": "?",
+                        "particle": true
+                    }
+                ]
+            },
+            {
+                "translation": "How big is it?",
+                "words": [
+                    {
+                        "word": "얼마나",
+                        "translation": "How much"
+                    },
+                    {
+                        "word": "커",
+                        "root": "크다",
+                        "translation": "to be big,to be large"
+                    },
+                    {
+                        "word": "요",
+                        "particle": true,
+                        "translation": "Particle for polite ending"
+                    },
+                    {
+                        "word": "?",
+                        "particle": true
+                    }
+                ]
+            },
+            {
+                "translation": "How did you do it?",
+                "words": [
+                    {
+                        "word": "어떻게",
+                        "translation": "How"
+                    },
+                    {
+                        "word": "했어",
+                        "root": "하다",
+                        "translation": "to do"
+                    },
+                    {
+                        "word": "요",
+                        "particle": true,
+                        "translation": "Particle for polite ending"
+                    },
+                    {
+                        "word": "?",
+                        "particle": true
+                    }
+                ]
+            },
+            {
+                "translation": "Which restaurant?",
+                "words": [
+                    {
+                        "word": "어떤",
+                        "translation": "Which"
+                    },
+                    {
+                        "word": "식당",
+                        "translation": "Restaurant"
+                    },
+                    {
+                        "word": "요",
+                        "particle": true,
+                        "translation": "Particle for polite ending"
+                    },
+                    {
+                        "word": "?",
+                        "particle": true
+                    }
+                ]
+            }
+        ]
+    }
+}

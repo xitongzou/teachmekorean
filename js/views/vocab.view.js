@@ -38,7 +38,7 @@ define([
                 title: this.title,
                 words: this.words.toJSON()
             }));
-            $('#word-holder').html(this.$el);
+            $('#vocab-holder').html(this.$el);
         }
 
     });

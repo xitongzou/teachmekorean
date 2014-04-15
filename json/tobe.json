@@ -1,12 +1,14 @@
 {
     "tobe-content": {
-        "title": "이다",
+        "title": "이다,아니다",
         "content": [
             {
-                "title": "The verb 이다 means to be.",
-                "details": "When the verb ends in a consonant, the ending 이에요 is used. When the verb ends in a noun, 예요 is used. The casual ending form is 이야."
+                "title": "The verb 이다 means to be. The verb 아니다 means not to be.",
+                "details": "For 이다, when the noun ends in a consonant, the ending 이에요 is used. When the noun ends in a vowel, 예요 is used. The casual ending form is 이야. <br/> For 아니다, the endings 아니에요 (polite) and 아니야 (plain) are used. <br/>Now you can say Noun A is/is not Noun B!<br/> Note that you can click on any of the Korean words below to get the translation and/or add it to the vocab list."
             }
-        ]},
+        ],
+        "button": " <p><a href='#vocab/words-other-basic' class='btn btn-primary btn-lg' role='button'>Ok, next lesson</a></p>"
+    },
     "tobe-words": {
         "sentences": [
             {
@@ -50,14 +52,34 @@
                 ]
             },
             {
-                "translation": "It's a school",
+                "translation": "It's not a school",
                 "words": [
                     {
                         "word": "학교",
                         "translation": "school"
                     },
                     {
-                        "word": "예",
+                        "word": "아니에",
+                        "root": "아니다",
+                        "translation": "To not be",
+                        "particle": true
+                    },
+                    {
+                        "word": "요",
+                        "particle": true,
+                        "translation": "Particle for polite ending"
+                    }
+                ]
+            },
+            {
+                "translation": "Is it water?",
+                "words": [
+                    {
+                        "word": "물",
+                        "translation": "water"
+                    },
+                    {
+                        "word": "이에",
                         "root": "이다",
                         "translation": "To be",
                         "particle": true
@@ -66,6 +88,10 @@
                         "word": "요",
                         "particle": true,
                         "translation": "Particle for polite ending"
+                    },
+                    {
+                        "word": "?",
+                        "particle": true
                     }
                 ]
             }

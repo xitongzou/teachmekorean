@@ -1,4 +1,14 @@
 {
+    "expressions-basic-content": {
+        "title": "Basic Korean Expressions",
+        "content": [
+            {
+                "title": "First, let's start off by learning some of the basic Korean expressions.",
+                "details": "You can click the link beside each word or expression to add it to the vocabulary list on the page. When you are finished, click the button below to continue to the next lesson."
+            }
+        ],
+        "button": " <p><a href='#grammar/tobe' class='btn btn-primary btn-lg' role='button'>Ok, next lesson</a></p>"
+    },
     "expressions-basic-vocab": {
         "title": "Basic Expressions",
                 "words": [

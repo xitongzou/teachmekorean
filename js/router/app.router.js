@@ -129,12 +129,14 @@ define([
 
         renderContentView: function (contentArray) {
             var title = contentArray.title;
+            var button = contentArray.button;
             var contentCollection = new ContentCollection();
             _.each(contentArray.content, function (content) {
                 contentCollection.add(new ContentModel(content));
             });
             return new ContentView({
                 title: title,
+                button: button,
                 collection: contentCollection
             });
         },

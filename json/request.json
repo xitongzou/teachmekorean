@@ -4,9 +4,11 @@
         "content": [
             {
                 "title": "The verb 주다 means to give, or saying please.",
-                "details": " Appending 주다 to the end of another verb after conjugation with 아/어/여 gives it a request meaning. 줘 is the plain form, and 주세요 is the polite form. 드리다 is the honorific version of this verb."
+                "details": " Appending 주다 to the end of a noun is like saying 'please give me [noun]'. Appending it to the end of another verb after conjugation with 아/어/여 gives it a request meaning. 줘 is the plain form, and 주세요 is the polite form. 드리다 is the honorific version of this verb."
             }
-        ]},
+        ],
+        "button": " <p><a href='#grammar/location' class='btn btn-primary btn-lg' role='button'>Ok, next lesson</a></p>"
+    },
     "request-words": {
         "sentences": [
             {

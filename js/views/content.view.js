@@ -13,6 +13,7 @@ define([
 
         initialize: function (opts) {
             this.title = opts.title;
+            this.button = opts.button;
             this.render(opts.collection);
         },
 
@@ -22,6 +23,7 @@ define([
             var template = Handlebars.compile(source);
             this.$el.html(template({
                 title: self.title,
+                button: self.button,
                 entries: collection.toJSON()}));
             $('#content-holder').html(this.$el);
         }
