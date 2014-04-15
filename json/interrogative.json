@@ -1,5 +1,5 @@
 {
-    "negation-content": {
+    "interrogative-content": {
         "title": "Who,what,when,where,why,how",
         "content": [
             {
@@ -9,7 +9,7 @@
         ],
         "button": " <p><a href='#grammar/fromto' class='btn btn-primary btn-lg' role='button'>Ok, next lesson</a></p>"
     },
-    "negation-words": {
+    "interrogative-words": {
         "sentences": [
             {
                 "translation": "Who is this?",
