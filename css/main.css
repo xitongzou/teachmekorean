@@ -56,6 +56,9 @@
   -moz-border-radius: 6px;
   border-radius: 6px;
   padding: 10px; }
+#korean-app #lesson-content {
+    word-wrap: break-word;
+}
 #korean-app #lesson-content #word-holder .korean-word,
 #korean-app #lesson-content #word-holder .english-word {
   font-weight: bold;
