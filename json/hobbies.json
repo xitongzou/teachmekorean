@@ -1,0 +1,139 @@
+{
+    "hobbies-vocab": {
+        "title": "Hobby related vocabulary",
+        "words": [
+            {
+                "word": "취미",
+                "translation": "Hobby"
+            },
+            {
+                "word": "계획",
+                "translation": "Plan"
+            },
+            {
+                "word": "음악",
+                "translation": "Music"
+            },
+            {
+                "word": "영화",
+                "translation": "Movie"
+            },
+            {
+                "word": "공연",
+                "translation": "Perform"
+            },
+            {
+                "word": "악기",
+                "translation": "Musical instrument"
+            },
+            {
+                "word": "스포츠",
+                "translation": "Sports"
+            },
+            {
+                "word": "축구",
+                "translation": "Soccer"
+            },
+            {
+                "word": "야구",
+                "translation": "Baseball"
+            },
+            {
+                "word": "농구",
+                "translation": "Basketball"
+            },
+            {
+                "word": "배구",
+                "translation": "Volleyball"
+            },
+            {
+                "word": "수영",
+                "translation": "Swimming"
+            },
+            {
+                "word": "조깅",
+                "translation": "Jogging"
+            },
+            {
+                "word": "태권도",
+                "translation": "Taekwondo"
+            },
+            {
+                "word": "탁구",
+                "translation": "Tennis"
+            },
+            {
+                "word": "등산하다",
+                "translation": "to hike"
+            },
+            {
+                "word": "낚시",
+                "translation": "Fishing"
+            },
+            {
+                "word": "책",
+                "translation": "Book"
+            },
+            {
+                "word": "만화",
+                "translation": "Comic"
+            },
+            {
+                "word": "잡지",
+                "translation": "Magazine"
+            },
+            {
+                "word": "뉴스,소식",
+                "translation": "News"
+            },
+            {
+                "word": "노래,곡",
+                "translation": "Song"
+            },
+            {
+                "word": "부르다",
+                "translation": "To call,To sing"
+            },
+            {
+                "word": "사귀다",
+                "translation": "To make friends,to date"
+            },
+            {
+                "word": "만나다",
+                "translation": "To meet"
+            },
+            {
+                "word": "보내다",
+                "translation": "To spend time"
+            },
+            {
+                "word": "어울리다",
+                "translation": "To fit,to hang out"
+            },
+            {
+                "word": "캠핑",
+                "translation": "Camping"
+            },
+            {
+                "word": "지원",
+                "translation": "Volunteer"
+            },
+            {
+                "word": "봉사",
+                "translation": "Service"
+            },
+            {
+                "word": "활동",
+                "translation": "Activity"
+            },
+            {
+                "word": "축제",
+                "translation": "Festival"
+            },
+            {
+                "word": "행사",
+                "translation": "Event"
+            }
+        ]
+    }
+}

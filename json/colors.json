@@ -1,0 +1,67 @@
+{
+    "colors-vocab": {
+        "title": "Colors",
+        "words": [
+            {
+                "word": "빨간색",
+                "translation": "Red"
+            },
+            {
+                "word": "주황색",
+                "translation": "Orange"
+            },
+            {
+                "word": "노란색",
+                "translation": "Yellow"
+            },
+            {
+                "word": "초록색,녹색",
+                "translation": "Green"
+            },
+            {
+                "word": "연두색",
+                "translation": "Light Green"
+            },
+            {
+                "word": "남색",
+                "translation": "Navy Blue"
+            },
+            {
+                "word": "파란색",
+                "translation": "Blue"
+            },
+            {
+                "word": "하늘색",
+                "translation": "Sky Blue,Cyan"
+            },
+            {
+                "word": "보라색",
+                "translation": "Purple"
+            },
+            {
+                "word": "하얀색,흰색",
+                "translation": "White"
+            },
+            {
+                "word": "회색",
+                "translation": "Grey"
+            },
+            {
+                "word": "까만색,검은색",
+                "translation": "Black"
+            },
+            {
+                "word": "분홍색",
+                "translation": "Pink"
+            },
+            {
+                "word": "갈색",
+                "translation": "Brown"
+            },
+            {
+                "word": "베이지색",
+                "translation": "Beige"
+            }
+        ]
+    }
+}

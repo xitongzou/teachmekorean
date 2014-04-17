@@ -1,0 +1,103 @@
+{
+    "travel-vocab": {
+        "title": "Location or Place related vocabulary",
+        "words": [
+            {
+                "word": "고향",
+                "translation": "One's birthplace"
+            },
+            {
+                "word": "여행하다",
+                "translation": "To travel"
+            },
+            {
+                "word": "구경하다,관광하다",
+                "translation": "to sightsee"
+            },
+            {
+                "word": "관광 안내원",
+                "translation": "Tour guide"
+            },
+            {
+                "word": "바닷가",
+                "translation": "Beach"
+            },
+            {
+                "word": "유적지",
+                "translation": "Historic Site"
+            },
+            {
+                "word": "차",
+                "translation": "Car"
+            },
+            {
+                "word": "기차",
+                "translation": "Train"
+            },
+            {
+                "word": "비행기",
+                "translation": "Plane"
+            },
+            {
+                "word": "자전가",
+                "translation": "Bicycle"
+            },
+            {
+                "word": "오토바이",
+                "translation": "Motorcycle"
+            },
+            {
+                "word": "주차",
+                "translation": "To park"
+            },
+            {
+                "word": "공항",
+                "translation": "Airport"
+            },
+            {
+                "word": "야경",
+                "translation": "Nightview"
+            },
+            {
+                "word": "해돋이",
+                "translation": "Sunrise"
+            },
+            {
+                "word": "해양",
+                "translation": "Ocean,Sea"
+            },
+            {
+                "word": "해안",
+                "translation": "Coast"
+            },
+            {
+                "word": "숙소",
+                "translation": "Accommodation,Lodging"
+            },
+            {
+                "word": "호텔",
+                "translation": "Hotel"
+            },
+            {
+                "word": "택시",
+                "translation": "Taxi"
+            },
+            {
+                "word": "해외",
+                "translation": "Overseas,Abroad"
+            },
+            {
+                "word": "국내",
+                "translation": "Domestic"
+            },
+            {
+                "word": "환전",
+                "translation": "Exchange"
+            },
+            {
+                "word": "지하철",
+                "translation": "Subway"
+            }
+        ]
+    }
+}
