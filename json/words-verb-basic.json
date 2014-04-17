@@ -7,7 +7,7 @@
                 "details": "These are verbs that you will commonly use in Korean. Sometimes multiple verbs have the same meaning in English, or vice versa."
             }
         ],
-        "button": " <p><a href='#vocab/numbers' class='btn btn-primary btn-lg' role='button'>Ok, next lesson</a></p>"
+        "button": "<p><a href='#grammar/towant' class='btn btn-primary btn-prev btn-lg' role='button'>Previous lesson</a><a href='#vocab/numbers' class='btn btn-primary btn-next btn-lg' role='button'>Ok, next lesson</a></p>"
     },
     "words-verb-basic-vocab": {
         "title": "Basic Verbs",

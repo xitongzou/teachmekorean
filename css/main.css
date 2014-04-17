@@ -104,3 +104,9 @@
 }
 #korean-app footer p {
   margin-left: 20px; }
+#korean-app .btn-prev {
+  float: left;
+}
+#korean-app .btn-next {
+  float: right;
+}

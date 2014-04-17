@@ -1,0 +1,13 @@
+{
+    "alphabet-4-content": {
+        "title": "Korean Alphabet - Advanced Korean Vowels",
+        "content": [
+            {
+                "title": "Ok, you've learned 18 Korean characters. Now let's learn the 13 advanced Korean vowels, which are similar to the ones you've learned already.",
+                "details": "1. ㅑ - this vowel sounds like 'yah'.<br/>2. ㅕ - this vowel sounds like 'yaww'.<br/>3. ㅛ - this vowel sounds like 'yo'.<br/>4. ㅠ - this vowel sounds like 'yew'.<br/>5. ㅖ - this vowel sounds like 'yeh'.<br/>6. ㅒ - this vowel sounds like 'yay'.<br/>7. ㅝ - this vowel sounds like 'waww'.<br/>8. ㅘ - this vowel sounds like 'wah'.<br/>9. ㅚ - this vowel sounds like 'weh'.<br/>10. ㅞ - this vowel also sounds like 'weh'.<br/>11. ㅙ - this vowel sounds like 'way'.<br/>12. ㅟ - this vowel sounds like 'wee'<br/>13. ㅢ - this vowel sounds like 'uh-ee'<br/> That's the advanced 13 Korean vowels. Now let's move on to advanced consonants!"
+            }
+        ],
+        "button": "<p><a href='#grammar/alphabet-3' class='btn btn-primary btn-prev btn-lg' role='button'>Previous lesson</a><a href='#grammar/alphabet-5' class='btn btn-primary btn-next btn-lg' role='button'>Ok, next lesson</a></p>"
+    },
+    "alphabet-4-words": []
+}

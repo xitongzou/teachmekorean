@@ -6,7 +6,9 @@
                 "title": "에서 and 부터 means from, and 까지 means to or until.",
                 "details": "These particles are attached after a noun, with 에서 being used more with location and 부터 used more with time, and 까지 used as to (for location) and until (for time)."
             }
-        ]},
+        ],
+    "button": "<p><a href='#grammar/interrogative' class='btn btn-primary btn-prev btn-lg' role='button'>Previous lesson</a>"
+    },
     "fromto-words": {
         "sentences": [
             {

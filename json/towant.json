@@ -7,7 +7,7 @@
                 "details": "Remove the '다' part of the verb, and replace it with 고 싶어요, which is the usual polite form."
             }
         ],
-        "button": " <p><a href='#vocab/words-verb-basic' class='btn btn-primary btn-lg' role='button'>Ok, next lesson</a></p>"
+        "button": "<p><a href='#grammar/tohave' class='btn btn-primary btn-prev btn-lg' role='button'>Previous lesson</a><a href='#vocab/words-verb-basic' class='btn btn-primary btn-next btn-lg' role='button'>Ok, next lesson</a></p>"
     },
     "towant-words": {
         "sentences": [

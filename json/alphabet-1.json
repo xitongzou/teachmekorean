@@ -1,0 +1,13 @@
+{
+    "alphabet-1-content": {
+        "title": "Korean Alphabet - Introduction",
+        "content": [
+            {
+                "title": "First, let's learn the Korean alphabet!",
+                "details": "First make sure your browser can read Korean characters. Make sure your browser encoding is set to Unicode, or UTF-8. If you can see this character (한국), then you are fine.<br/>The Korean alphabet is called 'Hangeul', and it is constructed the same way English is constructed, with consonants and vowels! That means you only have to memorize 40 characters, compared to 26 in English.<br/>Each Korean word starts with a consonant, followed by a vowel, either positioned to the right of it, or below it. Korean words are formed by 2-4 characters as one syllable.<br/>A word like 한 is one way of stacking, having the vowel to the right of the first consonant, with the third character under those two. 글 is the other main way of stacking, where the vowel falls below the first consonant, with the third character below the second. A third character will always fall on the bottom. You will never have three characters in a row on the top.<br/>Does this make sense to you? If so, continue on to the next part!"
+            }
+        ],
+        "button": "<p><a href='#' class='btn btn-primary btn-prev btn-lg' role='button'>Previous lesson</a><a href='#grammar/alphabet-2' class='btn btn-primary btn-next btn-lg' role='button'>Ok, next lesson</a></p>"
+    },
+    "alphabet-1-words": []
+}

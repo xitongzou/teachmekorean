@@ -1,0 +1,13 @@
+{
+    "alphabet-5-content": {
+        "title": "Korean Alphabet - Advanced Korean Consonants",
+        "content": [
+            {
+                "title": "Ok, these 9 advanced consonants should be the final parts of the Korean alphabet! These consonants are similar to the ones you've learned already. After this, you should be able to pronounce (almost) any Korean word by adding up the sounds together!",
+                "details": "All of these consonants are almost silent when they appear at the end of a Korean word.<br/>1. ㅃ - this consonant sounds like 'b' but with a stronger downward tone.<br/>2. ㅉ - this consonant sounds like 'j' but with a stronger downward tone.<br/>3. ㄸ - this consonant sounds like 'd' but with a stronger downward tone.<br/>4. ㄲ - this consonant sounds like 'g' but with a stronger downward tone.<br/>5. ㅆ - this consonant sounds like 's' but with a stronger downward tone.<br/>6. ㅋ - this consonant sounds like a strong 'k'.<br/>7. ㅌ - this consonant sounds like a strong 't'.<br/>8. ㅊ - this consonant sounds like a strong 'ch'.<br/>9. ㅍ - this consonant sounds like a strong 'p'.<br/> That's all the Korean characters! Now let's review some Korean pronunciations!"
+            }
+        ],
+        "button": "<p><a href='#grammar/alphabet-4' class='btn btn-primary btn-prev btn-lg' role='button'>Previous lesson</a><a href='#grammar/alphabet-6' class='btn btn-primary btn-next btn-lg' role='button'>Ok, next lesson</a></p>"
+    },
+    "alphabet-5-words": []
+}

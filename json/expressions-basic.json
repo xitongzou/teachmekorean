@@ -7,7 +7,7 @@
                 "details": "You can click the link beside each word or expression to add it to the vocabulary list on the page. When you are finished, click the button below to continue to the next lesson."
             }
         ],
-        "button": " <p><a href='#grammar/tobe' class='btn btn-primary btn-lg' role='button'>Ok, next lesson</a></p>"
+        "button": "<p><a href='#grammar/alphabet-6' class='btn btn-primary btn-prev btn-lg' role='button'>Previous lesson</a><a href='#grammar/tobe' class='btn btn-primary btn-next btn-lg' role='button'>Ok, next lesson</a></p>"
     },
     "expressions-basic-vocab": {
         "title": "Basic Expressions",
@@ -75,6 +75,14 @@
                     {
                         "word": "잘 먹었습니다",
                         "translation": "I ate well"
+                    },
+                    {
+                        "word": "괜찮아요",
+                        "translation": "It's ok,It's alright,Don't worry about it"
+                    },
+                    {
+                        "word": "걱정마세요",
+                        "translation": "Don't worry"
                     }
                 ]
             }

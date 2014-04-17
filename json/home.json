@@ -4,10 +4,10 @@
         "content": [
         {
             "title": "Let's learn Korean by navigating through the menus, or just click the button below to go through our recommended learning guide! ",
-            "details": "Note that we expect you to already know how to read hangeul. If you haven't learned it yet, please visit <a href='http://www.learnkoreanlanguage.com/learn-hangul.html' target='_blank'>this site first</a>."
+            "details": ""
         }
-         ],
-        "button": " <p><a href='#vocab/expressions-basic' class='btn btn-primary btn-lg' role='button'>Let's get started</a></p>"
+        ],
+        "button": " <p><a href='#grammar/alphabet-1' class='btn btn-primary btn-lg' role='button'>Let's get started</a></p>"
     },
     "home-words": []
 }
