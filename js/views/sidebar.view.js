@@ -8,7 +8,7 @@ define([
     var SidebarView = Backbone.View.extend({
 
         tagName: 'nav',
-        className: 'col-sm-3',
+        className: 'col-md-3',
         template: '#sidebar-template',
 
         initialize: function () {

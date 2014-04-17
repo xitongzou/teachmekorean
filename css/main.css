@@ -106,7 +106,9 @@
   margin-left: 20px; }
 #korean-app .btn-prev {
   float: left;
+  margin-top: 20px;
 }
 #korean-app .btn-next {
   float: right;
+  margin-top: 20px;
 }

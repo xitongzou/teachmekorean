@@ -10,7 +10,7 @@ define([
     var VocabListView = Backbone.View.extend({
 
         tagName: 'div',
-        className: 'vocab-content col-sm-3 well well-small',
+        className: 'vocab-content col-md-3 well well-small',
         template: '#vocab-list-template',
         words: null,
 
