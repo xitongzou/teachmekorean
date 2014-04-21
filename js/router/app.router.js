@@ -93,13 +93,16 @@ define([
             }
 
             //apply animation effects
-            if (level) {
-                $('#' + level).collapse("show");
-            } else {
-                $('.collapse.in').collapse('hide');
-            }
+            var $selectedLesson = $("." + name);
+            var $collapsed = $('.collapse.in');
+            _.forEach($collapsed, function (elm) {
+                if (elm.id !== level) {
+                    $(elm).collapse('hide');
+                }
+            });
+            $('#' + level).collapse("show");
             $('.selected').removeClass("selected");
-            $('.' + name).addClass("selected");
+            $selectedLesson.addClass("selected");
         },
 
         /** this function populates the model objects from json and renders the view **/

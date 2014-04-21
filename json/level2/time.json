@@ -1,22 +1,28 @@
 {
+    "time-content": {
+        "title": "Words based on time",
+        "content": [
+            {
+                "title": "Now lets learn some words based on time.",
+                "details": "1. Usually nouns revolving around time will have the time particle appended (에) when you reference them in a sentence.<br/>2. To make a sentence with time, the number of the hour uses native Korean numbers, and the minute number uses Sino-Korean numbers. Thus, to say 3:29pm, it would be 오후 (afternoon) + 세시(3 hours) + 이십구분(29 minutes)."
+            }
+        ],
+        "button": "<p><a href='#lesson/level2/and' class='btn btn-primary btn-prev btn-lg' role='button'>Previous lesson</a><a href='#lesson/level2/fromto-person' class='btn btn-primary btn-next btn-lg' role='button'>Ok, next lesson</a></p>"
+    },
     "time-vocab": {
-        "title": "Vocabulary based around time or frequency",
+        "title": "Vocabulary based around time",
         "words": [
             {
                 "word": "시간",
                 "translation": "time,hour"
             },
             {
+                "word": "반",
+                "translation": "half"
+            },
+            {
                 "word": "분",
                 "translation": "minute"
-            },
-            {
-                "word": "시기",
-                "translation": "time"
-            },
-            {
-                "word": "시대",
-                "translation": "generation,age,era"
             },
             {
                 "word": "지금,이제",
@@ -43,7 +49,7 @@
                 "translation": "week"
             },
             {
-                "word": "월",
+                "word": "월,달",
                 "translation": "month"
             },
             {
@@ -115,40 +121,80 @@
                 "translation": "weekend"
             },
             {
-                "word": "절대로",
-                "translation": "never"
+                "word": "월요일",
+                "translation": "Monday"
             },
             {
-                "word": "가끔,때때로",
-                "translation": "sometimes,occasionally"
+                "word": "화요일",
+                "translation": "Tuesday"
             },
             {
-                "word": "자주,자꾸",
-                "translation": "often,frequently"
+                "word": "수요일",
+                "translation": "Wednesday"
             },
             {
-                "word": "드물게",
-                "translation": "rarely,seldom"
+                "word": "목요일",
+                "translation": "Thursday"
             },
             {
-                "word": "전혀",
-                "translation": "if ever,at all"
+                "word": "금요일",
+                "translation": "Friday"
             },
             {
-                "word": "항상,언제나",
-                "translation": "always"
+                "word": "토요일",
+                "translation": "Saturday"
             },
             {
-                "word": "보통,대개",
-                "translation": "usually"
+                "word": "일요일",
+                "translation": "Sunday"
             },
             {
-                "word": "일상",
-                "translation": "daily,day to day"
+                "word": "일월",
+                "translation": "January"
             },
             {
-                "word": "종일",
-                "translation": "whole day"
+                "word": "이월",
+                "translation": "February"
+            },
+            {
+                "word": "삼월",
+                "translation": "March"
+            },
+            {
+                "word": "사월",
+                "translation": "April"
+            },
+            {
+                "word": "오월",
+                "translation": "May"
+            },
+            {
+                "word": "유월",
+                "translation": "June"
+            },
+            {
+                "word": "칠월",
+                "translation": "July"
+            },
+            {
+                "word": "팔월",
+                "translation": "August"
+            },
+            {
+                "word": "구월",
+                "translation": "September"
+            },
+            {
+                "word": "시월",
+                "translation": "October"
+            },
+            {
+                "word": "십일월",
+                "translation": "November"
+            },
+            {
+                "word": "십이월",
+                "translation": "December"
             }
         ]
     }

@@ -1,0 +1,69 @@
+{
+    "only-content": {
+        "title": "만 (only)",
+        "content": [
+            {
+                "title": "When we want to add the meaning of 'only' to a noun, we use the particle '만'.",
+                "details": "We append 만 to the end of a noun, and this also adds the meaning of the noun being the topic/subject of the sentence as well. So when we use 만, we don't use 는/은 or 이/가 with it."
+            }
+        ],
+        "button": "<p><a href='#lesson/level2/also' class='btn btn-primary btn-prev btn-lg' role='button'>Previous lesson</a><a href='#lesson/level2/frequency' class='btn btn-primary btn-next btn-lg' role='button'>Ok, next lesson</a></p>"
+    },
+    "only-words": {
+        "sentences": [
+            {
+                "translation": "I only ordered beer.",
+                "words": [
+                    {
+                        "word": "맥주",
+                        "translation": "Beer"
+                    },
+                    {
+                        "word": "만",
+                        "particle": true,
+                        "translation": "Particle meaning 'only'"
+                    },
+                    {
+                        "word": "주문했어",
+                        "root": "주문하다",
+                        "translation": "to order"
+                    },
+                    {
+                        "word": "요",
+                        "particle": true,
+                        "translation": "Particle for polite ending"
+                    }
+                ]
+            },
+            {
+                "translation": "I only cook at home.",
+                "words": [
+                    {
+                        "word": "집",
+                        "translation": "House,home"
+                    },
+                    {
+                        "word": "에서",
+                        "particle": true,
+                        "translation": "Dynamic location particle (at,in,of,from)"
+                    },
+                    {
+                        "word": "만",
+                        "particle": true,
+                        "translation": "Particle meaning 'only'"
+                    },
+                    {
+                        "word": "요리해",
+                        "root": "요리하다",
+                        "translation": "to cook"
+                    },
+                    {
+                        "word": "요",
+                        "particle": true,
+                        "translation": "Particle for polite ending"
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -7,7 +7,7 @@
                 "details": "Here a list of some basic Korean vocabulary that you might find helpful. Again, you can always add it to your vocab list to keep track of it as we go along."
             }
         ],
-        "button": "<p><a href='#lesson/level1/tobe' class='btn btn-primary btn-prev btn-lg' role='button'>Previous lesson</a><a href='#lesson/level1/topic' class='btn btn-primary btn-next btn-lg' role='button'>Ok, next lesson</a></p>"
+        "button": "<p><a href='#lesson/level1/expressions-basic' class='btn btn-primary btn-prev btn-lg' role='button'>Previous lesson</a><a href='#lesson/level1/tobe' class='btn btn-primary btn-next btn-lg' role='button'>Ok, next lesson</a></p>"
     },
     "words-other-basic-vocab": {
         "title": "Basic Vocabulary",
@@ -61,20 +61,12 @@
                 "translation": "we,us (formal)"
             },
             {
-                "word": "하고",
-                "translation": "and"
+                "word": "그",
+                "translation": "He,him"
             },
             {
-                "word": "그리고",
-                "translation": "also,as well"
-            },
-            {
-                "word": "하지만,그런데,근데",
-                "translation": "but,however"
-            },
-            {
-                "word": "그러지만",
-                "translation": "yes but,moreover"
+                "word": "그녀",
+                "translation": "She,her"
             },
             {
                 "word": "이렇게",
@@ -85,12 +77,12 @@
                 "translation": "like that"
             },
             {
-                "word": "그러면",
-                "translation": "well,in that case"
+                "word": "다",
+                "translation": "all"
             },
             {
-                "word": "그래서,그러니까",
-                "translation": "so,thus,therefore"
+                "word": "더",
+                "translation": "more"
             },
             {
                 "word": "아직",
@@ -101,8 +93,12 @@
                 "translation": "also,yet"
             },
             {
-                "word": "아니면,또는",
-                "translation": "or"
+                "word": "이미,벌써",
+                "translation": "already"
+            },
+            {
+                "word": "거의",
+                "translation": "almost"
             },
             {
                 "word": "아마,어쩌면,혹시",
@@ -113,16 +109,12 @@
                 "translation": "here"
             },
             {
-                "word": "그기",
+                "word": "거기",
                 "translation": "there (close)"
             },
             {
                 "word": "저기",
                 "translation": "there (far)"
-            },
-            {
-                "word": "지금,이제",
-                "translation": "now"
             },
             {
                 "word": "어디",

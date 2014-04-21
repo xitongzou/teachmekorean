@@ -1,0 +1,53 @@
+{
+    "words-conjunctions-content": {
+        "title": "Conjunctions",
+        "content": [
+            {
+                "title": "Ok, now let's learn some conjunctions.",
+                "details": "Conjunctions are used to connect sentences together. Here are the most common ones."
+            }
+        ],
+        "button": "<p><a href='#lesson/level2/object' class='btn btn-primary btn-prev btn-lg' role='button'>Previous lesson</a><a href='#lesson/level2/and' class='btn btn-primary btn-next btn-lg' role='button'>Ok, next lesson</a></p>"
+    },
+    "words-conjunctions-vocab": {
+        "title": "Conjunctions",
+        "words": [
+            {
+                "word": "그리고",
+                "translation": "and,also,as well"
+            },
+            {
+                "word": "하지만",
+                "translation": "but"
+            },
+            {
+                "word": "그런데,근데",
+                "translation": "but,however"
+            },
+            {
+                "word": "그러지만",
+                "translation": "yes but,moreover"
+            },
+            {
+                "word": "그러면,그럼",
+                "translation": "well,in that case"
+            },
+            {
+                "word": "그래서",
+                "translation": "so,thus,therefore"
+            },
+            {
+                "word": "그러니까",
+                "translation": "so,thus,therefore"
+            },
+            {
+                "word": "아니면",
+                "translation": "or"
+            },
+            {
+                "word": "또는,혹은",
+                "translation": "or"
+            }
+        ]
+    }
+}

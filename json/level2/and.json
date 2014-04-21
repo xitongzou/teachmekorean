@@ -1,0 +1,78 @@
+{
+    "and-content": {
+        "title": "와/과,하고,(이)랑 (and/with)",
+        "content": [
+            {
+                "title": "When we want to say Noun A <em>and/with</em> Noun B, we use 와/과, 하고 or (이)랑 between the two nouns.",
+                "details": "1. 와/과 is the most formal, and usually used in writing. If the noun ends in a consonant, we append 과 to the end of the first noun. If the noun ends in a vowel, we append 와 to the end of the first noun.<br/>2. 하고 is used both in writing and in speaking, and can be used both formally and casually. 하고 is usually inserted in between the two nouns.<br/>3. (이)랑 is the most casual and usually used in speaking. When the noun ends in a consonant, we append 이랑 to the end of the first noun. If the noun ends in a vowel, we append 랑 to the end of the first noun."
+            }
+        ],
+        "button": "<p><a href='#lesson/level2/words-conjunctions' class='btn btn-primary btn-prev btn-lg' role='button'>Previous lesson</a><a href='#lesson/level2/time' class='btn btn-primary btn-next btn-lg' role='button'>Ok, next lesson</a></p>"
+    },
+    "and-words": {
+        "sentences": [
+            {
+                "translation": "Milk and Bread please.",
+                "words": [
+                    {
+                        "word": "우유",
+                        "translation": "Milk"
+                    },
+                    {
+                        "word": "하고",
+                        "translation": "and,with"
+                    },
+                    {
+                        "word": "빵",
+                        "translation": "Bread"
+                    },
+                    {
+                        "word": "주",
+                        "root": "주다",
+                        "translation": "To give, to request"
+                    },
+                    {
+                        "word": "세",
+                        "root": "(으)시",
+                        "particle": true,
+                        "translation": "Honorific marker"
+                    },
+                    {
+                        "word": "요",
+                        "particle": true,
+                        "translation": "Particle for polite ending"
+                    }
+                ]
+            },
+            {
+                "translation": "I watched a movie with a friend",
+                "words": [
+                    {
+                        "word": "친구",
+                        "translation": "Friend"
+                    },
+                    {
+                        "word": "랑",
+                        "particle": true,
+                        "root": "(이)랑",
+                        "translation": "and,with"
+                    },
+                    {
+                        "word": "영화",
+                        "translation": "Movie"
+                    },
+                    {
+                        "word": "봤어",
+                        "root": "보다",
+                        "translation": "to see,to watch,to look,to try"
+                    },
+                    {
+                        "word": "요",
+                        "particle": true,
+                        "translation": "Particle for polite ending"
+                    }
+                ]
+            }
+        ]
+    }
+}

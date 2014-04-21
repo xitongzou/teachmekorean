@@ -7,7 +7,7 @@
                 "details": "These particles are attached after a noun, with 에서 being used more with location and 부터 used more with time, and 까지 used as to (for location) and until (for time)."
             }
         ],
-    "button": "<p><a href='#lesson/level1/interrogative' class='btn btn-primary btn-prev btn-lg' role='button'>Previous lesson</a>"
+    "button": "<p><a href='#lesson/level2/interrogative' class='btn btn-primary btn-prev btn-lg' role='button'>Previous lesson</a><a href='#lesson/level2/future' class='btn btn-primary btn-next btn-lg' role='button'>Ok, next lesson</a></p>"
     },
     "fromto-words": {
         "sentences": [

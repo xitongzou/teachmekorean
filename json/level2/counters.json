@@ -1,0 +1,72 @@
+{
+    "counters-content": {
+        "title": "Counters",
+        "content": [
+            {
+                "title": "Korean has different words to measure things called counters. The construction is noun + number + counter word.",
+                "details": "The most general Korean counter word is 개 which is used for anything that doesn't have a specific counter word.<br/>Some other useful counters are: 명 (for people), 대 (for cars), 병 (for bottles), 잔 (for cups), 마리 (for animals), 권 (for books), 달 (for months), 장 (paper,pages,tickets).<br/>When measuring something, usually native Korean numbers are used."
+            }
+        ],
+        "button": "<p><a href='#lesson/level2/fromto-person' class='btn btn-primary btn-prev btn-lg' role='button'>Previous lesson</a><a href='#lesson/level2/progressive' class='btn btn-primary btn-next btn-lg' role='button'>Ok, next lesson</a></p>"
+    },
+    "counters-words": {
+        "sentences": [
+            {
+                "translation": "Please give me a bottle of beer",
+                "words": [
+                    {
+                        "word": "맥주",
+                        "translation": "Beer"
+                    },
+                    {
+                        "word": "한",
+                        "translation": "One"
+                    },
+                    {
+                        "word": "병",
+                        "translation": "Counter word for bottles"
+                    },
+                    {
+                        "word": "주",
+                        "root": "주다",
+                        "translation": "To give, to request"
+                    },
+                    {
+                        "word": "세",
+                        "root": "(으)시",
+                        "particle": true,
+                        "translation": "Honorific marker"
+                    },
+                    {
+                        "word": "요",
+                        "particle": true,
+                        "translation": "Particle for polite ending"
+                    }
+                ]
+            },
+            {
+                "translation": "There's ten people here.",
+                "words": [
+                    {
+                        "word": "열",
+                        "translation": "Ten"
+                    },
+                    {
+                        "word": "명",
+                        "translation": "Counter word for people"
+                    },
+                    {
+                        "word": "있어",
+                        "root": "있다",
+                        "translation": "To have,to exist"
+                    },
+                    {
+                        "word": "요",
+                        "particle": true,
+                        "translation": "Particle for polite ending"
+                    }
+                ]
+            }
+        ]
+    }
+}

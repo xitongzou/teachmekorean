@@ -1,0 +1,80 @@
+{
+    "progressive-content": {
+        "title": "고 있다 (Present Progressive Tense)",
+        "content": [
+            {
+                "title": "Present Progressive tense is the tense you use when you are saying you are currently doing something.",
+                "details": "In English the equivalent ending is '-ing'. In Korean, we remove the '다' part of the verb, and replace it with 고 있어요, which is the usual polite form."
+            }
+        ],
+        "button": "<p><a href='#lesson/level2/counters' class='btn btn-primary btn-prev btn-lg' role='button'>Previous lesson</a><a href='#lesson/level2/also' class='btn btn-primary btn-next btn-lg' role='button'>Ok, next lesson</a></p>"
+    },
+    "progressive-words": {
+        "sentences": [
+            {
+                "translation": "I'm sleeping right now",
+                "words": [
+                    {
+                        "word": "저",
+                        "translation": "I,me"
+                    },
+                    {
+                        "word": "는",
+                        "root": "은/는",
+                        "translation": "Topic particle",
+                        "particle": true
+                    },
+                    {
+                        "word": "자",
+                        "root": "자다",
+                        "translation": "to sleep"
+                    },
+                    {
+                        "word": "고 있어",
+                        "particle": true,
+                        "translation": "Present Progressive particle"
+                    },
+                    {
+                        "word": "요",
+                        "particle": true,
+                        "translation": "Particle for polite ending"
+                    }
+                ]
+            },
+            {
+                "translation": "I'm thinking about you right now",
+                "words": [
+                    {
+                        "word": "지금",
+                        "translation": "Now"
+                    },
+                    {
+                        "word": "당신",
+                        "translation": "You (formal)"
+                    },
+                    {
+                        "word": "을",
+                        "root": "을/를",
+                        "particle": true,
+                        "translation": "Object particle"
+                    },
+                    {
+                        "word": "생각하",
+                        "root": "생각하다",
+                        "translation": "to think"
+                    },
+                    {
+                        "word": "고 있어",
+                        "particle": true,
+                        "translation": "Present Progressive particle"
+                    },
+                    {
+                        "word": "요",
+                        "particle": true,
+                        "translation": "Particle for polite ending"
+                    }
+                ]
+            }
+        ]
+    }
+}

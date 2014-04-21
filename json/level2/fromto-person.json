@@ -1,0 +1,108 @@
+{
+    "fromto-person-content": {
+        "title": "한테(서),에게(서),께 (from, to) a person",
+        "content": [
+            {
+                "title": "Whenever we want to say <em>to/from</em> someone or living thing, we use 한테 or 에게 or 께.",
+                "details": "1. 께 is the most formal one and used mostly with elders and seniors. It is attached the end of the noun and can mean 'from' or 'to' depending on context.<br/>2. 에게 is less formal but not too casual either. It is attached to the end of the noun, and 에게서 means strictly 'from' someone, but 에게 can mean 'from' or 'to' depending on the context.<br/>3. 한테 is the most casual and spoken out of these three. It is attached to the end of the noun, and 한테서 means strictly 'from' someone, but 한테 can mean 'from' or 'to' depending on the context."
+            }
+        ],
+        "button": "<p><a href='#lesson/level2/time' class='btn btn-primary btn-prev btn-lg' role='button'>Previous lesson</a><a href='#lesson/level2/counters' class='btn btn-primary btn-next btn-lg' role='button'>Ok, next lesson</a></p>"
+    },
+    "fromto-person-words": {
+        "sentences": [
+            {
+                "translation": "Why did you lie to me?",
+                "words": [
+                    {
+                        "word": "왜",
+                        "translation": "Why"
+                    },
+                    {
+                        "word": "나",
+                        "translation": "I,me"
+                    },
+                    {
+                        "word": "한테",
+                        "particle": true,
+                        "translation": "To,from (someone)"
+                    },
+                    {
+                        "word": "거짓말했어",
+                        "root": "거짓말하다",
+                        "translation": "to lie"
+                    },
+                    {
+                        "word": "요",
+                        "particle": true,
+                        "translation": "Particle for polite ending"
+                    },
+                    {
+                        "word": "?",
+                        "particle": true
+                    }
+                ]
+            },
+            {
+                "translation": "He bought her flowers and chocolate",
+                "words": [
+                    {
+                        "word": "그",
+                        "translation": "He,him"
+                    },
+                    {
+                        "word": "는",
+                        "root": "은/는",
+                        "translation": "Topic particle",
+                        "particle": true
+                    },
+                    {
+                        "word": "그녀",
+                        "translation": "She,her"
+                    },
+                    {
+                        "word": "에게",
+                        "particle": true,
+                        "translation": "To,from (someone)"
+                    },
+                    {
+                        "word": "꽃",
+                        "translation": "Flowers"
+                    },
+                    {
+                        "word": "과",
+                        "root": "와/과",
+                        "particle": true,
+                        "translation": "and,with"
+                    },
+                    {
+                        "word": "초콜릿",
+                        "translation": "Chocolate"
+                    },
+                    {
+                        "word": "을",
+                        "root": "을/를",
+                        "particle": true,
+                        "translation": "Object particle"
+                    },
+                    {
+                        "word": "사",
+                        "root": "사다",
+                        "translation": "to buy"
+                    },
+                    {
+                        "word": "줬어",
+                        "root": "주다",
+                        "particle": true,
+                        "translation": "To give, to request"
+                    },
+                    {
+                        "word": "요",
+                        "particle": true,
+                        "translation": "Particle for polite ending"
+                    }
+                ]
+            }
+        ]
+    }
+}
