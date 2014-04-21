@@ -26,7 +26,7 @@ define([
         },
 
         home: function () {
-            this.loadView("home");
+            this.loadView("", "home");
         },
 
         initialize: function () {
@@ -36,6 +36,11 @@ define([
             this.renderHeader();
             this.renderFooter();
             this.renderSidebar();
+
+            // Matches #lesson/10, passing "10"
+            this.route("lesson/:level/:name", "lesson", function (level, name) {
+                this.loadView(level, name);
+            });
 
             // Matches #lesson/10, passing "10"
             this.route("grammar/:id", "page", function (id) {
@@ -53,10 +58,20 @@ define([
             });
         },
 
-        loadView: function (lessonName) {
-            var contentid = lessonName + "-content";
-            var wordid = lessonName + "-words";
-            var vocabid = lessonName + "-vocab";
+        loadView: function (level, name) {
+            var contentid = "";
+            var wordid = "";
+            var vocabid = "";
+
+            if (level) {
+                contentid += level + "-";
+                wordid += level + "-";
+                vocabid += level + "-";
+            }
+
+            contentid += name + "-content";
+            wordid += name + "-words";
+            vocabid += name + "-vocab";
 
             this.container.call('remove');
 
@@ -74,28 +89,55 @@ define([
             }
 
             if (!contentView || !wordView || !vocabView) {
-                this.loadJSON(lessonName);
+                this.loadJSON(level, name);
             }
+
+            //apply animation effects
+            if (level) {
+                $('#' + level).collapse("show");
+            } else {
+                $('.collapse.in').collapse('hide');
+            }
+            $('.selected').removeClass("selected");
+            $('.' + name).addClass("selected");
         },
 
         /** this function populates the model objects from json and renders the view **/
-        loadJSON: function (lessonName) {
+        loadJSON: function (level, name) {
 
             var self = this;
-            var contentid = lessonName + "-content";
-            var wordid = lessonName + "-words";
-            var vocabid = lessonName + "-vocab";
+            var contentid = "";
+            var wordid = "";
+            var vocabid = "";
+            var jsonFile = "json/";
 
-            $.getJSON("json/" + lessonName + ".json",function (data) {
+            if (level) {
+                contentid += level + "-";
+                wordid += level + "-";
+                vocabid += level + "-";
+                jsonFile += level + "/";
+            }
+
+            contentid += name + "-content";
+            wordid += name + "-words";
+            vocabid += name + "-vocab";
+            jsonFile += name + ".json";
+
+
+            $.getJSON(jsonFile,function (data) {
+
+                /** the 'level' prefix isn't needed in the json,
+                 *  but we still need the view container to index it more uniquely
+                 */
 
                 /** get content **/
-                var lessonContent = data[contentid];
+                var lessonContent = data[name + "-content"];
 
                 /** get words **/
-                var lessonWords = data[wordid];
+                var lessonWords = data[name + "-words"];
 
                 /** get vocab table **/
-                var lessonVocab = data[vocabid];
+                var lessonVocab = data[name + "-vocab"];
 
                 if (lessonContent) {
                     self.container.add(self.renderContentView(lessonContent), contentid);

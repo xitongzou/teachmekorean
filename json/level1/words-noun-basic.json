@@ -1,4 +1,14 @@
 {
+    "words-noun-basic-content": {
+        "title": "Basic Korean Nouns",
+        "content": [
+            {
+                "title": "Ok, it's time to learn some basic Korean nouns.",
+                "details": "These are nouns that you will commonly use in Korean. Sometimes multiple nouns have the same meaning in English, or vice versa."
+            }
+        ],
+        "button": "<p><a href='#lesson/level1/towant' class='btn btn-primary btn-prev btn-lg' role='button'>Previous lesson</a><a href='#lesson/level1/words-verb-basic' class='btn btn-primary btn-next btn-lg' role='button'>Ok, next lesson</a></p>"
+    },
     "words-noun-basic-vocab": {
         "title": "Basic Words",
                 "words": [

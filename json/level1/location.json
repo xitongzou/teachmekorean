@@ -7,7 +7,7 @@
                 "details": "에 roughly corresponds to 'at,to,in,of,by', and it usually attached to the location or situation it is marking. 에서 is used the same way, except an action or event is happening there."
             }
         ],
-        "button": "<p><a href='#grammar/request' class='btn btn-primary btn-prev btn-lg' role='button'>Previous lesson</a><a href='#grammar/negation' class='btn btn-primary btn-next btn-lg' role='button'>Ok, next lesson</a></p>"
+        "button": "<p><a href='#lesson/level1/request' class='btn btn-primary btn-prev btn-lg' role='button'>Previous lesson</a><a href='#lesson/level1/negation' class='btn btn-primary btn-next btn-lg' role='button'>Ok, next lesson</a></p>"
     },
     "location-words": {
         "sentences": [

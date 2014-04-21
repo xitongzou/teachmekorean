@@ -95,12 +95,13 @@
   line-height: 20px;
   color: #999999;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
-  text-transform: uppercase; }
+  text-transform: uppercase;
+}
 #korean-app .vocab-content.vocab-view {
   font-size: 13px;
 }
 #korean-app .vocab-content.vocab-view a {
-    cursor: pointer;
+  cursor: pointer;
 }
 #korean-app footer p {
   margin-left: 20px; }
@@ -111,4 +112,7 @@
 #korean-app .btn-next {
   float: right;
   margin-top: 20px;
+}
+.selected {
+    font-weight: bold;
 }

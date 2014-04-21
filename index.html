@@ -73,7 +73,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="header-collapse">
         <ul class="nav navbar-nav">
-            <li><a href="#">Home</a></li>
+            <li><a class="home" href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
@@ -87,6 +87,43 @@
 
 <script id="sidebar-template" type="text/x-handlebars-template">
 <div class="panel-group" id="accordian">
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#level1">
+                Level 1
+            </a>
+        </h4>
+    </div>
+    <div id="level1" class="panel-collapse collapse">
+        <div class="panel-body">
+            <ul class="nav">
+                <li><a class="alphabet-1" href="#lesson/level1/alphabet-1">Korean alphabet part 1</a></li>
+                <li><a class="alphabet-2" href="#lesson/level1/alphabet-2">Korean alphabet part 2</a></li>
+                <li><a class="alphabet-3" href="#lesson/level1/alphabet-3">Korean alphabet part 3</a></li>
+                <li><a class="alphabet-4" href="#lesson/level1/alphabet-4">Korean alphabet part 4</a></li>
+                <li><a class="alphabet-5" href="#lesson/level1/alphabet-5">Korean alphabet part 5</a></li>
+                <li><a class="alphabet-6" href="#lesson/level1/alphabet-6">Korean alphabet part 6</a></li>
+                <li><a class="expressions-basic" href="#lesson/level1/expressions-basic">Basic Expressions</a></li>
+                <li><a class="tobe" href="#lesson/level1/tobe">이다 (to be)</a></li>
+                <li><a class="words-other-basic" href="#lesson/level1/words-other-basic">Basic Korean Terms</a></li>
+                <li><a class="topic" href="#lesson/level1/topic">은/는 (topic)</a></li>
+                <li><a class="tohave" href="#lesson/level1/tohave">있다,없다 (to have,to exist)</a></li>
+                <li><a class="towant" href="#lesson/level1/towant">고 싶다 (to want)</a></li>
+                <li><a class="words-noun-basic" href="#lesson/level1/words-noun-basic">Basic Nouns</a></li>
+                <li><a class="words-verb-basic" href="#lesson/level1/words-verb-basic">Basic Verbs</a></li>
+                <li><a class="numbers" href="#lesson/level1/numbers">Numbers</a></li>
+                <li><a class="present" href="#lesson/level1/present">아/어/여 (present tense)</a></li>
+                <li><a class="past" href="#lesson/level1/past">았/었/였 (past tense)</a></li>
+                <li><a class="request" href="#lesson/level1/request">주다 (request)</a></li>
+                <li><a class="location" href="#lesson/level1/location">에,에서 (location, time)</a></li>
+                <li><a class="negation" href="#lesson/level1/negation">안,지 않다 (negation)</a></li>
+                <li><a class="interrogative" href="#lesson/level1/interrogative">Who,what,when,where,why,how</a></li>
+                <li><a class="fromto" href="#lesson/level1/fromto">에서,부터,까지 (from, to)</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
 <div class="panel panel-default">
     <div class="panel-heading">
         <h4 class="panel-title">
@@ -190,12 +227,6 @@
     <div id="basics" class="panel-collapse collapse">
         <div class="panel-body">
             <ul class="nav">
-                <li><a href="#grammar/alphabet-1">Hangeul part 1</a></li>
-                <li><a href="#grammar/alphabet-2">Hangeul part 2</a></li>
-                <li><a href="#grammar/alphabet-3">Hangeul part 3</a></li>
-                <li><a href="#grammar/alphabet-4">Hangeul part 4</a></li>
-                <li><a href="#grammar/alphabet-5">Hangeul part 5</a></li>
-                <li><a href="#grammar/alphabet-6">Hangeul part 6</a></li>
                 <li><a href="#grammar/topic">은/는 (topic)</a></li>
                 <li><a href="#grammar/subject">이/가 (subject)</a></li>
                 <li><a href="#">을/를 (object)</a></li>

@@ -7,7 +7,7 @@
                 "details": "1. ㅏ - this vowel sounds like 'ah', or the 'a' in 'father'.<br/>2. ㅓ - this vowel sounds like 'aww', or the 'Au' in 'Australia'.<br/>3. ㅗ - this vowel sounds like 'oh', or the 'o' in 'so'.<br/>4. ㅜ - this vowel sounds like 'ooh' or the 'ue' in 'sue'.<br/>5. ㅡ - this vowel sounds like 'uhh' or the 'oo' in 'good'.<br/>6. ㅣ - this vowel sounds like 'ee' or the 'ee' in 'see'.<br/>7. ㅔ - this vowel sounds like 'eh' or the 'e' in 'bed'.<br/>8. ㅐ - this vowel sounds like 'ay' or the 'ay' in 'lay'.<br/>That's the basic 8 Korean vowels. Now let's move on to consonants!"
             }
         ],
-        "button": "<p><a href='#grammar/alphabet-1' class='btn btn-primary btn-prev btn-lg' role='button'>Previous lesson</a><a href='#grammar/alphabet-3' class='btn btn-primary btn-next btn-lg' role='button'>Ok, next lesson</a></p>"
+        "button": "<p><a href='#lesson/level1/alphabet-1' class='btn btn-primary btn-prev btn-lg' role='button'>Previous lesson</a><a href='#lesson/level1/alphabet-3' class='btn btn-primary btn-next btn-lg' role='button'>Ok, next lesson</a></p>"
     },
     "alphabet-2-words": []
 }

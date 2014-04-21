@@ -7,7 +7,7 @@
                 "details": "In Korean, the first number system is the native korean system, which is mainly used to count things, to say your age, and to say the hour of the time. They are: <br/>하나(1),둘(2),셋(3),넷(4),다섯(5),여섯(6),일곱(7),여덟(8),아홉(9),열(10),스물(20),서른(30)<br/>Note that in usage, 하나 -> 한, 둘 -> 두, 셋 -> 세, 넷 -> 네, 스물 -> 스무. <br/>The second system is the sino Korean system, and it is used in every other situation from math to money. They are: <br/>영(0),일(1),이(2),삼(3),사(4),오(5),육(6),칠(7),팔(8),구(9),십(10),백(100),천(1000),만(10000)"
             }
         ],
-        "button": "<p><a href='#vocab/words-verb-basic' class='btn btn-primary btn-prev btn-lg' role='button'>Previous lesson</a><a href='#grammar/present' class='btn btn-primary btn-next btn-lg' role='button'>Ok, next lesson</a></p>"
+        "button": "<p><a href='#lesson/level1/words-verb-basic' class='btn btn-primary btn-prev btn-lg' role='button'>Previous lesson</a><a href='#lesson/level1/present' class='btn btn-primary btn-next btn-lg' role='button'>Ok, next lesson</a></p>"
     },
     "numbers-words": {
         "sentences": [

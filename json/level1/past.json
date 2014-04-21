@@ -1,18 +1,18 @@
 {
-    "present-content": {
-        "title": "아/어/여 (present tense)",
+    "past-content": {
+        "title": "았/었/였 (past tense)",
         "content": [
             {
-                "title": "When we want to speak in present tense, we conjugate korean verbs by removing the verb stem '다' and replacing it with either 아,어 or 여.",
-                "details": "1. When the verb's last vowel ends in ㅏ or ㅗ, we replace the stem with '아'. <br/>2. When the verb's last vowel does not end in ㅏ or ㅗ, we replace the stem with '어'. <br/>3. When the verb ends in 하다 or 이다, we replace it with '여'.<br/>"
+                "title": "When we want to speak in past tense, we conjugate korean verbs by removing the verb stem '다' and replacing it with either 았다,었다 or 였다.",
+                "details": "1. When the verb's last vowel ends in ㅏ or ㅗ, we replace the stem with '았어'. <br/>2. When the verb's last vowel does not end in ㅏ or ㅗ, we replace the stem with '었어'. <br/>3. When the verb ends in 하다 or 이다, we replace it with '였어'.<br/>"
             }
         ],
-        "button": "<p><a href='#vocab/numbers' class='btn btn-primary btn-prev btn-lg' role='button'>Previous lesson</a><a href='#grammar/past' class='btn btn-primary btn-next btn-lg' role='button'>Ok, next lesson</a></p>"
+        "button": "<p><a href='#lesson/level1/present' class='btn btn-primary btn-prev btn-lg' role='button'>Previous lesson</a><a href='#lesson/level1/request' class='btn btn-primary btn-next btn-lg' role='button'>Ok, next lesson</a></p>"
     },
-    "present-words": {
+    "past-words": {
         "sentences": [
             {
-                "translation": "가요 - go",
+                "translation": "갔어요 - went",
                 "words": [
                     {
                         "word": "가다",
@@ -24,27 +24,8 @@
                         "translation": ""
                     },
                     {
-                        "word": "아",
-                        "translation": ""
-                    },
-                    {
-                        "word": "+",
-                        "translation": ""
-                    },
-                    {
-                        "word": "요",
-                        "particle": true,
-                        "translation": "Particle for polite ending"
-                    }
-                ]
-            },
-            {
-                "translation": "먹어요 - eat",
-                "words": [
-                    {
-                        "word": "먹다",
-                        "root": "먹다",
-                        "translation": "to eat"
+                        "word": "았",
+                        "translation": "Past tense particle"
                     },
                     {
                         "word": "+",
@@ -66,7 +47,42 @@
                 ]
             },
             {
-                "translation": "좋아해요 - like",
+                "translation": "먹었어요 - ate",
+                "words": [
+                    {
+                        "word": "먹다",
+                        "root": "먹다",
+                        "translation": "to eat"
+                    },
+                    {
+                        "word": "+",
+                        "translation": ""
+                    },
+                    {
+                        "word": "었",
+                        "translation": "Past tense particle"
+                    },
+                    {
+                        "word": "+",
+                        "translation": ""
+                    },
+                    {
+                        "word": "어",
+                        "translation": ""
+                    },
+                    {
+                        "word": "+",
+                        "translation": ""
+                    },
+                    {
+                        "word": "요",
+                        "particle": true,
+                        "translation": "Particle for polite ending"
+                    }
+                ]
+            },
+            {
+                "translation": "좋아했어요 - liked",
                 "words": [
                     {
                         "word": "좋아하다",
@@ -78,7 +94,15 @@
                         "translation": ""
                     },
                     {
-                        "word": "여",
+                        "word": "였",
+                        "translation": "Past tense particle"
+                    },
+                    {
+                        "word": "+",
+                        "translation": ""
+                    },
+                    {
+                        "word": "어",
                         "translation": ""
                     },
                     {

@@ -7,7 +7,7 @@
                 "details": "For 이다, when the noun ends in a consonant, the ending 이에요 is used. When the noun ends in a vowel, 예요 is used. The casual ending form is 이야. <br/> For 아니다, the endings 아니에요 (polite) and 아니야 (plain) are used. <br/>Now you can say Noun A is/is not Noun B!<br/> Note that you can click on any of the Korean words below to get the translation and/or add it to the vocab list."
             }
         ],
-        "button": "<p><a href='#grammar/expressions-basic' class='btn btn-primary btn-prev btn-lg' role='button'>Previous lesson</a><a href='#vocab/words-other-basic' class='btn btn-primary btn-next btn-lg' role='button'>Ok, next lesson</a></p>"
+        "button": "<p><a href='#lesson/level1/expressions-basic' class='btn btn-primary btn-prev btn-lg' role='button'>Previous lesson</a><a href='#lesson/level1/words-other-basic' class='btn btn-primary btn-next btn-lg' role='button'>Ok, next lesson</a></p>"
     },
     "tobe-words": {
         "sentences": [

@@ -7,7 +7,7 @@
                 "details": "When the noun ends in a consonant, the ending 은 is used. When the noun ends in a vowel, 는 is used. The topic particle is used to specify what you are talking about, or in contrast to other things. The English equivalent might be the use of The [noun] to indicate a specific noun."
             }
         ],
-        "button": "<p><a href='#vocab/words-other-basic' class='btn btn-primary btn-prev btn-lg' role='button'>Previous lesson</a><a href='#grammar/tohave' class='btn btn-primary btn-next btn-lg' role='button'>Ok, next lesson</a></p>"
+        "button": "<p><a href='#lesson/level1/words-other-basic' class='btn btn-primary btn-prev btn-lg' role='button'>Previous lesson</a><a href='#lesson/level1/tohave' class='btn btn-primary btn-next btn-lg' role='button'>Ok, next lesson</a></p>"
     },
     "topic-words": {
         "sentences": [
