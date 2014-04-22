@@ -7,7 +7,7 @@
                 "details": "Here a list of some basic Korean vocabulary that you might find helpful. Again, you can always add it to your vocab list to keep track of it as we go along."
             }
         ],
-        "button": "<p><a href='#lesson/level1/expressions-basic' class='btn btn-primary btn-prev btn-lg' role='button'>Previous lesson</a><a href='#lesson/level1/tobe' class='btn btn-primary btn-next btn-lg' role='button'>Ok, next lesson</a></p>"
+        "button": "<p><a href='#!/lesson/level1/expressions-basic' class='btn btn-primary btn-prev btn-lg' role='button'>Previous lesson</a><a href='#!/lesson/level1/tobe' class='btn btn-primary btn-next btn-lg' role='button'>Ok, next lesson</a></p>"
     },
     "words-other-basic-vocab": {
         "title": "Basic Vocabulary",

@@ -7,7 +7,7 @@
                 "details": "1. 와/과 is the most formal, and usually used in writing. If the noun ends in a consonant, we append 과 to the end of the first noun. If the noun ends in a vowel, we append 와 to the end of the first noun.<br/>2. 하고 is used both in writing and in speaking, and can be used both formally and casually. 하고 is usually inserted in between the two nouns.<br/>3. (이)랑 is the most casual and usually used in speaking. When the noun ends in a consonant, we append 이랑 to the end of the first noun. If the noun ends in a vowel, we append 랑 to the end of the first noun."
             }
         ],
-        "button": "<p><a href='#lesson/level2/words-conjunctions' class='btn btn-primary btn-prev btn-lg' role='button'>Previous lesson</a><a href='#lesson/level2/time' class='btn btn-primary btn-next btn-lg' role='button'>Ok, next lesson</a></p>"
+        "button": "<p><a href='#!/lesson/level2/words-conjunctions' class='btn btn-primary btn-prev btn-lg' role='button'>Previous lesson</a><a href='#!/lesson/level2/time' class='btn btn-primary btn-next btn-lg' role='button'>Ok, next lesson</a></p>"
     },
     "and-words": {
         "sentences": [

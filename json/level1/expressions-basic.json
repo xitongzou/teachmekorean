@@ -7,7 +7,7 @@
                 "details": "You can click the link beside each word or expression to add it to the vocabulary list on the page. When you are finished, click the button below to continue to the next lesson."
             }
         ],
-        "button": "<p><a href='#lesson/level1/alphabet-6' class='btn btn-primary btn-prev btn-lg' role='button'>Previous lesson</a><a href='#lesson/level1/words-other-basic' class='btn btn-primary btn-next btn-lg' role='button'>Ok, next lesson</a></p>"
+        "button": "<p><a href='#!/lesson/level1/alphabet-6' class='btn btn-primary btn-prev btn-lg' role='button'>Previous lesson</a><a href='#!/lesson/level1/words-other-basic' class='btn btn-primary btn-next btn-lg' role='button'>Ok, next lesson</a></p>"
     },
     "expressions-basic-vocab": {
         "title": "Basic Expressions",

@@ -7,7 +7,7 @@
             "details": ""
         }
         ],
-        "button": " <p><a href='#lesson/level1/alphabet-1' class='btn btn-primary btn-lg' role='button'>Let's get started</a></p>"
+        "button": " <p><a href='#!/lesson/level1/alphabet-1' class='btn btn-primary btn-lg' role='button'>Let's get started</a></p>"
     },
     "home-words": []
 }

@@ -22,7 +22,8 @@ define([
         container: null,
 
         routes: {
-            "": "home"
+            "": "home",
+            "!": "home"
         },
 
         home: function () {
@@ -37,17 +38,14 @@ define([
             this.renderFooter();
             this.renderSidebar();
 
-            // Matches #lesson/10, passing "10"
-            this.route("lesson/:level/:name", "lesson", function (level, name) {
+            this.route("!/lesson/:level/:name", "lesson", function (level, name) {
                 this.loadView(level, name);
             });
 
-            // Matches #lesson/10, passing "10"
             this.route("grammar/:id", "page", function (id) {
                 this.loadView(id);
             });
 
-            // Matches #vocab/10, passing "10"
             this.route("vocab/:id", "page", function (id) {
                 this.loadView(id);
             });

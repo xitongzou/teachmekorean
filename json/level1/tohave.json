@@ -7,7 +7,7 @@
                 "details": "The polite ending for 있다 is 있어요. The polite ending for 없다 is 없어요. 계시다 is the honorific form of 있다."
             }
         ],
-        "button": "<p><a href='#lesson/level1/topic' class='btn btn-primary btn-prev btn-lg' role='button'>Previous lesson</a><a href='#lesson/level1/towant' class='btn btn-primary btn-next btn-lg' role='button'>Ok, next lesson</a></p>"
+        "button": "<p><a href='#!/lesson/level1/topic' class='btn btn-primary btn-prev btn-lg' role='button'>Previous lesson</a><a href='#!/lesson/level1/towant' class='btn btn-primary btn-next btn-lg' role='button'>Ok, next lesson</a></p>"
     },
     "tohave-words": {
         "sentences": [

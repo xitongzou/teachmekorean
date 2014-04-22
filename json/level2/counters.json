@@ -7,7 +7,7 @@
                 "details": "The most general Korean counter word is 개 which is used for anything that doesn't have a specific counter word.<br/>Some other useful counters are: 명 (for people), 대 (for cars), 병 (for bottles), 잔 (for cups), 마리 (for animals), 권 (for books), 달 (for months), 장 (paper,pages,tickets).<br/>When measuring something, usually native Korean numbers are used."
             }
         ],
-        "button": "<p><a href='#lesson/level2/fromto-person' class='btn btn-primary btn-prev btn-lg' role='button'>Previous lesson</a><a href='#lesson/level2/progressive' class='btn btn-primary btn-next btn-lg' role='button'>Ok, next lesson</a></p>"
+        "button": "<p><a href='#!/lesson/level2/fromto-person' class='btn btn-primary btn-prev btn-lg' role='button'>Previous lesson</a><a href='#!/lesson/level2/progressive' class='btn btn-primary btn-next btn-lg' role='button'>Ok, next lesson</a></p>"
     },
     "counters-words": {
         "sentences": [
