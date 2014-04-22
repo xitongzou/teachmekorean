@@ -1,0 +1,67 @@
+{
+    "honorific-content": {
+        "title": "(으)시 (honorific particle)",
+        "content": [
+            {
+                "title": "When we want to ask someone to do something or make an imperative action, and we don't know that person well and/or they are older than us, then we need to use the honorific particle (으)시.",
+                "details": "1. When we are speaking in present tense, using the present verb conjugations (아/어/여) then we just replace the verb stem '다' with 으세요 if the verb ends in a consonant or 세요 if the verb ends in a vowel.<br/>2. Otherwise if the verb has another ending attached to it at the end, then we add (으)시 before the ending.<br/>3. Because this is a polite particle, we have to use '요' at the end or (ㅂ/습)니다 which are polite or honorific endings. We cannot use this with a casual or plain ending. We will discuss more about these endings soon."
+            }
+        ],
+        "button": "<p><a href='#!/lesson/level2/if' class='btn btn-primary btn-prev btn-lg' role='button'>Previous lesson</a><a href='#!/lesson/level2/stop' class='btn btn-primary btn-next btn-lg' role='button'>Ok, next lesson</a></p>"
+    },
+    "honorific-words": {
+        "sentences": [
+            {
+                "translation": "Please take a rest",
+                "words": [
+                    {
+                        "word": "쉬",
+                        "root": "쉬다",
+                        "translation": "to rest,to relax"
+                    },
+                    {
+                        "word": "세",
+                        "root": "(으)시",
+                        "particle": true,
+                        "translation": "Honorific particle"
+                    },
+                    {
+                        "word": "요",
+                        "particle": true,
+                        "translation": "Particle for polite ending"
+                    }
+                ]
+            },
+            {
+                "translation": "Come fast!",
+                "words": [
+                    {
+                        "word": "빨리",
+                        "root": "빠르다",
+                        "translation": "to be fast"
+                    },
+                    {
+                        "word": "오",
+                        "root": "오다",
+                        "translation": "to come"
+                    },
+                    {
+                        "word": "세",
+                        "root": "(으)시",
+                        "particle": true,
+                        "translation": "Honorific particle"
+                    },
+                    {
+                        "word": "요",
+                        "particle": true,
+                        "translation": "Particle for polite ending"
+                    },
+                    {
+                        "word": "!",
+                        "particle": true
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,84 @@
+{
+    "honorific-form-content": {
+        "title": "(ㅂ/습)니다 (honorific form)",
+        "content": [
+            {
+                "title": "In Korean there are different levels of politeness that one needs to be aware of. For most of these lessons we have used the 'polite' form, which is the form you will use when speaking with strangers or people your age. The polite form (called 존댓말) always has '요' as the ending. The plain/casual form (called 반말) just removes the '요' when you speak with close friends or younger people. Now we will teach you the honorific ending.",
+                "details": "1. The most polite ending in Korean is the honorific ending (ㅂ/습)니다. You remove the verb stem '다' and add 'ㅂ' to the end of the verb if the last syllable of the verb has 2 characters only, or add '습' if the last syllable has three or four characters. Then you add '니다' to the end.<br/>2. When asking a question, it is the form (ㅂ/습)니까, so you add '니까?' to the end instead of '니다'. To make it even <em>more</em> polite you can combine this with the honorific particle (으시) to make '십니까?'<br/>3. When making a request or imperative statement, we replace the Verb's '다' with '(으)십시오'.<br/>4. These endings are usually spoken to people much older than you, seniors, bosses, etc. When talking to strangers who you don't know the status or age, just use the polite ending (요) instead.<br/>5. These endings are also used commonly with the 'formal' versions of some Korean verbs like 드시다 (formal version of 먹다) and 드리다 (formal version of 주다)."
+            }
+        ],
+        "button": "<p><a href='#!/lesson/level2/stop' class='btn btn-primary btn-prev btn-lg' role='button'>Previous lesson</a><a href='#!/lesson/level3/verb-noun' class='btn btn-primary btn-next btn-lg' role='button'>Ok, next lesson</a></p>"
+    },
+    "honorific-form-words": {
+        "sentences": [
+            {
+                "translation": "I'm going now",
+                "words": [
+                    {
+                        "word": "지금",
+                        "translation": "Now"
+                    },
+                    {
+                        "word": "갑",
+                        "root": "가다",
+                        "translation": "to go"
+                    },
+                    {
+                        "word": "니다",
+                        "root": "(ㅂ/습)니다",
+                        "particle": true,
+                        "translation": "Particle for honorific ending"
+                    }
+                ]
+            },
+            {
+                "translation": "Did you sleep well?",
+                "words": [
+                    {
+                        "word": "잘",
+                        "translation": "where"
+                    },
+                    {
+                        "word": "주무십",
+                        "root": "주무시다",
+                        "translation": "to sleep (formal)"
+                    },
+                    {
+                        "word": "니까",
+                        "particle": true,
+                        "translation": "Particle for honorific question"
+                    },
+                    {
+                        "word": "?",
+                        "particle": true
+                    }
+                ]
+            },
+            {
+                "translation": "Come fast!",
+                "words": [
+                    {
+                        "word": "빨리",
+                        "root": "빠르다",
+                        "translation": "to be fast"
+                    },
+                    {
+                        "word": "오",
+                        "root": "오다",
+                        "translation": "to come"
+                    },
+                    {
+                        "word": "십시오",
+                        "root": "(으)십시오",
+                        "particle": true,
+                        "translation": "Particle for honorific request or imperative action"
+                    },
+                    {
+                        "word": "!",
+                        "particle": true
+                    }
+                ]
+            }
+        ]
+    }
+}

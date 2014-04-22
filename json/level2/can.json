@@ -1,0 +1,114 @@
+{
+    "can-content": {
+        "title": "(ㄹ/을) 수 있다/없다,못 (can do,can't do)",
+        "content": [
+            {
+                "title": "When we want to say we can do something, we conjugate korean verbs by removing the verb stem '다' and replacing it with (ㄹ/을)수 있어요. If we can't do something, then we replace '다' with (ㄹ/을)수 없다. If we are unable to do something, we use 못 + Verb.",
+                "details": "1. When the verb's last character is a consonant, we replace the stem with '을 수 있어요' if we want to say 'can' or '을 수 없어요' if we want to say 'cannot'. <br/>2. When the verb's last character is a vowel, we append ㄹ to the bottom of the verb and add '수 있어요' if we want to say 'can' or '수 없어요' if we want to say 'cannot'.<br/>3. If we want to say we are unable to do something (this is slightly different than cannot), we use the word '못' + Verb, or Verb + '지 못하다'."
+            }
+        ],
+        "button": "<p><a href='#!/lesson/level2/frequency' class='btn btn-primary btn-prev btn-lg' role='button'>Previous lesson</a><a href='#!/lesson/level2/should' class='btn btn-primary btn-next btn-lg' role='button'>Ok, next lesson</a></p>"
+    },
+    "can-words": {
+        "sentences": [
+            {
+                "translation": "Can you drive?",
+                "words": [
+                    {
+                        "word": "운전할",
+                        "root": "운정하다",
+                        "translation": "to drive"
+                    },
+                    {
+                        "word": "수 있어",
+                        "root": "수 있다",
+                        "translation": "Particle meaning 'can do' something"
+                    },
+                    {
+                        "word": "요",
+                        "particle": true,
+                        "translation": "Particle for polite ending"
+                    },
+                    {
+                        "word": "?",
+                        "particle": true
+                    }
+                ]
+            },
+            {
+                "translation": "I can't speak Chinese",
+                "words": [
+                    {
+                        "word": "중국어",
+                        "translation": "Chinese"
+                    },
+                    {
+                        "word": "할",
+                        "root": "하다",
+                        "translation": "to do"
+                    },
+                    {
+                        "word": "수 없어",
+                        "root": "수 없다",
+                        "translation": "Particle meaning 'cannot do' something"
+                    },
+                    {
+                        "word": "요",
+                        "particle": true,
+                        "translation": "Particle for polite ending"
+                    }
+                ]
+            },
+            {
+                "translation": "I am unable to protect you",
+                "words": [
+                    {
+                        "word": "지켜",
+                        "root": "지키다",
+                        "translation": "to guard,to protect,to defend"
+                    },
+                    {
+                        "word": "주",
+                        "root": "주다",
+                        "translation": "to give,to request"
+                    },
+                    {
+                        "word": "지 못해",
+                        "particle": true,
+                        "root": "지 못하다",
+                        "translation": "Particle after a verb to mean 'unable to do'"
+                    },
+                    {
+                        "word": "요",
+                        "particle": true,
+                        "translation": "Particle for polite ending"
+                    }
+                ]
+            },
+            {
+                "translation": "I am unable to protect you",
+                "words": [
+                    {
+                        "word": "못",
+                        "translation": "Particle meaning 'unable to do'"
+                    },
+                    {
+                        "word": "지켜",
+                        "root": "지키다",
+                        "translation": "to guard,to protect,to defend"
+                    },
+                    {
+                        "word": "줘",
+                        "root": "주다",
+                        "translation": "to give,to request"
+                    },
+                    {
+                        "word": "요",
+                        "particle": true,
+                        "translation": "Particle for polite ending"
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,68 @@
+{
+    "should-content": {
+        "title": "(아/어/여 야)되다/하다 (must do,should do)",
+        "content": [
+            {
+                "title": "When we want to say should or must do something, we conjugate korean verbs by changing the verb into its past/present form (using the 아/어/여 conjugations) and adding '야 하다/되다' to the end.",
+                "details": "Whether the ending is 야 해요 or 야 돼요 doesn't matter that much, they mean the same."
+            }
+        ],
+        "button": "<p><a href='#!/lesson/level2/can' class='btn btn-primary btn-prev btn-lg' role='button'>Previous lesson</a><a href='#!/lesson/level2/if' class='btn btn-primary btn-next btn-lg' role='button'>Ok, next lesson</a></p>"
+    },
+    "should-words": {
+        "sentences": [
+            {
+                "translation": "You should see him",
+                "words": [
+                    {
+                        "word": "그",
+                        "translation": "He,him"
+                    },
+                    {
+                        "word": "를",
+                        "root": "을/를",
+                        "particle": true,
+                        "translation": "Object particle"
+                    },
+                    {
+                        "word": "봐",
+                        "root": "보다",
+                        "translation": "to watch,to see,to look,to try"
+                    },
+                    {
+                        "word": "야 돼",
+                        "particle": true,
+                        "root": "야 되다/하다",
+                        "translation": "Particle meaning 'should,must' do something"
+                    },
+                    {
+                        "word": "요",
+                        "particle": true,
+                        "translation": "Particle for polite ending"
+                    }
+                ]
+            },
+            {
+                "translation": "You have to drive",
+                "words": [
+                    {
+                        "word": "운정해",
+                        "root": "운정하다",
+                        "translation": "to drive"
+                    },
+                    {
+                        "word": "야 해",
+                        "particle": true,
+                        "root": "야 되다/하다",
+                        "translation": "Particle meaning 'should,must' do something"
+                    },
+                    {
+                        "word": "요",
+                        "particle": true,
+                        "translation": "Particle for polite ending"
+                    }
+                ]
+            }
+        ]
+    }
+}

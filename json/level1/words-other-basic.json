@@ -147,6 +147,22 @@
             {
                 "word": "얼마나",
                 "translation": "how much"
+            },
+            {
+                "word": "누군가",
+                "translation": "someone"
+            },
+            {
+                "word": "어젠가",
+                "translation": "someday,sometime"
+            },
+            {
+                "word": "어딘가",
+                "translation": "somewhere"
+            },
+            {
+                "word": "뭔가",
+                "translation": "something"
             }
         ]
     }

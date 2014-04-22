@@ -1,0 +1,81 @@
+{
+    "stop-content": {
+        "title": "마세요,말고 (stop doing)",
+        "content": [
+            {
+                "title": "We can make use of the honorific particle (으시) that we learned in imperative actions, like telling someone to stop doing something. To do that, we just replace the verb stem '다' with '지 마세요'. If we want to say do B instead of A, we use '지 말고' instead.",
+                "details": "1. The polite way to tell someone to stop doing something is to use Verb + '지 마세요'.<br/>2. The plain/casual way of saying this to someone is to just use Verb + '지 마'.<br/>3. In order to say do B instead of A, we use Verb A + '지 말고' + Verb B + '세요'"
+            }
+        ],
+        "button": "<p><a href='#!/lesson/level2/if' class='btn btn-primary btn-prev btn-lg' role='button'>Previous lesson</a><a href='#!/lesson/level2/honorific-form' class='btn btn-primary btn-next btn-lg' role='button'>Ok, next lesson</a></p>"
+    },
+    "stop-words": {
+        "sentences": [
+            {
+                "translation": "Don't go.",
+                "words": [
+                    {
+                        "word": "가",
+                        "root": "가다",
+                        "translation": "to go"
+                    },
+                    {
+                        "word": "지 마",
+                        "particle": true,
+                        "translation": "Particle meaning 'don't do' something"
+                    },
+                    {
+                        "word": "세",
+                        "root": "(으)시",
+                        "particle": true,
+                        "translation": "Honorific marker"
+                    },
+                    {
+                        "word": "요",
+                        "particle": true,
+                        "translation": "Particle for polite ending"
+                    }
+                ]
+            },
+            {
+                "translation": "Don't drink coffee, drink tea instead",
+                "words": [
+                    {
+                        "word": "커피",
+                        "translation": "Coffee"
+                    },
+                    {
+                        "word": "마시",
+                        "root": "마시다",
+                        "translation": "to drink"
+                    },
+                    {
+                        "word": "지 말고",
+                        "particle": true,
+                        "translation": "Particle meaning 'do B instead of A'"
+                    },
+                    {
+                        "word": "차",
+                        "translation": "Tea"
+                    },
+                    {
+                        "word": "마시",
+                        "root": "마시다",
+                        "translation": "to drink"
+                    },
+                    {
+                        "word": "세",
+                        "root": "(으)시",
+                        "particle": true,
+                        "translation": "Honorific marker"
+                    },
+                    {
+                        "word": "요",
+                        "particle": true,
+                        "translation": "Particle for polite ending"
+                    }
+                ]
+            }
+        ]
+    }
+}

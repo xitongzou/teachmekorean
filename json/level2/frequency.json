@@ -1,0 +1,109 @@
+{
+    "frequency-content": {
+        "title": "Words based on frequency or emphasis",
+        "content": [
+            {
+                "title": "Now lets learn some words that deal with frequency or emphasis.",
+                "details": "These are words that reflect how often or how much you do something. Note that some of these words, 전혀, 절대, 별로, can only be used in negative sentences."
+            }
+        ],
+        "button": "<p><a href='#!/lesson/level2/only' class='btn btn-primary btn-prev btn-lg' role='button'>Previous lesson</a><a href='#!/lesson/level2/can' class='btn btn-primary btn-next btn-lg' role='button'>Ok, next lesson</a></p>"
+    },
+    "frequency-vocab": {
+        "title": "Vocabulary based around frequency or emphasis",
+        "words": [
+            {
+                "word": "절대로",
+                "translation": "never"
+            },
+            {
+                "word": "가끔,때때로",
+                "translation": "sometimes,occasionally"
+            },
+            {
+                "word": "자주,자꾸",
+                "translation": "often,frequently"
+            },
+            {
+                "word": "드물게",
+                "translation": "rarely,seldom"
+            },
+            {
+                "word": "전혀",
+                "translation": "if ever,not at all"
+            },
+            {
+                "word": "항상,언제나",
+                "translation": "always"
+            },
+            {
+                "word": "보통,대개",
+                "translation": "usually"
+            },
+            {
+                "word": "일상",
+                "translation": "daily,day to day"
+            },
+            {
+                "word": "종일",
+                "translation": "whole day"
+            },
+            {
+                "word": "매우,아주",
+                "translation": "very"
+            },
+            {
+                "word": "정말",
+                "translation": "really,truly"
+            },
+            {
+                "word": "진짜",
+                "translation": "really"
+            },
+            {
+                "word": "너무",
+                "translation": "too"
+            },
+            {
+                "word": "참,엄청",
+                "translation": "really,terribly,awfully"
+            },
+            {
+                "word": "대단히",
+                "translation": "greatly,extremely,highly"
+            },
+            {
+                "word": "무지,무척",
+                "translation": "very,quite,extremely,awfully"
+            },
+            {
+                "word": "지극히,극히",
+                "translation": "extremely"
+            },
+            {
+                "word": "특히",
+                "translation": "especially"
+            },
+            {
+                "word": "굉장히",
+                "translation": "greatly,extremely,immensely"
+            },
+            {
+                "word": "좀,조금",
+                "translation": "few,a little bit"
+            },
+            {
+                "word": "약간",
+                "translation": "somewhat,a little"
+            },
+            {
+                "word": "훨씬",
+                "translation": "much,a lot"
+            },
+            {
+                "word": "별로",
+                "translation": "not really"
+            }
+        ]
+    }
+}
