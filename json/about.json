@@ -1,0 +1,12 @@
+{
+    "about-content": {
+        "title": "What is this website about?",
+        "content": [
+            {
+                "title": "This website aims to help Korean learners by providing lessons related to Korean vocabulary and grammar.",
+                "details": "My name is Tong Zou. I'm an engineer at BitTorrent Inc, and I learn Korean in my spare time. I created this website in Feb 2013 to help myself learn Korean, and since then I have expanded this website to help other people who might be interested to learn Korean as well. This project is open source. The full code can be found in my <a href='http://github.com/xitongzou' target='_blank'>Github account</a>."
+            }
+        ]
+    },
+    "about-words": []
+}

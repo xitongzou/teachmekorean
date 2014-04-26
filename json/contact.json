@@ -1,0 +1,12 @@
+{
+    "contact-content": {
+        "title": "Contact Information",
+        "content": [
+            {
+                "title": "I would love it if people gave me feedback about this website.",
+                "details": "I am constantly trying to improve this website, and feedback is much appreciated. My contact information is as follows: <br/><br/>Email: <a href='mailto:xitongzou@gmail.com'>xitongzou@gmail.com</a><br/>Blog: <a href='http://www.blueisme.com' target='_blank'>www.blueisme.com</a><br/>Twitter: <a href='http://twitter.com/gofishus' target='_blank'>@gofishus</a><br/>Github: <a href='http://github.com/xitongzou' target='_blank'>xitongzou</a>"
+            }
+        ]
+    },
+    "contact-words": []
+}

@@ -23,11 +23,21 @@ define([
 
         routes: {
             "": "home",
-            "!": "home"
+            "!": "home",
+            "!/about": "about",
+            "!/contact": "contact"
         },
 
         home: function () {
             this.loadView("", "home");
+        },
+
+        about: function () {
+            this.loadView("", "about");
+        },
+
+        contact: function () {
+            this.loadView("", "contact");
         },
 
         initialize: function () {
